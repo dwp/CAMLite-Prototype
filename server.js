@@ -29,6 +29,7 @@ const extensions = require('./lib/extensions/extensions.js')
 const routes = require('./app/routes.js')
 const alphaRoutes = require('./app/routes/alpha.js')
 const alphaTeamleaderRoutes = require('./app/routes/alphaTeamleader.js')
+const alphaAgentRoutes = require('./app/routes/alphaagent.js')
 
 // Variables for v6 backwards compatibility
 // Set false by default, then turn on if we find /app/v6/routes.js
@@ -245,6 +246,7 @@ if (typeof (routes) !== 'function') {
   app.use('/', routes)
   app.use('/alpha', alphaRoutes)
   app.use ('/alpha/teamleader', alphaTeamleaderRoutes)
+  app.use ('/alpha/agent', alphaAgentRoutes)
 }
 
 if (useDocumentation) {
