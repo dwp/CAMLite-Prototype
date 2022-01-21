@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Assigning the cases
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="govuk-width-container">
+    <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <form action="assigning-cases-to-agent" method="post" class="form">
+
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="transport-option-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+  <span class="govuk-caption-l">New cases to assign</span>
+                        <h1 class="govuk-fieldset__heading">
+                            Which queue do you want to assign these cases to?
+                        </h1>
+                    </legend>
+
+                    <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="assign-queue" name="assign-queue"
+                                   type="radio"
+                                   value="me">
+                            <label class="govuk-label govuk-radios__label" for="assign-queue">
+                              My queues
+                            </label>
+                        </div>
+
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="assign-queue" name="assign-queue"
+                                   type="radio"
+                                   value="agent">
+                            <label class="govuk-label govuk-radios__label" for="assign-queue">
+                                Agent's queues
+                            </label>
+                        </div>
+
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="assign-queue" name="assign-queue"
+                                   type="radio"
+                                   value="other">
+                            <label class="govuk-label govuk-radios__label" for="assign-queue">
+                                Other team's queues
+                            </label>
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+            <button type="submit" class="govuk-button" data-module="govuk-button">
+                Continue
+            </button>
+        </form>
+    </div>
+</div>
+</div>
+{% endblock %}

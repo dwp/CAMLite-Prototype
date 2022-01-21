@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Assigning the cases
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="govuk-width-container">
+    <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <form action="assigned-tasks-confirmation-a" method="post" class="form">
+
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="transport-option-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+  <span class="govuk-caption-l">New tasks to assign</span>
+                        <h1 class="govuk-fieldset__heading">
+                            Which agent do you want to assign these tasks to?
+                        </h1>
+                    </legend>
+
+                    <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="agent-queue" name="agent-queue"
+                                   type="radio"
+                                   value="me">
+                            <label class="govuk-label govuk-radios__label" for="agent-queue">
+                              David Francis (3)
+                            </label>
+                        </div>
+
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="agent-queue" name="agent-queue"
+                                   type="radio"
+                                   value="agent">
+                            <label class="govuk-label govuk-radios__label" for="agent-queue">
+                                Paul Farmer (1)
+                            </label>
+                        </div>
+
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="agent-queue" name="agent-queue"
+                                   type="radio"
+                                   value="other">
+                            <label class="govuk-label govuk-radios__label" for="agent-queue">
+                                Rita Patel (2)
+                            </label>
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+            <button type="submit" class="govuk-button" data-module="govuk-button">
+                Continue
+            </button>
+        </form>
+    </div>
+</div>
+</div>
+{% endblock %}

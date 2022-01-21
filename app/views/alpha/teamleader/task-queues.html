@@ -1,0 +1,154 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Task queues
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+
+<main class="govuk-main-wrapper">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Task queues
+      </h1>
+
+
+      <p class="govuk-body govuk-!-margin-bottom-7">Select a gueue to view all tasks in that particular queue.</p>
+
+      <ol class="app-task-list">
+        <li>
+          <h2 class="app-task-list__section">
+           My queues: 15 tasks
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="company-information-status">
+                All tasks (15)
+                </a>
+              </span>
+
+            </li>
+
+
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="company-information-status">
+                Open tasks (5)
+                </a>
+              </span>
+
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="company-information-status">
+                Closed tasks (5)
+                </a>
+              </span>
+
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="company-information-status">
+                On hold tasks (??) (5)
+                </a>
+              </span>
+
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h2 class="app-task-list__section">
+            My team's queue: 135 tasks
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="teams-all-tasks" aria-describedby="company-information-status">
+                All tasks (135)
+                </a>
+              </span>
+
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="new-tasks-unassigned" aria-describedby="company-information-status">
+                  Unnasigned tasks (10)
+                </a>
+              </span>
+
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="company-information-status">
+                Asigned tasks (??) (35)
+                </a>
+              </span>
+
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="company-information-status">
+                Open tasks (50)
+                </a>
+              </span>
+
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="company-information-status">
+                Closed tasks (35)
+                </a>
+              </span>
+
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="company-information-status">
+                On hold tasks (??) (5)
+                </a>
+              </span>
+
+            </li>
+  </ul>
+
+        <li>
+          <h2 class="app-task-list__section">
+          Agent's queues: 35 tasks
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="agent-cases-queue" aria-describedby="agent-name">
+                  David Francis (12)
+              </span>
+  </li>
+                <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="agent-cases-queue" aria-describedby="agent-name">
+                Paul Farmer (17)
+              </span>
+              </li>
+                <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="agent-tasks-queue" aria-describedby="agent-name">
+                  Rita Patel (6)
+              </span>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+  </div>
+
+{% endblock %}
