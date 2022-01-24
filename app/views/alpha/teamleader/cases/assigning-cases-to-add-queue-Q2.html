@@ -13,7 +13,7 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="assigned-cases-confirmation-a" method="post" class="form">
+        <form action="new-queue-add" method="post" class="form">
 
 
             <div class="govuk-form-group">
@@ -21,39 +21,39 @@
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
   <span class="govuk-caption-l">New cases to assign</span>
                         <h1 class="govuk-fieldset__heading">
-                            Which agent do you want to assign these cases to?
+                            Add a new queue to
                         </h1>
                     </legend>
 
                     <div class="govuk-radios">
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="agent-queue" name="agent-queue"
+                            <input class="govuk-radios__input" id="new-queue-1" name="new-queue"
                                    type="radio"
-                                   value="David Francis">
-                            <label class="govuk-label govuk-radios__label" for="agent-queue">
-                              David Francis (3)
+                                   value="me">
+                            <label class="govuk-label govuk-radios__label" for="new-queue-1">
+                              My queues
                             </label>
                         </div>
 
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="agent-queue-1" name="agent-queue"
+                            <input class="govuk-radios__input" id="new-queue-2" name="new-queue"
                                    type="radio"
-                                   value="Paul Farmer">
-                            <label class="govuk-label govuk-radios__label" for="agent-queue-1">
-                                Paul Farmer (1)
+                                   value="agent">
+                            <label class="govuk-label govuk-radios__label" for="new-queue-2">
+                                Agent's queues
                             </label>
                         </div>
 
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="agent-queue-2" name="agent-queue"
+                            <input class="govuk-radios__input" id="new-queue-3" name="new-queue"
                                    type="radio"
-                                   value="Rita Patel">
-                            <label class="govuk-label govuk-radios__label" for="agent-queue-2">
-                                Rita Patel (2)
+                                   value="team">
+                            <label class="govuk-label govuk-radios__label" for="new-queue-3">
+                                Team's queues
                             </label>
                         </div>
+</div>
 
-                    </div>
                 </fieldset>
             </div>
             <button type="submit" class="govuk-button" data-module="govuk-button">

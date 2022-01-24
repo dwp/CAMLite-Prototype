@@ -245,8 +245,10 @@ if (typeof (routes) !== 'function') {
 } else {
   app.use('/', routes)
   app.use('/alpha', alphaRoutes)
-  app.use ('/alpha/teamleader', alphaTeamleaderRoutes)
+  app.use ('/alpha/teamleader/cases', alphaTeamleaderRoutes)
+  app.use ('/alpha/teamleader/tasks', alphaTeamleaderRoutes)
   app.use ('/alpha/agent', alphaAgentRoutes)
+  
 }
 
 if (useDocumentation) {
