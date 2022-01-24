@@ -21,6 +21,9 @@ router.post('/queue-choice', function (req, res) {
 
     } else if (assignqueue === 'other') {
       res.redirect('/alpha/agent/other')
+
+    }else if (assignqueue === 'addqueue') {
+      res.redirect('/alpha/agent/other')
     }
   });
 
