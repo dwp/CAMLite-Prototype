@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Assigning the cases
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="govuk-width-container">
+    <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <form action="assigning-tasks-to-add-queue-Q2" method="post" class="form">
+
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="transport-option-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+  <span class="govuk-caption-l">New tasks to assign</span>
+                        <h1 class="govuk-fieldset__heading">
+                            Add a new queue
+                        </h1>
+                    </legend>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="type">
+                          Queue ID
+                      </label>
+                      <input class="govuk-input govuk-!-width-one-half" id="type" name="type" type="text">
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="type">
+                          Queue name
+                      </label>
+                      <input class="govuk-input govuk-!-width-one-half" id="type" name="type" type="text">
+                    </div>
+
+
+
+                </fieldset>
+            </div>
+            <button type="submit" class="govuk-button" data-module="govuk-button">
+                Continue
+            </button>
+        </form>
+    </div>
+</div>
+</div>
+{% endblock %}

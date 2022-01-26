@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Assigning the cases
+  Assigning the tasks
 {% endblock %}
 
 
@@ -13,47 +13,47 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="new-queue-added" method="post" class="form">
+        <form action="assigned-tasks-confirmation-other" method="post" class="form">
 
 
             <div class="govuk-form-group">
                 <fieldset class="govuk-fieldset" aria-describedby="transport-option-hint">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-  <span class="govuk-caption-l">New cases to assign</span>
+  <span class="govuk-caption-l">New tasks to assign</span>
                         <h1 class="govuk-fieldset__heading">
-                            Add a new queue to
+                            Which other team do you want to assign these tasks to?
                         </h1>
                     </legend>
 
                     <div class="govuk-radios">
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="new-queue-1" name="new-queue"
+                            <input class="govuk-radios__input" id="other-queue-1" name="other-queue"
                                    type="radio"
-                                   value="me">
-                            <label class="govuk-label govuk-radios__label" for="new-queue-1">
-                              Team Leader queues
+                                   value="Team 1">
+                            <label class="govuk-label govuk-radios__label" for="other-queue-1">
+                              Team 1
                             </label>
                         </div>
 
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="new-queue-2" name="new-queue"
+                            <input class="govuk-radios__input" id="other-queue-2" name="other-queue"
                                    type="radio"
-                                   value="agent">
-                            <label class="govuk-label govuk-radios__label" for="new-queue-2">
-                                Agent's queues
+                                   value="Team 2">
+                            <label class="govuk-label govuk-radios__label" for="other-queue-2">
+                                Team 2
                             </label>
                         </div>
 
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="new-queue-3" name="new-queue"
+                            <input class="govuk-radios__input" id="other-queue-3" name="other-queue"
                                    type="radio"
-                                   value="team">
-                            <label class="govuk-label govuk-radios__label" for="new-queue-3">
-                                Team's queues
+                                   value="Team 3">
+                            <label class="govuk-label govuk-radios__label" for="other-queue-3">
+                                Team 3
                             </label>
                         </div>
-</div>
 
+                    </div>
                 </fieldset>
             </div>
             <button type="submit" class="govuk-button" data-module="govuk-button">
