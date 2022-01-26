@@ -33,7 +33,7 @@
         Case details
       </h1>
 
-      <p class="govuk-body govuk-!-margin-bottom-7">There are 135 cases in this queue.</p>
+
       <form action="assigning-cases" method="post" class="form">
 
       <table class="govuk-table">
@@ -41,7 +41,7 @@
   <thead class="govuk-table__head">
     <tr class="govuk-table__row">
       <th scope="col" class="govuk-table__header"></th>
-      <th scope="col" class="govuk-table__header">Details</th>
+      <th scope="col" class="govuk-table__header"></th>
     </tr>
   </thead>
   <tbody class="govuk-table__body">
@@ -59,7 +59,7 @@
     </tr>
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Status</th>
-      <td class="govuk-table__cell"><strong class="govuk-tag  govuk-tag--yellow" id="unassigned">Awaiting decission</strong></td>
+      <td class="govuk-table__cell"><strong class="govuk-tag  govuk-tag--yellow" id="awaiting decision">Awaiting decision</strong></td>
     </tr>
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Customer name</th>
@@ -108,7 +108,35 @@
 
   </tbody>
 </table>
+</div>
 
+<div class="govuk-grid-column-one-third">
+<div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="urgent" name="urgent" type="checkbox" value="urgent">
+        <label class="govuk-label govuk-checkboxes__label" for="urgent">
+          Urgent
+        </label>
+      </div>
+</div>
+<br><br><br>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Case notes
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    We need to know your nationality so we can work out which elections you’re entitled to vote in. If you cannot provide your nationality, you’ll have to send copies of identity documents through the post.
+<br>
+<a class="govuk-link" href="#">Edit notes</a>
+  </div>
+</details>
+
+</div>
+
+<div class="govuk-grid-column-full">
 
 
 <br><br><br>
