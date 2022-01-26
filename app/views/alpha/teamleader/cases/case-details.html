@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Case details
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="case-queues">Cases</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="teams-all-cases">Team's all cases</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="teams-all-cases">Case details</a>
+        </li>
+
+      </ol>
+    </div>
+<main class="govuk-main-wrapper">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-l">
+        Case details
+      </h1>
+
+      <p class="govuk-body govuk-!-margin-bottom-7">There are 135 cases in this queue.</p>
+      <form action="assigning-cases" method="post" class="form">
+
+      <table class="govuk-table">
+
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header"></th>
+      <th scope="col" class="govuk-table__header">Details</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Created on</th>
+      <td class="govuk-table__cell">1 Feb 2021</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Type</th>
+      <td class="govuk-table__cell">Lorem ipsum</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Sub-type</th>
+      <td class="govuk-table__cell">Lorem ipsum</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Status</th>
+      <td class="govuk-table__cell"><strong class="govuk-tag  govuk-tag--yellow" id="unassigned">Awaiting decission</strong></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Customer name</th>
+      <td class="govuk-table__cell">Lorem ipsum</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">NINO</th>
+      <td class="govuk-table__cell">RN 00 01 23 A</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">CRN</th>
+      <td class="govuk-table__cell">Lorem ipsum</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Benefit</th>
+      <td class="govuk-table__cell">Lorem ipsum</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Case resolution</th>
+      <td class="govuk-table__cell">Lorem ipsum</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Case resolution selected on</th>
+      <td class="govuk-table__cell">Lorem ipsum</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Due date</th>
+      <td class="govuk-table__cell">Lorem ipsum</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Owner ID</th>
+      <td class="govuk-table__cell">Lorem ipsum</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Owner name</th>
+      <td class="govuk-table__cell">Lorem ipsum</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Claim ID</th>
+      <td class="govuk-table__cell">Lorem ipsum</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Case ID</th>
+      <td class="govuk-table__cell">Lorem ipsum</td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+<br><br><br>
+<div class="govuk-button-group">
+  <a href='assigning-cases'>
+<button class="govuk-button" data-module="govuk-button">
+  Re-allocate case
+</button>
+
+
+</div>
+<div><a class="govuk-link" href="dashboard-tl">Cancel</a></div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

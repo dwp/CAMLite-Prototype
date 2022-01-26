@@ -12,7 +12,7 @@ router.post('/queue-choice', function (req, res) {
     const assignqueue = req.session.data['assign-queue']
     console.log(assignqueue)
     if (assignqueue === 'me') {
-      res.redirect('/alpha/teamleader/cases/assigning-cases-to-myqueue')
+      res.redirect('/alpha/teamleader/cases/assigned-cases-confirmation-myqueue')
 
     } else if (assignqueue === 'agent') {
       res.redirect('/alpha/teamleader/cases/assigning-cases-to-agent')
