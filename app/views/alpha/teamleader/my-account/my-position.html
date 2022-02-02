@@ -9,25 +9,38 @@
 {% block content %}
 
 <div class="govuk-width-container">
-    <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="my-account">My account</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="my-position">My position</a>
+        </li>
+
+      </ol>
+    </div>
+
+
+
 
  <main class="govuk-main-wrapper " id="main-content" role="main">
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-l">
-                Current active position
-              </h1>
 
-<form action="position-notification" method="post" class="form">
+
+<form action="position-confirmation-tl" method="post" class="form">
 
       <div class="govuk-form-group">
     <fieldset class="govuk-fieldset">
       <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
         <h1 class="govuk-fieldset__heading">
-          Change position
+          Change position to:
         </h1>
         <div id="more-detail-hint" class="govuk-hint">
-  To change your active position, select another and click 'change position'.
+  To change your active position, select another and click 'save and continue'.
 </div>
       </legend>
       <div class="govuk-radios" data-module="govuk-radios">
@@ -35,7 +48,9 @@
         <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="position-1" name="position" type="radio" value="teamleader">
           <label class="govuk-label govuk-radios__label" for="position-1">
-            Team Leader
+            Team Leader <strong class="govuk-tag" >
+              Active position
+            </strong>
           </label>
         </div>
         <div class="govuk-radios__item">
@@ -55,12 +70,13 @@
     Save and continue
   </button>
 
-  <a class="govuk-link" href="dashboard-tl">Cancel</a>
+
 </div>
 </form>
 <p><a href="my-position-validation" aria-describedby="my-position-validation"> Validation example </a> </p>
     </div>
-  </div>
+
+  
   </main>
   </div>
 

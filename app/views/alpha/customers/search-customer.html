@@ -1,0 +1,268 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Search customer
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-width-container">
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="customers-list">Customers</a>
+        </li>
+
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="search-customers">Find customer</a>
+        </li>
+      </ol>
+    </div>
+
+      <main class="govuk-main-wrapper">
+
+  <div class="govuk-grid-row">
+<div class="govuk-grid-column-full">
+  <h1 class="govuk-heading-l">
+     Find customer
+   </h1>
+   </div>
+    <div class="govuk-grid-column-one-half">
+
+
+      <!--COLUMN 1-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="nino">
+            NINO
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="nino" name="nino" type="text">
+      </div>
+
+  <!--COLUMN 2-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="crn">
+        CRN
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="crn" name="crn" type="text">
+  </div>
+
+  <!--COLUMN 3-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="sub-type">
+        First name
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="first-name" name="first-name" type="text">
+  </div>
+
+  <!--COLUMN 4-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="benefit">
+        Other forename(s)
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="other-forenames" name="other-forenames" type="text">
+  </div>
+
+  <!--COLUMN 5-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="customer-surname">
+        Surname
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="surname" name="surname" type="text">
+  </div>
+
+  <!--COLUMN 6-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="case-resolution">
+        Preferred name
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="preferred-name" name="preferred-name" type="text">
+  </div>
+
+  <!--COLUMN 7-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="case-resolution">
+        Gender
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="gender" name="gender" type="text">
+  </div>
+
+  <!--COLUMN 8-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="case-resolution">
+        Postcode
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="postcode" name="postcode" type="text">
+  </div>
+</div>
+    <div class="govuk-grid-column-one-half">
+
+
+      <!--COLUMN 9-->
+      <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" role="group" aria-describedby="date-of-birth-start">
+      <legend class="govuk-fieldset__legend">
+      Date of birth start
+      </legend>
+      <div id="created-on-hint" class="govuk-hint">
+      For example, 27 3 2007
+      </div>
+      <div class="govuk-date-input" id="date-of-birth-start">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="date-of-birth-start-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="date-of-birth-start-day" name="date-of-birth-start-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="date-of-birth-start-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="date-of-birth-start-month" name="date-of-birth-start-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="date-of-birth-start-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="date-of-birth-start-year" name="date-of-birth-start-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      </div>
+
+      </fieldset>
+      </div>
+
+
+      <!--COLUMN 10-->
+
+      <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" role="group" aria-describedby="date-of-birth-end">
+      <legend class="govuk-fieldset__legend">
+      Date of birth end
+      </legend>
+      <div id="created-on-hint" class="govuk-hint">
+      For example, 27 3 2007
+      </div>
+      <div class="govuk-date-input" id="date-of-birth-end">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="date-of-birth-end-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="date-of-birth-end-day" name="date-of-birth-end-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="date-of-birth-end-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="date-of-birth-end-month" name="date-of-birth-end-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="date-of-birth-end-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="date-of-birth-end-year" name="date-of-birth-end-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      </div>
+
+      </fieldset>
+      </div>
+
+
+
+      <!--COLUMN 11-->
+      <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" role="group" aria-describedby="date-of-death-start">
+      <legend class="govuk-fieldset__legend">
+      Date of death start
+      </legend>
+      <div id="date-of-death-hint" class="govuk-hint">
+      For example, 27 3 2007
+      </div>
+      <div class="govuk-date-input" id="date-of-death-start">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="date-of-death-start-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="date-of-death-start-day" name="date-of-death-start-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="date-of-death-start-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="date-of-death-start-month" name="date-of-death-start-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="date-of-death-start-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="date-of-death-start-year" name="date-of-death-start-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      </div>
+
+      </fieldset>
+      </div>
+
+      <!--COLUMN 12-->
+      <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" role="group" aria-describedby="date-of-death-end">
+      <legend class="govuk-fieldset__legend">
+      Date of death end
+      </legend>
+      <div id="created-on-hint" class="govuk-hint">
+      For example, 27 3 2007
+      </div>
+      <div class="govuk-date-input" id="date-of-death-end">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="date-of-death-end-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="date-of-death-end-day" name="date-of-death-end-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="date-of-death-end-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="date-of-death-end-month" name="date-of-death-end-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="date-of-death-end-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="date-of-death-end-year" name="date-of-death-end-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      </div>
+
+      </fieldset>
+      </div>
+
+
+</div>
+
+<div class="govuk-grid-column-full">
+<div class="govuk-button-group">
+  <a href='search-customer-results'>
+  <button class="govuk-button" data-module="govuk-button">
+    Search
+  </button>
+</a>
+  <a class="govuk-link" href="search-cases">Clear fields</a>
+</div>
+</div>
+
+      </div>
+      </main>
+
+  </div>
+
+{% endblock %}
