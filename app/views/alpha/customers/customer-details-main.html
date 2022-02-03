@@ -1,0 +1,345 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Case details
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="case-queues">Cases</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="teams-all-cases">Team's all cases</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="customer-details-main">Customer details</a>
+        </li>
+
+      </ol>
+    </div>
+
+
+<!-- <section class="key-details-bar" role="contentinfo" aria-label="Key details">
+  <dl class="key-details-bar_key-details">
+    <div class="key-details-bar_top-block">
+      <dt class="govuk-visually-hidden">Name:</dt>
+      <dt class="key-details-bar_name">Noelle Carmel</dt>
+      <dt class="govuk-visually-hidden">National Insurance Number:</dt>
+      <dt class="key-details-bar_name">RN 00 04 26D</dt>
+      <dt class="govuk-visually-hidden">Claim status:</dt>
+      <dt class="key-details-bar_status">Lorem ipsum</dt>
+      ::after
+</section>    -->
+
+<div class="govuk-width-container">
+<section class="dwp-key-details-bar" aria-label="Key details">
+<dl class="dwp-key-details-bar__key-details">
+    <div class="dwp-key-details-bar__top-block">
+        <dt class="govuk-visually-hidden">Name:</dt>
+        <dd class="dwp-key-details-bar__name"> Jane Doe</dd>
+        <dt class="govuk-visually-hidden">National Insurance number:</dt>
+        <dd class="dwp-key-details-bar__nino">QQ 12 34 56 X</dd>
+        <dt class="govuk-visually-hidden">Claim status:</dt>
+        <dd class="dwp-key-details-bar__status">complete</dd>
+    </div>
+    <div class="dwp-key-details-bar__bottom-block">
+        <dt>Date of birth:</dt>
+        <dd>4 June 1972</dd>
+        <dt>Mobile:</dt>
+        <dd>07771 900 900</dd>
+        <dt>Language:</dt>
+        <dd>Welsh speaker</dd>
+    </div>
+</dl>
+</section>
+</div>
+
+
+
+<main class="govuk-main-wrapper">
+  <div class="govuk-grid-row">
+
+
+
+
+    <div class="govuk-grid-column-one-thirds">
+
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-one-third">
+
+          <nav class="moj-side-navigation" aria-label="Side navigation">
+  <h4 class="moj-side-navigation__title">Customer</h4>
+            <ul class="moj-side-navigation__list">
+
+              <li class="moj-side-navigation__item moj-side-navigation__item--active">
+                <a href="customer-details-main" aria-current="location">Customer details</a>
+              </li>
+              <li class="moj-side-navigation__item">
+                <a href="customer-details-contact">Contact details</a>
+              </li>
+
+              <li class="moj-side-navigation__item">
+                <a href="#1.3">Representatives</a>
+              </li>
+              <li class="moj-side-navigation__item">
+                <a href="#1.3">Benefits</a>
+              </li>
+
+            </ul>
+
+            <h4 class="moj-side-navigation__title">Cases</h4>
+            <ul class="moj-side-navigation__list">
+              <li class="moj-side-navigation__item">
+                <a href="#2.1">Cases list</a>
+              </li>
+
+              <li class="moj-side-navigation__item">
+                <a href="#2.2">Cases notes</a>
+              </li>
+              <li class="moj-side-navigation__item">
+                <a href="#2.2">Cases documents</a>
+              </li>
+
+
+            </ul>
+
+            <h4 class="moj-side-navigation__title">Tasks</h4>
+            <ul class="moj-side-navigation__list">
+              <li class="moj-side-navigation__item">
+                <a href="#2.1">Tasks list</a>
+              </li>
+
+              <li class="moj-side-navigation__item">
+                <a href="#2.2">Tasks notes</a>
+              </li>
+              <li class="moj-side-navigation__item">
+                <a href="#2.2">Tasks documents</a>
+              </li>
+
+
+            </ul>
+          </nav>
+
+        </div>
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Personal details
+      </h1>
+
+      <dl class="govuk-summary-list">
+
+
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Customer name
+          </dt>
+          <dd class="govuk-summary-list__value">
+          Jane Doe
+          </dd>
+
+        </div>
+
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Preferred name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Jane
+          </dd>
+
+        </div>
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Gender
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Female
+          </dd>
+
+        </div>
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            NINO
+          </dt>
+          <dd class="govuk-summary-list__value">
+            RN 00 23 34 55R
+          </dd>
+
+        </div>
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            CRN
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Lorem Ipsum
+          </dd>
+
+        </div>
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Date of birth
+          </dt>
+          <dd class="govuk-summary-list__value">
+            4 June 1972
+          </dd>
+
+        </div>
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Date of death
+          </dt>
+          <dd class="govuk-summary-list__value">
+            -
+          </dd>
+
+        </div>
+
+
+      </dl>
+
+
+
+
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+  <div class="govuk-accordion__section ">
+
+
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+          Additional
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+
+      <dl class="govuk-summary-list">
+
+
+
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Preferred spoken language
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Lorem ipsum
+          </dd>
+
+        </div>
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Preferred written language
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Lorem ipsum
+          </dd>
+
+        </div>
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Accessibility needs
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Lorem ipsum
+          </dd>
+
+        </div>
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Unacceptable behaviour
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Lorem ipsum
+          </dd>
+
+        </div>
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            National sensitivity indicator
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <td class="govuk-table__cell"><div class="govuk-checkboxes" data-module="govuk-checkboxes">
+          <div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+            <label class="govuk-label govuk-checkboxes__label" for="waste">
+
+            </label>
+          </div></td>
+          </dd>
+
+        </div>
+
+
+
+      </dl>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+        <br><br><br>
+        <div class="govuk-button-group">
+          <a href='assigning-cases'>
+        <button class="govuk-button" data-module="govuk-button">
+          Re-allocate case
+        </button>
+
+
+        </div>
+        <div><a class="govuk-link" href="dashboard-tl">Cancel</a></div>
+
+
+
+
+</div>
+
+<div class="govuk-grid-column-one-third">
+<div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="urgent" name="urgent" type="checkbox" value="urgent">
+        <label class="govuk-label govuk-checkboxes__label" for="urgent">
+          Urgent
+        </label>
+      </div>
+</div>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Case notes
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    We need to know your nationality so we can work out which elections you’re entitled to vote in. If you cannot provide your nationality, you’ll have to send copies of identity documents through the post.
+<br>
+<a class="govuk-link" href="#">Edit notes</a>
+  </div>
+</details>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+{% endblock %}
