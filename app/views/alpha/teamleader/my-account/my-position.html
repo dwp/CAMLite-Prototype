@@ -17,7 +17,7 @@
           <a class="govuk-breadcrumbs__link" href="my-account">My account</a>
         </li>
         <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="my-position">My position</a>
+          <a class="govuk-breadcrumbs__link" href="my-position">Change position</a>
         </li>
 
       </ol>
@@ -33,50 +33,94 @@
 
 <form action="position-confirmation-tl" method="post" class="form">
 
-      <div class="govuk-form-group">
-    <fieldset class="govuk-fieldset">
-      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-        <h1 class="govuk-fieldset__heading">
-          Change position to:
-        </h1>
-        <div id="more-detail-hint" class="govuk-hint">
-  To change your active position, select another and click 'save and continue'.
-</div>
-      </legend>
-      <div class="govuk-radios" data-module="govuk-radios">
 
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="position-1" name="position" type="radio" value="teamleader">
-          <label class="govuk-label govuk-radios__label" for="position-1">
-            Team Leader <strong class="govuk-tag" >
-              Active position
-            </strong>
-          </label>
-        </div>
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="position-2" name="position" type="radio" value="agent">
-          <label class="govuk-label govuk-radios__label" for="position-2">
-            Agent
-          </label>
-        </div>
+      <h1 class="govuk-heading-l">
+        Change position
+      </h1>
 
-      </div>
+<p class="govuk-body govuk-!-margin-bottom-7">Select a role to change your active position.</p>
+  <table class="govuk-table">
+
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+
+        <th scope="col" class="govuk-table__header">Organisation</th>
+        <th scope="col" class="govuk-table__header">Position</th>
+        <th scope="col" class="govuk-table__header"></th>
+          <th scope="col" class="govuk-table__header"></th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+
+        <td class="govuk-table__cell">DWP Organisation</td>
+        <td class="govuk-table__cell">Site manager</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag" >Active position  </strong></td>
+        <td class="govuk-table__cell"><div class="govuk-checkboxes" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" id="active-position" name="active-position" type="checkbox" value="carcasses" checked>
+        <label class="govuk-label govuk-checkboxes__label" for="active-position">
+        </label>
+      </div></td>
+      </tr>
+      <tr class="govuk-table__row">
+
+        <td class="govuk-table__cell">DWP Organisation</td>
+        <td class="govuk-table__cell">Team leader</td>
+        <td class="govuk-table__cell"></td>
+        <td class="govuk-table__cell"><div class="govuk-checkboxes" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste">
+
+        </label>
+      </div></td>
+      </tr>
+      <tr class="govuk-table__row">
+
+        <td class="govuk-table__cell">DWP Organisation</td>
+        <td class="govuk-table__cell">Agent</td>
+        <td class="govuk-table__cell"></td>
+        <td class="govuk-table__cell"><div class="govuk-checkboxes" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste">
+
+        </label>
+      </div></td>
+      </tr>
+
+      <tr class="govuk-table__row">
+
+        <td class="govuk-table__cell">DWP Organisation</td>
+        <td class="govuk-table__cell">Operation manager</td>
+        <td class="govuk-table__cell"></td>
+        <td class="govuk-table__cell"><div class="govuk-checkboxes" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste">
+
+        </label>
+      </div></td>
+      </tr>
+    </tbody>
+  </table>
 
 
-    </fieldset>
-  </div>
+
+
+
+
+
   <div class="govuk-button-group">
   <button type="submit" class="govuk-button" data-module="govuk-button">
     Save and continue
   </button>
 
 
-</div>
+
 </form>
 <p><a href="my-position-validation" aria-describedby="my-position-validation"> Validation example </a> </p>
     </div>
 
-  
+</div>
+
   </main>
   </div>
 
