@@ -1,0 +1,298 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Search cases
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-width-container">
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="case-queues">Cases</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="teams-all-cases">Team's all cases</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="customer-details-main">Customer details</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="customer-contact-history">Customer contact history  </a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="search-history">Search contact history  </a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="search-history-results">Search results  </a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="open-contact-record">Contact record details  </a>
+        </li>
+      </ol>
+    </div>
+
+    <div class="govuk-width-container">
+    <section class="dwp-key-details-bar" aria-label="Key details">
+    <dl class="dwp-key-details-bar__key-details">
+        <div class="dwp-key-details-bar__top-block">
+            <dt class="govuk-visually-hidden">Name:</dt>
+            <dd class="dwp-key-details-bar__name"> Jane Doe</dd>
+            <dt class="govuk-visually-hidden">National Insurance number:</dt>
+            <dd class="dwp-key-details-bar__nino">QQ 12 34 56 X</dd>
+            <dt class="govuk-visually-hidden">Claim status:</dt>
+            <dd class="dwp-key-details-bar__status">Tag to tag some info about customer</dd>
+        </div>
+        <div class="dwp-key-details-bar__bottom-block">
+            <dt>Date of birth:</dt>
+            <dd>4 June 1972</dd>
+            <dt>Mobile:</dt>
+            <dd>07771 900 900</dd>
+            <dt>Language:</dt>
+            <dd>Welsh speaker</dd>
+        </div>
+    </dl>
+    </section>
+    </div>
+
+
+
+      <main class="govuk-main-wrapper">
+
+  <div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+  <h1 class="govuk-heading-l">
+     Contact record details
+   </h1>
+
+
+
+      <dl class="govuk-summary-list">
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Date of contact
+          </dt>
+          <dd class="govuk-summary-list__value">
+            5 January 2021
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> Date of contact</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+          Contact reason
+          </dt>
+          <dd class="govuk-summary-list__value">
+            lorem ipsum
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> Contact reason</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Contact sub-reason
+          </dt>
+          <dd class="govuk-summary-list__value">
+
+            <p class="govuk-body">lorem ipsum</p>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> Contact sub-reason</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Inbound/outbound
+          </dt>
+          <dd class="govuk-summary-list__value">
+            lorem ipsum
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> Inbound/outbound</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Security questions
+          </dt>
+          <dd class="govuk-summary-list__value">
+            lorem ipsum
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden">Security questions</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Contact with
+          </dt>
+          <dd class="govuk-summary-list__value">
+            lorem ipsum
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> Contact with</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Channel
+          </dt>
+          <dd class="govuk-summary-list__value">
+            lorem ipsum
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> Channel</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+          System (DRS/CAMLite)
+          </dt>
+          <dd class="govuk-summary-list__value">
+            lorem ipsum
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> System (DRS/CAMLite)</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Agent ID
+          </dt>
+          <dd class="govuk-summary-list__value">
+            lorem ipsum
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> Agent ID</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Connection ID
+          </dt>
+          <dd class="govuk-summary-list__value">
+            lorem ipsum
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> connection ID</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Number called from
+          </dt>
+          <dd class="govuk-summary-list__value">
+            lorem ipsum
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> Number called from</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Reason not online
+          </dt>
+          <dd class="govuk-summary-list__value">
+            lorem ipsum
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> Reason not online</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+</div>
+
+<div class="govuk-grid-column-one-third">
+  <h1 class="govuk-heading-m">Contact history notes</h1>
+<div class="moj-timeline">
+  <div class="moj-timeline__item">
+
+    <div class="moj-timeline__header">
+      <a class="govuk-button govuk-!-margin-bottom-0" href="add-contact-note">Add note</a>
+    </div>
+
+
+
+
+
+  </div>
+
+  <div class="moj-timeline__item">
+
+    <div class="moj-timeline__header">
+      <h2 class="moj-timeline__title">Note added</h2>
+
+      <p class="moj-timeline__byline">by Caseworker 1</p>
+
+    </div>
+
+    <p class="moj-timeline__date">
+      <time datetime="2019-06-07T12:32:00.000Z">7 June 2019 at 12:32pm</time>
+    </p>
+
+    <div class="moj-timeline__description">Your application is being reviewed by one of our case workers.</div>
+    <div class="moj-timeline__description"><a class="govuk-link " href="#">Delete note</a>
+
+    </div>
+  </div>
+
+  <div class="moj-timeline__item">
+
+    <div class="moj-timeline__header">
+      <h2 class="moj-timeline__title">Note added</h2>
+
+      <p class="moj-timeline__byline">by Caseworker 1</p>
+
+    </div>
+
+    <p class="moj-timeline__date">
+      <time datetime="2019-06-06T09:12:00.000Z">6 June 2019 at 9:12am</time>
+    </p>
+
+    <div class=" moj-timeline__description ">Your application has been received – reference </div>
+<div class="moj-timeline__description"><a class="govuk-link " href="#">Delete note</a>
+
+</div>
+
+
+
+</div>
+
+
+
+      </div>
+      </main>
+
+  </div>
+
+{% endblock %}

@@ -1,0 +1,219 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Customer contact history
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="case-queues">Cases</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="teams-all-cases">Team's all cases</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="customer-details-main">Customer details</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="customer-details-main">Customer contact history  </a>
+        </li>
+
+      </ol>
+    </div>
+
+    <div class="govuk-width-container">
+    <section class="dwp-key-details-bar" aria-label="Key details">
+    <dl class="dwp-key-details-bar__key-details">
+        <div class="dwp-key-details-bar__top-block">
+            <dt class="govuk-visually-hidden">Name:</dt>
+            <dd class="dwp-key-details-bar__name"> Jane Doe</dd>
+            <dt class="govuk-visually-hidden">National Insurance number:</dt>
+            <dd class="dwp-key-details-bar__nino">QQ 12 34 56 X</dd>
+            <dt class="govuk-visually-hidden">Claim status:</dt>
+            <dd class="dwp-key-details-bar__status">Tag to tag some info about customer</dd>
+        </div>
+        <div class="dwp-key-details-bar__bottom-block">
+            <dt>Date of birth:</dt>
+            <dd>4 June 1972</dd>
+            <dt>Mobile:</dt>
+            <dd>07771 900 900</dd>
+            <dt>Language:</dt>
+            <dd>Welsh speaker</dd>
+        </div>
+    </dl>
+    </section>
+    </div>
+
+<main class="govuk-main-wrapper">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+
+      <h1 class="govuk-heading-l">
+        Contact history
+      </h1>
+
+<div class="govuk-!-align-right">
+<a href='search-history'>
+  <button class="govuk-button govuk-button--secondary" data-module="govuk-button" action="search-history">
+Search history
+</button>
+</a>
+</div>
+
+
+
+  <table class="govuk-table" >
+     <thead class="govuk-table__head">
+       <tr class="govuk-table__row">
+
+           <th class="govuk-table__header" scope="col">Date of contact</th>
+           <th class="govuk-table__header" scope="col">Contact reason</th>
+           <th class="govuk-table__header" scope="col">Contact sub-reason</th>
+           <th class="govuk-table__header" scope="col">Inbound/outbound</th>
+           <th class="govuk-table__header" scope="col">Security questions</th>
+           <th class="govuk-table__header" scope="col">Contact with</th>
+           <th class="govuk-table__header" scope="col">Channel</th>
+           <th class="govuk-table__header" scope="col">System (DRS/CAMLite)</th>
+           <th class="govuk-table__header" scope="col">Agent ID</th>
+           <th class="govuk-table__header" scope="col">Connection ID</th>
+           <th class="govuk-table__header" scope="col">Number called from</th>
+           <th class="govuk-table__header" scope="col">Reason not online</th>
+
+       </tr>
+     </thead>
+     <tbody class="govuk-table__body">
+       <tr class="govuk-table__row">
+         <td class="govuk-table__cell"><a href="open-contact-record" class="govuk-link">Lorem ipsum</a></td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem Ipsum</td>
+
+       </tr>
+
+
+       <tr class="govuk-table__row">
+
+           <td class="govuk-table__cell"><a href="open-contact-record" class="govuk-link">Lorem ipsum</a></td>
+           <td class="govuk-table__cell">Lorem ipsum</td>
+           <td class="govuk-table__cell">Lorem ipsum</td>
+           <td class="govuk-table__cell">Lorem ipsum</td>
+           <td class="govuk-table__cell">Lorem ipsum</td>
+           <td class="govuk-table__cell">Lorem ipsum</td>
+           <td class="govuk-table__cell">Lorem ipsum</td>
+           <td class="govuk-table__cell">Lorem ipsum</td>
+           <td class="govuk-table__cell">Lorem ipsum</td>
+           <td class="govuk-table__cell">Lorem ipsum</td>
+           <td class="govuk-table__cell">Lorem ipsum</td>
+           <td class="govuk-table__cell">Lorem Ipsum</td>
+       </tr>
+       <tr class="govuk-table__row">
+         <td class="govuk-table__cell"><a href="open-contact-record" class="govuk-link">Lorem ipsum</a></td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem Ipsum</td>
+       </tr>
+       <tr class="govuk-table__row">
+         <td class="govuk-table__cell"><a href="open-contact-record" class="govuk-link">Lorem ipsum</a></td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem Ipsum</td>
+
+       </tr>
+       <tr class="govuk-table__row">
+         <td class="govuk-table__cell"><a href="open-contact-record" class="govuk-link">Lorem ipsum</a></td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem Ipsum</td>
+       </tr>
+
+
+
+  </tbody>
+</table>
+</div>
+</div>
+<div>
+<nav class="moj-pagination" id="pagination-label">
+
+  <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+  <ul class="moj-pagination__list">
+    <li class="moj-pagination__item  moj-pagination__item--prev">
+      <a class="moj-pagination__link" href="">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+    </li>
+
+  <li class="moj-pagination__item moj-pagination__item--active">1</li>
+    <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=1">2</a></li>
+
+
+
+    <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=3">3</a></li>
+
+    <li class="moj-pagination__item moj-pagination__item--dots">...</li>
+
+    <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=5">5</a></li>
+
+    <li class="moj-pagination__item  moj-pagination__item--next">
+      <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+    </li>
+  </ul>
+  <p class="moj-pagination__results">Showing <b>10</b> to <b>20</b> of <b>30</b> pages</p>
+</nav>
+</div>
+<br><br><br>
+<div class="govuk-button-group">
+  <a href='add-new-contact-record'>
+<button class="govuk-button" data-module="govuk-button" >
+  Add new contact record
+</button>
+</a>
+
+</div>
+
+
+  </div>  </div>
+  </div>
+
+
+
+{% endblock %}
