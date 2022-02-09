@@ -13,21 +13,50 @@
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="cases">Cases</a>
         </li>
-        <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="new-cases-unassigned">New cases to assign</a>
-        </li>
-        <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="search">Find case</a>
-        </li>
+
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="customer-details-main">Customer details</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="customer-all-cases">Customer cases</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="case-details">Create new case</a>
+      </li>
       </ol>
     </div>
+
+    <div class="govuk-width-container">
+    <section class="dwp-key-details-bar" aria-label="Key details">
+    <dl class="dwp-key-details-bar__key-details">
+        <div class="dwp-key-details-bar__top-block">
+            <dt class="govuk-visually-hidden">Name:</dt>
+            <dd class="dwp-key-details-bar__name"> Jane Doe</dd>
+            <dt class="govuk-visually-hidden">National Insurance number:</dt>
+            <dd class="dwp-key-details-bar__nino">QQ 12 34 56 X</dd>
+            <dt class="govuk-visually-hidden">Claim status:</dt>
+            <dd class="dwp-key-details-bar__status">Unacceptable behaviour field data</dd>
+        </div>
+        <div class="dwp-key-details-bar__bottom-block">
+            <dt>Date of birth:</dt>
+            <dd>4 June 1972</dd>
+            <dt>Mobile:</dt>
+            <dd>07771 900 900</dd>
+            <dt>Language:</dt>
+            <dd>Welsh speaker</dd>
+        </div>
+    </dl>
+    </section>
+    </div>
+
+
 
       <main class="govuk-main-wrapper">
 
   <div class="govuk-grid-row">
 <div class="govuk-grid-column-full">
   <h1 class="govuk-heading-l">
-     Search cases
+     Create new case
    </h1>
    </div>
     <div class="govuk-grid-column-one-half">
@@ -40,31 +69,9 @@
       Created on
     </legend>
     <div id="created-on-hint" class="govuk-hint">
-      For example, 27 3 2007
+27 March 2022
     </div>
-    <div class="govuk-date-input" id="created-on">
-      <div class="govuk-date-input__item">
-        <div class="govuk-form-group">
-          <label class="govuk-label govuk-date-input__label" for="created-on-day">
-            Day
-          </label>
-          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="created-on-day" name="created-on-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-      </div>
-      <div class="govuk-date-input__item">
-        <div class="govuk-form-group">
-          <label class="govuk-label govuk-date-input__label" for="created-on-month">
-            Month
-          </label>
-          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="created-on-month" name="created-on-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-      </div>
-      <div class="govuk-date-input__item">
-        <div class="govuk-form-group">
-          <label class="govuk-label govuk-date-input__label" for="created-on-year">
-            Year
-          </label>
-          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="created-on-year" name="created-on-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-      </div>
-    </div>
+
 
   </fieldset>
 </div>
@@ -74,11 +81,12 @@
     <label class="govuk-label" for="type">
         Type
     </label>
-    <select class="govuk-select" id="sort" name="sort">
-    <option value="published">lorem ipsum</option>
-    <option value="updated" selected>lorem ipsum</option>
-    <option value="views">lorem ipsum</option>
-    <option value="comments">lorem ipsum</option>
+
+    <select class="govuk-select " id="sort" name="sort">
+    <option value="published">Recently published</option>
+    <option value="updated" selected>Recently updated</option>
+    <option value="views">Most views</option>
+    <option value="comments">Most comments</option>
   </select>
   </div>
 
@@ -87,11 +95,11 @@
     <label class="govuk-label" for="sub-type">
         Sub-type
     </label>
-    <select class="govuk-select" id="sort" name="sort">
-    <option value="published">lorem ipsum</option>
-    <option value="updated" selected>lorem ipsum</option>
-    <option value="views">lorem ipsum</option>
-    <option value="comments">lorem ipsum</option>
+    <select class="govuk-select " id="sort" name="sort">
+    <option value="published">Recently published</option>
+    <option value="updated" selected>Recently updated</option>
+    <option value="views">Most views</option>
+    <option value="comments">Most comments</option>
   </select>
   </div>
 
@@ -100,11 +108,11 @@
     <label class="govuk-label" for="benefit">
         Benefit
     </label>
-    <select class="govuk-select" id="sort" name="sort">
-    <option value="published">lorem ipsum</option>
-    <option value="updated" selected>lorem ipsum</option>
-    <option value="views">lorem ipsum</option>
-    <option value="comments">lorem ipsum</option>
+    <select class="govuk-select " id="sort" name="sort">
+    <option value="published">Recently published</option>
+    <option value="updated" selected>Recently updated</option>
+    <option value="views">Most views</option>
+    <option value="comments">Most comments</option>
   </select>
   </div>
 
@@ -113,11 +121,11 @@
     <label class="govuk-label" for="status">
         Status
     </label>
-    <select class="govuk-select" id="sort" name="sort">
-    <option value="published">lorem ipsum</option>
-    <option value="updated" selected>lorem ipsum</option>
-    <option value="views">lorem ipsum</option>
-    <option value="comments">lorem ipsum</option>
+    <select class="govuk-select " id="sort" name="sort">
+    <option value="published">Recently published</option>
+    <option value="updated" selected>Recently updated</option>
+    <option value="views">Most views</option>
+    <option value="comments">Most comments</option>
   </select>
   </div>
 
@@ -126,11 +134,11 @@
     <label class="govuk-label" for="case-resolution">
         Case resolution
     </label>
-    <select class="govuk-select" id="sort" name="sort">
-    <option value="published">lorem ipsum</option>
-    <option value="updated" selected>lorem ipsum</option>
-    <option value="views">lorem ipsum</option>
-    <option value="comments">lorem ipsum</option>
+    <select class="govuk-select " id="sort" name="sort">
+    <option value="published">Recently published</option>
+    <option value="updated" selected>Recently updated</option>
+    <option value="views">Most views</option>
+    <option value="comments">Most comments</option>
   </select>
   </div>
 
@@ -180,7 +188,9 @@
         <label class="govuk-label" for="customer-surname">
             Customer surname
         </label>
-        <input class="govuk-input govuk-!-width-one-half" id="customer-surname" name="customer-surname" type="text">
+        <div id="created-on-hint" class="govuk-hint">
+        Jane Doe
+      </div>
       </div>
 
       <!--COLUMN 9-->
@@ -188,7 +198,9 @@
         <label class="govuk-label" for="nino">
             NINO
         </label>
-        <input class="govuk-input govuk-!-width-one-half" id="nino" name="nino" type="text">
+        <div id="created-on-hint" class="govuk-hint">
+          QQ 12 34 56 X
+          </div>
       </div>
 
       <!--COLUMN 10-->
@@ -196,7 +208,8 @@
         <label class="govuk-label" for="crn">
             CRN
         </label>
-        <input class="govuk-input govuk-!-width-one-half" id="crn" name="crn" type="text">
+        <div id="created-on-hint" class="govuk-hint">
+          Lorem Ipsum</div>
       </div>
 
       <!--COLUMN 11-->
@@ -240,7 +253,8 @@
         <label class="govuk-label" for="caseid">
             Case ID
         </label>
-        <input class="govuk-input govuk-!-width-one-half" id="caseid" name="caseid" type="text">
+      <div id="created-on-hint" class="govuk-hint">
+        Lorem Ipsum</div>
       </div>
 
       <!--COLUMN 13-->
@@ -250,13 +264,46 @@
         </label>
         <input class="govuk-input govuk-!-width-one-half" id="claimid" name="claimid" type="text">
       </div>
+
+      <!--COLUMN 14-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="claimid">
+            System
+        </label>
+        <div id="created-on-hint" class="govuk-hint">
+          Lorem Ipsum</div>
+      </div>
+
+      <!--COLUMN 15-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="claimid">
+
+        </label>
+        <div class=" govuk-checkboxes  " data-module="govuk-checkboxes">
+              <div class=" govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="urgent" name="urgent" type="checkbox" value="urgent">
+                <label class=" govuk-label govuk-checkboxes__label" for="urgent">
+                  Urgent
+                </label>
+              </div>
+
+
+              </div>
+      </div>
 </div>
 
 <div class="govuk-grid-column-full">
+
+  <div class="govuk-form-group">
+  <label class="govuk-label" for="more-detail">
+    Add note
+  </label>
+  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
+</div>
 <div class="govuk-button-group">
-  <a href='search-cases-results'>
+  <a href='create-new-case-confirmation'>
   <button class="govuk-button" data-module="govuk-button">
-    Search
+    Save and continue
   </button>
 </a>
   <a class="govuk-link" href="search-cases">Clear fields</a>
