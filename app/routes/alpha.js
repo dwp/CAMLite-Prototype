@@ -8,7 +8,7 @@
 
 router.post('/login-as', function (req, res) {
     const login = req.session.data['login']
-    if (login === 'teamleader') {      
+    if (login === 'teamleader') {
       //res.render('alpha/teamleader/dashboard-tl') // Could use but in this case better to redirect as below
       res.redirect('/alpha/teamleader/dashboard-tl')
     } else if (login === 'agent') {
@@ -18,6 +18,8 @@ router.post('/login-as', function (req, res) {
       //res.render('alpha/manager/dashboard-m')
       res.redirect('/alpha/manager/dashboard-m')
     }
-  })
+  });
+
+  
 
  module.exports = router

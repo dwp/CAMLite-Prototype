@@ -1,0 +1,121 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Search cases
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-width-container">
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="my-team">My team</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="search-employees">Search employees</a>
+        </li>
+
+      </ol>
+    </div>
+
+      <main class="govuk-main-wrapper">
+
+  <div class="govuk-grid-row">
+<div class="govuk-grid-column-full">
+  <h1 class="govuk-heading-l">
+     Search employees
+   </h1>
+   </div>
+    <div class="govuk-grid-column-one-half">
+
+
+      <!--COLUMN 1-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="nino">
+            Last name
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="last-name" name="last-name" type="text">
+      </div>
+
+  <!--COLUMN 2-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="nino">
+        First name
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="first-name" name="first-name" type="text">
+  </div>
+
+  <!--COLUMN 3-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="nino">
+      User ID
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+  </div>
+
+  <!--COLUMN 4-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="nino">
+      Staff number
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="staff-number" name="staff-number" type="text">
+  </div>
+
+
+
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <!--COLUMN 5-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="nino">
+          Nationally sensitive
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="nationally-sensitive" name="nationally-sensitive" type="text">
+      </div>
+
+      <!--COLUMN 6-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="status">
+            Availability
+        </label>
+        <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+        <option value="available">Available</option>
+        <option value="not-available" >Not available</option>
+
+      </select>
+      </div>
+
+
+      <!--COLUMN 8-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="customer-surname">
+            Callback Skill (Enquire Only)
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="customer-surname" name="customer-surname" type="text">
+      </div>
+
+
+</div>
+
+<div class="govuk-grid-column-full">
+
+  <a href='search-employees-results'>
+  <button class="govuk-button" data-module="govuk-button">
+    Search
+  </button>
+</a>
+<p>  <a class="govuk-link" href="search-employees">Clear fields</a></p>
+</div>
+
+
+      </div>
+      </main>
+
+  </div>
+
+{% endblock %}

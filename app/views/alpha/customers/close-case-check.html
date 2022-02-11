@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Close case check
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+
+
+
+
+
+
+
+<main class="govuk-main-wrapper">
+  <div class="govuk-grid-row">
+
+
+        <div class="govuk-grid-column-two-thirds">
+
+          <span class="govuk-caption-l">Closing the case for Jane Doe</span>
+          <h1 class="govuk-heading-l">Are you sure you want to close this case?</h1>
+
+          <table class="govuk-table">
+
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header"></th>
+                <th scope="col" class="govuk-table__header"></th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Case ID</th>
+                <td class="govuk-table__cell">Lorem Ipsum</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Status</th>
+                <td class="govuk-table__cell"><strong class="govuk-tag  govuk-tag--blue" id="unassigned">Open</strong></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Case resolution</th>
+                <td class="govuk-table__cell">Lorem Ipsum</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Case resolution selected on</th>
+                <td class="govuk-table__cell">12 Feb 2022</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Open tasks for this case</th>
+                <td class="govuk-table__cell">0</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+
+
+
+
+
+
+
+        <a href='close-case-confirmation'>
+        <button class="govuk-button govuk-!-margin-top-6" data-module="govuk-button">
+          Yes, close this case
+        </button>
+      </a>
+        <p><a class="govuk-link " href="case-details">No, return to the case details</a></p>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}

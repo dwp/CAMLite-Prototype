@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Search results
+  My team
 {% endblock %}
 
 
@@ -12,16 +12,15 @@
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="customers-list">Customers</a>
+        <a class="govuk-breadcrumbs__link" href="my-team">My team</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="search-employees">Search employees</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="search-employees-results">Search results</a>
       </li>
 
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="search-customers">Search customers</a>
-      </li>
-
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="search-customer-results">Search results</a>
-      </li>
     </ol>
   </div>
       <main class="govuk-main-wrapper">
@@ -34,22 +33,23 @@
             <h1 class="govuk-heading-l">
             Search results
             </h1>
-  <p class="govuk-body govuk-!-margin-bottom-7">Cutomers matching the search criteria: 1</p>
-            <table class="govuk-table" data-module="moj-sortable-table" >
+
+
+        <p>  Employees matching the search criteria: 1</p>
+
+
+
+            <table class="govuk-table govuk-!-margin-top-7" data-module="moj-sortable-table" >
 
               <thead class="govuk-table__head">
                 <tr class="govuk-table__row">
 
-                  <th scope="col" class="govuk-table__header" aria-sort="none">First name</th>
-                  <th scope="col" class="govuk-table__header" aria-sort="none">Other forename(s)</th>
                   <th scope="col" class="govuk-table__header" aria-sort="none">Last name</th>
-                  <th scope="col" class="govuk-table__header" aria-sort="none">Preferred name</th>
-                  <th scope="col" class="govuk-table__header" aria-sort="none">NINO</th>
-                  <th scope="col" class="govuk-table__header" aria-sort="none">CRN</th>
-                  <th scope="col" class="govuk-table__header" aria-sort="none">Gender</th>
-                  <th scope="col" class="govuk-table__header" aria-sort="none">Postcode</th>
-                  <th scope="col" class="govuk-table__header" aria-sort="none">Date of birth</th>
-                  <th scope="col" class="govuk-table__header" aria-sort="none">Date of death</th>
+                  <th scope="col" class="govuk-table__header" aria-sort="none">First name</th>
+                  <th scope="col" class="govuk-table__header" aria-sort="none">Staff number</th>
+                  <th scope="col" class="govuk-table__header" aria-sort="none">Nationally sensitive</th>
+                  <th scope="col" class="govuk-table__header" aria-sort="none">Status</th>
+                  <th scope="col" class="govuk-table__header" aria-sort="none">Case resolution</th>
 
                 </tr>
               </thead>
@@ -57,22 +57,16 @@
               <tbody class="govuk-table__body">
 
                 <tr class="govuk-table__row">
-<td class="govuk-table__cell"><a href="customer-details-main" aria-describedby="team-employee-details">Jane </a></td>
+<td class="govuk-table__cell"><a href="team-employee-details" aria-describedby="team-employee-details">Patel</a></td>
 
 
-                  <td class="govuk-table__cell">Lorem Ipsum</td>
-                  <td class="govuk-table__cell">Doe</td>
-                  <td class="govuk-table__cell">Lorem Ipsum</td>
+                  <td class="govuk-table__cell">Rita</td>
                   <td class="govuk-table__cell">Lorem Ipsum</td>
                   <td class="govuk-table__cell">Lorem Ipsum</td>
-                  <td class="govuk-table__cell">Lorem Ipsum</td>
-                  <td class="govuk-table__cell">Lorem Ipsum</td>
-                  <td class="govuk-table__cell">Lorem Ipsum</td>
+                  <th scope="row" class="govuk-table__header"><strong class="govuk-tag govuk-tag--green" id="open">Available</strong></th>
                   <td class="govuk-table__cell">Lorem Ipsum</td>
 
                 </tr>
-
-
 
 
               </tbody>
