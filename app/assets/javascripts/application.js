@@ -14,7 +14,8 @@ new MOJFrontend.ButtonMenu({
   container: $("#navi-search"),
   mq: "(min-width: 200em)",
   buttonText: "Search",
-  menuClasses: "moj-button-menu__wrapper--right",
+  buttonClasses:
+    "govuk-button--secondary moj-button-menu__toggle-button--secondary",
 });
 
 new MOJFrontend.ButtonMenu({
@@ -23,4 +24,11 @@ new MOJFrontend.ButtonMenu({
   buttonText: "Menu",
   buttonClasses:
     "govuk-button--secondary moj-button-menu__toggle-button--secondary",
+});
+
+new MOJFrontend.ButtonMenu({
+  container: $("#query"),
+  mq: "(min-width: 200em)",
+  buttonText: "Saved queries",
+  menuClasses: "moj-button-menu__wrapper--right",
 });

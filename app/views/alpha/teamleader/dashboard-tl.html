@@ -11,21 +11,39 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Dashboard
+    </h1>
 
-      <h1 class="govuk-heading-xl">
-        Dashboard
-      </h1>
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Important
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+            You have 7 new cases in the Team queue.
+            <a class="govuk-notification-banner__link" href="/alpha/teamleader/cases/new-cases-unassigned">View new cases</a>.
+          </p>
+        </div>
+      </div>
+
+
+
+
+<div class="govuk-grid-column-two-thirds">
 
 
 
 
 
 
-      <h2 class="govuk-heading-l govuk-!-margin-bottom-2">Items to assign</h2>
-      <p class="govuk-body govuk-!-margin-bottom-7">You have 14 items to assign.</p>
 
-      <table class="govuk-table">
+
+      <h2 class="govuk-heading-l govuk-!-margin-bottom-2">Items to review</h2>
+
+      <table class="govuk-table govuk-!-margin-top-5">
 
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">

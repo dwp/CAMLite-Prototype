@@ -74,4 +74,20 @@ router.post('/queue-choice', function (req, res) {
 
             }
           });
+
+    //removing query
+                router.post('/delete-query', function (req, res) {
+                    const deletequery = req.session.data['delete-query']
+                    console.log(deletequery)
+                    if (deletequery === 'yes') {
+                      res.redirect('/alpha/teamleader/cases/removing-query-confirmation')
+
+                    } else if (deletequery === 'no') {
+                      res.redirect('/alpha/teamleader/cases/saved-queries')
+
+                    }
+                  });
+
+
+
 module.exports = router
