@@ -30,15 +30,35 @@
         Team's all cases
       </h1>
 
-      <p class="govuk-body govuk-!-margin-bottom-7">Total: 135 cases </p>
+
       <!--<form method="post" class="form">-->
-      <div class="govuk-!-align-right">
-      <a href='search-cases'>
-      <button class="govuk-button govuk-button--secondary" data-module="govuk-button" action="search-cases">
-      Search cases
-      </button>
-      </a>
+
+      <div style="float: right;">
+
+      <div class="moj-button-menu" id="cases-list-menu">
+          <div class="moj-button-menu__wrapper">
+
+            <a href="search-cases" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+              Search cases
+            </a>
+
+            <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+              Export to excel
+            </a>
+
+            <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+              Select columns
+            </a>
+
+          </div>
+        </div>
+
       </div>
+
+<p class="govuk-body govuk-!-margin-bottom-7">Total: 135 cases</p>
+
+
+
 
 <form action="assigning-cases" method="post" class="form">
 
