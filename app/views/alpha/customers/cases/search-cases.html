@@ -17,7 +17,7 @@
           <a class="govuk-breadcrumbs__link" href="new-cases-unassigned">New cases to assign</a>
         </li>
         <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="search">Find case</a>
+          <a class="govuk-breadcrumbs__link" href="search">Search cases</a>
         </li>
       </ol>
     </div>
@@ -74,7 +74,12 @@
     <label class="govuk-label" for="type">
         Type
     </label>
-    <input class="govuk-input govuk-!-width-one-half" id="type" name="type" type="text">
+    <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+    <option value="published">lorem ipsum</option>
+    <option value="updated" selected>lorem ipsum</option>
+    <option value="views">lorem ipsum</option>
+    <option value="comments">lorem ipsum</option>
+  </select>
   </div>
 
   <!--COLUMN 3-->
@@ -82,7 +87,12 @@
     <label class="govuk-label" for="sub-type">
         Sub-type
     </label>
-    <input class="govuk-input govuk-!-width-one-half" id="sub-type" name="sub-type" type="text">
+    <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+    <option value="published">lorem ipsum</option>
+    <option value="updated" selected>lorem ipsum</option>
+    <option value="views">lorem ipsum</option>
+    <option value="comments">lorem ipsum</option>
+  </select>
   </div>
 
   <!--COLUMN 4-->
@@ -90,7 +100,12 @@
     <label class="govuk-label" for="benefit">
         Benefit
     </label>
-    <input class="govuk-input govuk-!-width-one-half" id="benefit" name="benefit" type="text">
+    <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+    <option value="published">lorem ipsum</option>
+    <option value="updated" selected>lorem ipsum</option>
+    <option value="views">lorem ipsum</option>
+    <option value="comments">lorem ipsum</option>
+  </select>
   </div>
 
   <!--COLUMN 5-->
@@ -98,7 +113,12 @@
     <label class="govuk-label" for="status">
         Status
     </label>
-    <input class="govuk-input govuk-!-width-one-half" id="status" name="status" type="text">
+    <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+    <option value="published">lorem ipsum</option>
+    <option value="updated" selected>lorem ipsum</option>
+    <option value="views">lorem ipsum</option>
+    <option value="comments">lorem ipsum</option>
+  </select>
   </div>
 
   <!--COLUMN 6-->
@@ -106,7 +126,12 @@
     <label class="govuk-label" for="case-resolution">
         Case resolution
     </label>
-    <input class="govuk-input govuk-!-width-one-half" id="case-resolution" name="case-resolution" type="text">
+    <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+    <option value="published">lorem ipsum</option>
+    <option value="updated" selected>lorem ipsum</option>
+    <option value="views">lorem ipsum</option>
+    <option value="comments">lorem ipsum</option>
+  </select>
   </div>
 
   <!--COLUMN 7-->
@@ -228,15 +253,22 @@
 </div>
 
 <div class="govuk-grid-column-full">
-<div class="govuk-button-group">
-  <a href='search-cases-results'>
-  <button class="govuk-button" data-module="govuk-button">
-    Search
-  </button>
-</a>
-  <a class="govuk-link" href="search-cases">Clear fields</a>
+
+  <div class="govuk-button-group govuk-!-margin-top-6">
+      <a href='/alpha/teamleader/cases/search-cases-results'>
+    <button class="govuk-button" data-module="govuk-button">
+      Search
+    </button></a>
+
+      <a href='/alpha/every-user-general/save-as-query'>
+        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+      Save as query
+    </button></a>
+  </div>
+
+  <p><a class="govuk-link" href="search-cases">Clear fields</a></p>
 </div>
-</div>
+
 
       </div>
       </main>

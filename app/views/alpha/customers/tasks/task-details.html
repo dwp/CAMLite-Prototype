@@ -93,15 +93,7 @@
               5 January 2020
             </dd>
           </div>
-          <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
-            <dt class="govuk-summary-list__key">
-          Created by
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Lorem ipsum
-            </dd>
 
-          </div>
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
               Type
@@ -389,7 +381,7 @@
 <div class="moj-button-menu" id="cases-list-menu">
     <div class="moj-button-menu__wrapper">
 
-      <a href="/alpha/teamleader/cases/search-cases'" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+      <a href="/alpha/customers/tasks/search-tasks" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
         Search tasks
       </a>
 
@@ -429,6 +421,7 @@
            </label>
          </div>
        </th>
+       <th class="govuk-table__header" scope="col">Task ID</th>
        <th class="govuk-table__header" scope="col">Created on</th>
        <th class="govuk-table__header" scope="col">Type</th>
        <th class="govuk-table__header" scope="col">Sub-type</th>
@@ -436,15 +429,17 @@
        <th class="govuk-table__header" scope="col">Customer name</th>
        <th class="govuk-table__header" scope="col">National Insurance Number</th>
        <th class="govuk-table__header" scope="col">CRN</th>
-       <th class="govuk-table__header" scope="col">Status</th>
-       <th class="govuk-table__header" scope="col">Benefit</th>
-       <th class="govuk-table__header" scope="col">Case resolution</th>
-       <th class="govuk-table__header" scope="col">Case resolution selected on</th>
-       <th class="govuk-table__header" scope="col">Due date</th>
+
+       <th class="govuk-table__header" scope="col">Assigned to</th>
+       <th class="govuk-table__header" scope="col">Task SLA/ Doc BF</th>
+       <th class="govuk-table__header" scope="col">Start task from</th>
+       <th class="govuk-table__header" scope="col">Clear task by</th>
+       <th class="govuk-table__header" scope="col">Closed on</th>
        <th class="govuk-table__header" scope="col">Owner ID</th>
        <th class="govuk-table__header" scope="col">Owner name</th>
        <th class="govuk-table__header" scope="col">Claim ID</th>
        <th class="govuk-table__header" scope="col">Case ID</th>
+        <th class="govuk-table__header" scope="col">Urgent</th>
    </tr>
  </thead>
  <tbody class="govuk-table__body">
@@ -458,7 +453,7 @@
          </label>
        </div>
      </td>
-
+     <td class="govuk-table__cell">Lorem ipsum</td>
      <td class="govuk-table__cell"><a href="/tasks/task-details" aria-describedby="/tasks/task-details">12 Mar 2021</a></td>
      <td class="govuk-table__cell">Lorem ipsum</td>
      <td class="govuk-table__cell">Lorem ipsum</td>
@@ -476,7 +471,7 @@
      <td class="govuk-table__cell">Lorem Ipsum</td>
      <td class="govuk-table__cell">Lorem ipsum</td>
      <td class="govuk-table__cell">Lorem Ipsum</td>
-
+<td class="govuk-table__cell">Lorem ipsum</td>
    </tr>
    <tr class="govuk-table__row">
      <td class="govuk-table__cell">
@@ -487,6 +482,7 @@
          </label>
        </div>
      </td>
+     <td class="govuk-table__cell">Lorem ipsum</td>
      <td class="govuk-table__cell"><a href="case-details" aria-describedby="case-details">6 May 2021</a></td>
      <td class="govuk-table__cell">Lorem ipsum</td>
      <td class="govuk-table__cell">Lorem ipsum</td>
@@ -504,6 +500,7 @@
      <td class="govuk-table__cell">Lorem Ipsum</td>
      <td class="govuk-table__cell">Lorem ipsum</td>
      <td class="govuk-table__cell">Lorem Ipsum</td>
+     <td class="govuk-table__cell">Lorem ipsum</td>
 
    </tr>
    <tr class="govuk-table__row">
@@ -515,6 +512,7 @@
          </label>
        </div>
      </td>
+     <td class="govuk-table__cell">Lorem ipsum</td>
      <td class="govuk-table__cell"><a href="case-details" aria-describedby="case-details">21 Feb 2021</a></td>
      <td class="govuk-table__cell">Lorem ipsum</td>
      <td class="govuk-table__cell">Lorem ipsum</td>
@@ -532,6 +530,7 @@
      <td class="govuk-table__cell">Lorem Ipsum</td>
      <td class="govuk-table__cell">Lorem ipsum</td>
      <td class="govuk-table__cell">Lorem Ipsum</td>
+     <td class="govuk-table__cell">Lorem ipsum</td>
    </tr>
 
 </tbody>

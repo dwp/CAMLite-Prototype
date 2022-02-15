@@ -11,23 +11,54 @@
     <div class="govuk-breadcrumbs">
       <ol class="govuk-breadcrumbs__list">
         <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="cases">Cases</a>
+          <a class="govuk-breadcrumbs__link" href="case-queues">Cases</a>
         </li>
         <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="new-cases-unassigned">New cases to assign</a>
+          <a class="govuk-breadcrumbs__link" href="teams-all-cases">Team's all cases</a>
         </li>
         <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="search">Search cases</a>
+          <a class="govuk-breadcrumbs__link" href="customer-details-main">Customer details</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="customer-contact-history">Customer contact history  </a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="add-new-contact-record">Add new contact record  </a>
         </li>
       </ol>
     </div>
+
+    <div class="govuk-width-container">
+    <section class="dwp-key-details-bar" aria-label="Key details">
+    <dl class="dwp-key-details-bar__key-details">
+        <div class="dwp-key-details-bar__top-block">
+            <dt class="govuk-visually-hidden">Name:</dt>
+            <dd class="dwp-key-details-bar__name"> Jane Doe</dd>
+            <dt class="govuk-visually-hidden">National Insurance number:</dt>
+            <dd class="dwp-key-details-bar__nino">QQ 12 34 56 X</dd>
+            <dt class="govuk-visually-hidden">Claim status:</dt>
+            <dd class="dwp-key-details-bar__status">Unacceptable behaviour field data</dd>
+        </div>
+        <div class="dwp-key-details-bar__bottom-block">
+            <dt>Date of birth:</dt>
+            <dd>4 June 1972</dd>
+            <dt>Mobile:</dt>
+            <dd>07771 900 900</dd>
+            <dt>Language:</dt>
+            <dd>Welsh speaker</dd>
+        </div>
+    </dl>
+    </section>
+    </div>
+
+
 
       <main class="govuk-main-wrapper">
 
   <div class="govuk-grid-row">
 <div class="govuk-grid-column-full">
   <h1 class="govuk-heading-l">
-     Search cases
+     Add new contact record
    </h1>
    </div>
     <div class="govuk-grid-column-one-half">
@@ -37,7 +68,7 @@
       <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" role="group" aria-describedby="created-on">
     <legend class="govuk-fieldset__legend">
-      Created on
+      Date of contact
     </legend>
     <div id="created-on-hint" class="govuk-hint">
       For example, 27 3 2007
@@ -72,8 +103,9 @@
   <!--COLUMN 2-->
   <div class="govuk-form-group">
     <label class="govuk-label" for="type">
-        Type
+        Contact reason
     </label>
+
     <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
     <option value="published">lorem ipsum</option>
     <option value="updated" selected>lorem ipsum</option>
@@ -85,7 +117,7 @@
   <!--COLUMN 3-->
   <div class="govuk-form-group">
     <label class="govuk-label" for="sub-type">
-        Sub-type
+        Contact sub-reason
     </label>
     <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
     <option value="published">lorem ipsum</option>
@@ -98,7 +130,7 @@
   <!--COLUMN 4-->
   <div class="govuk-form-group">
     <label class="govuk-label" for="benefit">
-        Benefit
+        Inbound/outbound
     </label>
     <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
     <option value="published">lorem ipsum</option>
@@ -111,7 +143,7 @@
   <!--COLUMN 5-->
   <div class="govuk-form-group">
     <label class="govuk-label" for="status">
-        Status
+        Security questions
     </label>
     <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
     <option value="published">lorem ipsum</option>
@@ -124,7 +156,18 @@
   <!--COLUMN 6-->
   <div class="govuk-form-group">
     <label class="govuk-label" for="case-resolution">
-        Case resolution
+        Contact with
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="case-resolution" name="case-resolution" type="text">
+  </div>
+</div>
+
+
+<div class="govuk-grid-column-one-half">
+  <!--COLUMN 7-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="case-resolution">
+        Channel
     </label>
     <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
     <option value="published">lorem ipsum</option>
@@ -134,139 +177,81 @@
   </select>
   </div>
 
-  <!--COLUMN 7-->
-  <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" role="group" aria-describedby="case-resolution-selected-on">
-  <legend class="govuk-fieldset__legend">
-  Case resolution selected on
-  </legend>
-  <div id="created-on-hint" class="govuk-hint">
-  For example, 27 3 2007
-  </div>
-  <div class="govuk-date-input" id="case-resolution-selected-on">
-  <div class="govuk-date-input__item">
-    <div class="govuk-form-group">
-      <label class="govuk-label govuk-date-input__label" for="case-resolution-selected-on-day">
-        Day
-      </label>
-      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="case-resolution-selected-on-day" name="case-resolution-selected-on-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-  </div>
-  <div class="govuk-date-input__item">
-    <div class="govuk-form-group">
-      <label class="govuk-label govuk-date-input__label" for="case-resolution-selected-on-month">
-        Month
-      </label>
-      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="case-resolution-selected-on-month" name="case-resolution-selected-on-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-  </div>
-  <div class="govuk-date-input__item">
-    <div class="govuk-form-group">
-      <label class="govuk-label govuk-date-input__label" for="case-resolution-selected-on-year">
-        Year
-      </label>
-      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="case-resolution-selected-on-year" name="case-resolution-selected-on-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-  </div>
-  </div>
-
-  </fieldset>
-  </div>
-
-    </div>
-
-    <div class="govuk-grid-column-one-half">
-
 
       <!--COLUMN 8-->
       <div class="govuk-form-group">
         <label class="govuk-label" for="customer-surname">
-            Customer surname
+            System (DRS/CAMLite)
         </label>
-        <input class="govuk-input govuk-!-width-one-half" id="customer-surname" name="customer-surname" type="text">
+        <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+        <option value="published">lorem ipsum</option>
+        <option value="updated" selected>lorem ipsum</option>
+        <option value="views">lorem ipsum</option>
+        <option value="comments">lorem ipsum</option>
+      </select>
       </div>
 
       <!--COLUMN 9-->
       <div class="govuk-form-group">
         <label class="govuk-label" for="nino">
-            NINO
+            Agent ID
         </label>
-        <input class="govuk-input govuk-!-width-one-half" id="nino" name="nino" type="text">
+        <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+        <option value="published">lorem ipsum</option>
+        <option value="updated" selected>lorem ipsum</option>
+        <option value="views">lorem ipsum</option>
+        <option value="comments">lorem ipsum</option>
+      </select>
       </div>
 
       <!--COLUMN 10-->
       <div class="govuk-form-group">
         <label class="govuk-label" for="crn">
-            CRN
+            Connection ID
         </label>
-        <input class="govuk-input govuk-!-width-one-half" id="crn" name="crn" type="text">
+        <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+        <option value="published">lorem ipsum</option>
+        <option value="updated" selected>lorem ipsum</option>
+        <option value="views">lorem ipsum</option>
+        <option value="comments">lorem ipsum</option>
+      </select>
       </div>
 
       <!--COLUMN 11-->
       <div class="govuk-form-group">
-      <fieldset class="govuk-fieldset" role="group" aria-describedby="due-date">
-      <legend class="govuk-fieldset__legend">
-      Due date
-      </legend>
-      <div id="created-on-hint" class="govuk-hint">
-      For example, 27 3 2007
-      </div>
-      <div class="govuk-date-input" id="due-date">
-      <div class="govuk-date-input__item">
-        <div class="govuk-form-group">
-          <label class="govuk-label govuk-date-input__label" for="due-date-day">
-            Day
-          </label>
-          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="due-date-day" name="due-date-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-      </div>
-      <div class="govuk-date-input__item">
-        <div class="govuk-form-group">
-          <label class="govuk-label govuk-date-input__label" for="due-date-month">
-            Month
-          </label>
-          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="due-date-month" name="due-date-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-      </div>
-      <div class="govuk-date-input__item">
-        <div class="govuk-form-group">
-          <label class="govuk-label govuk-date-input__label" for="due-date-year">
-            Year
-          </label>
-          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="due-date-year" name="due-date-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-      </div>
-      </div>
-
-      </fieldset>
+        <label class="govuk-label" for="crn">
+            Number called from
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="crn" name="crn" type="text">
       </div>
 
       <!--COLUMN 12-->
       <div class="govuk-form-group">
         <label class="govuk-label" for="caseid">
-            Case ID
+            Reason not online
         </label>
         <input class="govuk-input govuk-!-width-one-half" id="caseid" name="caseid" type="text">
       </div>
-
-      <!--COLUMN 13-->
-      <div class="govuk-form-group">
-        <label class="govuk-label" for="claimid">
-            Claim ID
-        </label>
-        <input class="govuk-input govuk-!-width-one-half" id="claimid" name="claimid" type="text">
-      </div>
 </div>
+      <!--COLUMN 13-->
+      <div class="govuk-grid-column-full">
 
-<div class="govuk-grid-column-full">
+        <div class="govuk-form-group">
+        <label class="govuk-label" for="more-detail">
+          Add note
+        </label>
+        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
+      </div>
 
-  <div class="govuk-button-group govuk-!-margin-top-6">
-      <a href='search-cases-results'>
-    <button class="govuk-button" data-module="govuk-button">
-      Search
-    </button></a>
 
-      <a href='save-as-query'>
-        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-      Save as query
-    </button></a>
-  </div>
 
-  <p><a class="govuk-link" href="search-cases">Clear fields</a></p>
+
+  <a href='add-new-contact-confirmation'>
+  <button class="govuk-button " data-module="govuk-button">
+    Save and continue
+  </button>
+</a>
+  <p>  <a class="govuk-link" href="add-new-contact-record">Cancel and clear fields</a></p>
 </div>
 
 

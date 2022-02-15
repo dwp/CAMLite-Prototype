@@ -26,17 +26,7 @@
     </div>
 
 
-<!-- <section class="key-details-bar" role="contentinfo" aria-label="Key details">
-  <dl class="key-details-bar_key-details">
-    <div class="key-details-bar_top-block">
-      <dt class="govuk-visually-hidden">Name:</dt>
-      <dt class="key-details-bar_name">Noelle Carmel</dt>
-      <dt class="govuk-visually-hidden">National Insurance Number:</dt>
-      <dt class="key-details-bar_name">RN 00 04 26D</dt>
-      <dt class="govuk-visually-hidden">Claim status:</dt>
-      <dt class="key-details-bar_status">Lorem ipsum</dt>
-      ::after
-</section>    -->
+
 
 <div class="govuk-width-container">
 <section class="dwp-key-details-bar" aria-label="Key details">
@@ -66,10 +56,8 @@
 <main class="govuk-main-wrapper">
   <div class="govuk-grid-row">
 
-
-
         <div class="govuk-grid-column-one-third">
-
+<aside class="app-related-items" role="complementary">
           <nav class="moj-side-navigation" aria-label="Side navigation">
   <h4 class="moj-side-navigation__title">Customer</h4>
             <ul class="moj-side-navigation__list">
@@ -81,9 +69,7 @@
                 <a href="customer-details-contact">Engagement</a>
               </li>
 
-              <li class="moj-side-navigation__item">
-                <a href="customer-details-contact-notes">Contact history notes</a>
-              </li>
+
 
               <li class="moj-side-navigation__item">
                 <a href="customer-details-representatives">Representatives</a>
@@ -97,7 +83,10 @@
             <h4 class="moj-side-navigation__title">Cases</h4>
             <ul class="moj-side-navigation__list">
               <li class="moj-side-navigation__item">
-                <a href="#2.1">Cases queue</a>
+                <a href="/alpha/customers/cases/customer-all-cases">Customer cases</a>
+              </li>
+              <li class="moj-side-navigation__item">
+                <a href="/alpha/customers/cases/create-new-case">Create new case</a>
               </li>
 
 
@@ -106,14 +95,14 @@
             <h4 class="moj-side-navigation__title">Tasks</h4>
             <ul class="moj-side-navigation__list">
               <li class="moj-side-navigation__item">
-                <a href="/alpha/customers/tasks/customer-all-tasks">Tasks queue</a>
+                <a href="/alpha/customers/tasks/customer-all-tasks">Customer tasks </a>
               </li>
 
 
 
             </ul>
           </nav>
-
+</aside>
         </div>
 
     <div class="govuk-grid-column-two-thirds">
@@ -121,6 +110,7 @@
       <h1 class="govuk-heading-l">
         Contact details
       </h1>
+
 
 
 
@@ -185,13 +175,87 @@
 
 
       </dl>
-<div>
-  <a href='customer-contact-history'>
-  <button class="govuk-button" data-module="govuk-button">
-    View contact log
-  </button>
-  </a>
+<div class="govuk-!-margin-top-9">
+    <div class="govuk-button-group">
+        <a href='add-new-contact-record'>
+        <button class="govuk-button govuk-!-button-align-right" data-module="govuk-button">
+          Add new contact record
+        </button>
+        </a>
+
+        <a href='customer-contact-history'>
+        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          View contact log
+    </button>
+    </a>
+  </div>
+</div>
+
+      <div class="govuk-!-margin-top-7">
+    <h1 class="govuk-heading-l">Contact history notes</h1>
+    <div class="moj-timeline">
+      <div class="moj-timeline__item">
+
+        <div class="moj-timeline__header">
+          <h2 class="moj-timeline__title">Note added</h2>
+
+          <p class="moj-timeline__byline">by Caseworker 1</p>
+
+        </div>
+
+        <p class="moj-timeline__date">
+          <time datetime="2019-06-07T12:32:00.000Z">7 July 2019 at 12:32pm</time>
+        </p>
+
+        <div class="moj-timeline__description">Your application is being reviewed by one of our case workers.</div>
+
+      </div>
+    <div class="moj-timeline__item">
+
+      <div class="moj-timeline__header">
+        <h2 class="moj-timeline__title">Note added</h2>
+
+        <p class="moj-timeline__byline">by Caseworker 1</p>
+
+      </div>
+
+      <p class="moj-timeline__date">
+        <time datetime="2019-06-07T12:32:00.000Z">7 June 2019 at 12:32pm</time>
+      </p>
+
+      <div class="moj-timeline__description">Your application is being reviewed by one of our case workers.</div>
+
     </div>
+
+    <div class="moj-timeline__item">
+
+      <div class="moj-timeline__header">
+        <h2 class="moj-timeline__title">Note added</h2>
+
+        <p class="moj-timeline__byline">by Caseworker 1</p>
+
+      </div>
+
+      <p class="moj-timeline__date">
+        <time datetime="2019-06-06T09:12:00.000Z">6 June 2019 at 9:12am</time>
+      </p>
+
+      <div class=" moj-timeline__description ">Your application has been received – reference </div>
+
+
+
+
+    </div>
+
+
+
+
+</div>
+
+
+</div>
+
+
   </div>
 
 </div>

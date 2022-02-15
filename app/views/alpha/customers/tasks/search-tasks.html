@@ -35,6 +35,15 @@
 
       <!--COLUMN 1-->
       <div class="govuk-form-group">
+        <label class="govuk-label" for="type">
+            Task ID
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="type" name="type" type="text">
+      </div>
+
+
+      <!--COLUMN 2-->
+      <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" role="group" aria-describedby="created-on">
     <legend class="govuk-fieldset__legend">
       Created on
@@ -69,7 +78,7 @@
   </fieldset>
 </div>
 
-  <!--COLUMN 2-->
+  <!--COLUMN 3-->
   <div class="govuk-form-group">
     <label class="govuk-label" for="type">
         Type
@@ -77,7 +86,7 @@
     <input class="govuk-input govuk-!-width-one-half" id="type" name="type" type="text">
   </div>
 
-  <!--COLUMN 3-->
+  <!--COLUMN 4-->
   <div class="govuk-form-group">
     <label class="govuk-label" for="sub-type">
         Sub-type
@@ -85,13 +94,6 @@
     <input class="govuk-input govuk-!-width-one-half" id="sub-type" name="sub-type" type="text">
   </div>
 
-  <!--COLUMN 4-->
-  <div class="govuk-form-group">
-    <label class="govuk-label" for="benefit">
-        Benefit
-    </label>
-    <input class="govuk-input govuk-!-width-one-half" id="benefit" name="benefit" type="text">
-  </div>
 
   <!--COLUMN 5-->
   <div class="govuk-form-group">
@@ -104,7 +106,7 @@
   <!--COLUMN 6-->
   <div class="govuk-form-group">
     <label class="govuk-label" for="case-resolution">
-        Case resolution
+        Task SLA/ Doc BF
     </label>
     <input class="govuk-input govuk-!-width-one-half" id="case-resolution" name="case-resolution" type="text">
   </div>
@@ -113,7 +115,7 @@
   <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" role="group" aria-describedby="case-resolution-selected-on">
   <legend class="govuk-fieldset__legend">
-  Case resolution selected on
+  Start task from
   </legend>
   <div id="created-on-hint" class="govuk-hint">
   For example, 27 3 2007
@@ -145,28 +147,95 @@
   </fieldset>
   </div>
 
+
+<!--COLUMN 8-->
+      <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" role="group" aria-describedby="case-resolution-selected-on">
+      <legend class="govuk-fieldset__legend">
+      Clear task by
+      </legend>
+      <div id="created-on-hint" class="govuk-hint">
+      For example, 27 3 2007
+      </div>
+      <div class="govuk-date-input" id="case-resolution-selected-on">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="case-resolution-selected-on-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="case-resolution-selected-on-day" name="case-resolution-selected-on-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="case-resolution-selected-on-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="case-resolution-selected-on-month" name="case-resolution-selected-on-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="case-resolution-selected-on-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="case-resolution-selected-on-year" name="case-resolution-selected-on-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      </div>
+
+      </fieldset>
+      </div>
+
+
+
+
+
+
+
+      <!--COLUMN 9-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="customer-surname">
+            Owner ID
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="customer-surname" name="customer-surname" type="text">
+      </div>
+
     </div>
 
     <div class="govuk-grid-column-one-half">
 
 
-      <!--COLUMN 8-->
-      <div class="govuk-form-group">
-        <label class="govuk-label" for="customer-surname">
-            Customer surname
-        </label>
-        <input class="govuk-input govuk-!-width-one-half" id="customer-surname" name="customer-surname" type="text">
-      </div>
-
-      <!--COLUMN 9-->
+      <!--COLUMN 10-->
       <div class="govuk-form-group">
         <label class="govuk-label" for="nino">
-            NINO
+            Owner name
         </label>
         <input class="govuk-input govuk-!-width-one-half" id="nino" name="nino" type="text">
       </div>
 
-      <!--COLUMN 10-->
+      <!--COLUMN 11-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="crn">
+            Assigned to
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="crn" name="crn" type="text">
+      </div>
+
+      <!--COLUMN 12-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="crn">
+            Customer name
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="crn" name="crn" type="text">
+      </div>
+
+      <!--COLUMN 13-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="crn">
+            NINO
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="crn" name="crn" type="text">
+      </div>
+
+      <!--COLUMN 14-->
       <div class="govuk-form-group">
         <label class="govuk-label" for="crn">
             CRN
@@ -174,11 +243,11 @@
         <input class="govuk-input govuk-!-width-one-half" id="crn" name="crn" type="text">
       </div>
 
-      <!--COLUMN 11-->
+      <!--COLUMN 15-->
       <div class="govuk-form-group">
       <fieldset class="govuk-fieldset" role="group" aria-describedby="due-date">
       <legend class="govuk-fieldset__legend">
-      Due date
+      Closed on
       </legend>
       <div id="created-on-hint" class="govuk-hint">
       For example, 27 3 2007
@@ -210,37 +279,52 @@
       </fieldset>
       </div>
 
-      <!--COLUMN 12-->
+      <!--COLUMN 16-->
       <div class="govuk-form-group">
         <label class="govuk-label" for="caseid">
-            Case ID
+            Claim ID
         </label>
         <input class="govuk-input govuk-!-width-one-half" id="caseid" name="caseid" type="text">
       </div>
 
-      <!--COLUMN 13-->
+      <!--COLUMN 17-->
       <div class="govuk-form-group">
         <label class="govuk-label" for="claimid">
-            Claim ID
+            Case ID
         </label>
         <input class="govuk-input govuk-!-width-one-half" id="claimid" name="claimid" type="text">
+      </div>
+
+      <!--COLUMN 18-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="claimid">
+            Urgent
+        </label>
+        <dd class="govuk-summary-list__value">
+          <td class="govuk-table__cell"><div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+        <div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses" >
+          <label class="govuk-label govuk-checkboxes__label" for="waste">
+
+          </label>
+        </div></td>
+        </dd>
       </div>
 </div>
 
 <div class="govuk-grid-column-full">
 
 <div class="govuk-button-group govuk-!-margin-top-6">
-  <a href='search-cases-results'>
+  <a href='/alpha/teamleader/tasks/search-tasks-results'>
   <button class="govuk-button" data-module="govuk-button">
     Search
   </button>
 </a>
-<a href='save-as-query'>
+<a href='/alpha/every-user-general/save-as-query'>
   <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
 Save as query
 </button></a>
 </div>
-  <p><a class="govuk-link" href="search-cases">Clear fields</a></p>
+  <p><a class="govuk-link" href="search-tasks">Clear fields</a></p>
 
 </div>
 
