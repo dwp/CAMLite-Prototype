@@ -1,0 +1,278 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Cases unassigned
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="case-queues">Tasks</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="teams-all-cases">Team's all tasks</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="customer-details-main">Customer details</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="customer-all-cases">Customer tasks</a>
+        </li>
+
+      </ol>
+    </div>
+
+    <div class="govuk-width-container">
+    <section class="dwp-key-details-bar" aria-label="Key details">
+    <dl class="dwp-key-details-bar__key-details">
+        <div class="dwp-key-details-bar__top-block">
+            <dt class="govuk-visually-hidden">Name:</dt>
+            <dd class="dwp-key-details-bar__name"> Jane Doe</dd>
+            <dt class="govuk-visually-hidden">National Insurance number:</dt>
+            <dd class="dwp-key-details-bar__nino">QQ 12 34 56 X</dd>
+            <dt class="govuk-visually-hidden">Claim status:</dt>
+            <dd class="dwp-key-details-bar__status">Unacceptable behaviour field data</dd>
+        </div>
+        <div class="dwp-key-details-bar__bottom-block">
+            <dt>Date of birth:</dt>
+            <dd>4 June 1972</dd>
+            <dt>Mobile:</dt>
+            <dd>07771 900 900</dd>
+            <dt>Language:</dt>
+            <dd>Welsh speaker</dd>
+        </div>
+    </dl>
+    </section>
+    </div>
+
+
+
+
+<main class="govuk-main-wrapper">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div style="float: right; ">
+
+        <div class="moj-button-menu govuk-!-margin-left-3"  id="query">
+      <div class="moj-button-menu__wrapper">
+
+        <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item  " data-module="govuk-button">
+          Lorem Ipsum query
+        </a>
+
+        <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+          Lorem Ipsum query 2
+        </a>
+
+        <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+          Lorem Ipsum query 3
+        </a>
+
+      </div>
+      </div>
+
+      </div>
+
+
+
+      <div style="float: right;">
+
+      <div class="moj-button-menu" id="cases-list-menu">
+          <div class="moj-button-menu__wrapper">
+
+            <a href="/alpha/teamleader/cases/search-cases'" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+              Search tasks
+            </a>
+
+            <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+              Export to excel
+            </a>
+
+            <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+              Select columns
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <h1 class="govuk-heading-l">
+        Customer tasks
+      </h1>
+
+      <p class="govuk-body govuk-!-margin-bottom-7">Total: 3 tasks</p>
+
+
+
+  <table class="govuk-table" data-module="moj-multi-select" data-multi-select-checkbox="#select-all">
+     <thead class="govuk-table__head">
+       <tr class="govuk-table__row">
+           <th class="govuk-table__header" scope="col" id="select-all">
+             <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+          <input type="checkbox" class="govuk-checkboxes__input" id="checkboxes-all">
+               <label class="moj-multi-select__toggle-label" for="checkboxes-all">
+                 <span class="govuk-visually-hidden">Select all</span>
+               </label>
+             </div>
+           </th>
+           <th class="govuk-table__header" scope="col">Created on</th>
+           <th class="govuk-table__header" scope="col">Type</th>
+           <th class="govuk-table__header" scope="col">Sub-type</th>
+           <th class="govuk-table__header" scope="col">Status</th>
+           <th class="govuk-table__header" scope="col">Customer name</th>
+           <th class="govuk-table__header" scope="col">National Insurance Number</th>
+           <th class="govuk-table__header" scope="col">CRN</th>
+           <th class="govuk-table__header" scope="col">Status</th>
+           <th class="govuk-table__header" scope="col">Benefit</th>
+           <th class="govuk-table__header" scope="col">Case resolution</th>
+           <th class="govuk-table__header" scope="col">Case resolution selected on</th>
+           <th class="govuk-table__header" scope="col">Due date</th>
+           <th class="govuk-table__header" scope="col">Owner ID</th>
+           <th class="govuk-table__header" scope="col">Owner name</th>
+           <th class="govuk-table__header" scope="col">Claim ID</th>
+           <th class="govuk-table__header" scope="col">Case ID</th>
+       </tr>
+     </thead>
+     <tbody class="govuk-table__body">
+
+       <tr class="govuk-table__row">
+         <td class="govuk-table__cell">
+           <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+             <input type="checkbox" class="govuk-checkboxes__input" id="row-3">
+             <label class="govuk-label govuk-checkboxes__label" for="row-3">
+               <span class="govuk-visually-hidden">Select row 3</span>
+             </label>
+           </div>
+         </td>
+
+         <td class="govuk-table__cell"><a href="case-details" aria-describedby="case-details">12 Mar 2021</a></td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--yellow" id="awaiting decision">Awaiting decision</strong></th>
+
+         <td class="govuk-table__cell"><a href="claimant-detail" aria-describedby="claimant-detail">Jane Doe</a></td>
+         <td class="govuk-table__cell">RN 00 04 26 D</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem Ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem Ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem Ipsum</td>
+
+       </tr>
+       <tr class="govuk-table__row">
+         <td class="govuk-table__cell">
+           <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+             <input type="checkbox" class="govuk-checkboxes__input" id="row-4">
+             <label class="govuk-label govuk-checkboxes__label" for="row-4">
+               <span class="govuk-visually-hidden">Select row 4</span>
+             </label>
+           </div>
+         </td>
+         <td class="govuk-table__cell"><a href="case-details" aria-describedby="case-details">6 May 2021</a></td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--grey" id="unassigned">Closed</strong></th>
+
+         <td class="govuk-table__cell"><a href="claimant-detail" aria-describedby="claimant-detail-report">Jane Doe</a></td>
+         <td class="govuk-table__cell">RN 00 01 11 N</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem Ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem Ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem Ipsum</td>
+
+       </tr>
+       <tr class="govuk-table__row">
+         <td class="govuk-table__cell">
+           <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+             <input type="checkbox" class="govuk-checkboxes__input" id="row-5">
+             <label class="govuk-label govuk-checkboxes__label" for="row-5">
+               <span class="govuk-visually-hidden">Select row 5</span>
+             </label>
+           </div>
+         </td>
+         <td class="govuk-table__cell"><a href="case-details" aria-describedby="case-details">21 Feb 2021</a></td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--green" id="unassigned">Open</strong></th>
+
+         <td class="govuk-table__cell"><a href="claimant-detail" aria-describedby="claimant-detail">Jane Doe</a></td>
+         <td class="govuk-table__cell">RN 00 11 23 B</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem Ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem Ipsum</td>
+         <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell">Lorem Ipsum</td>
+       </tr>
+
+  </tbody>
+</table>
+<div>
+<nav class="moj-pagination" id="pagination-label">
+
+  <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+  <ul class="moj-pagination__list">
+    <li class="moj-pagination__item  moj-pagination__item--prev">
+      <a class="moj-pagination__link" href="">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+    </li>
+
+  <li class="moj-pagination__item moj-pagination__item--active">1</li>
+    <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=1">2</a></li>
+
+
+
+    <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=3">3</a></li>
+
+    <li class="moj-pagination__item moj-pagination__item--dots">...</li>
+
+    <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=5">5</a></li>
+
+    <li class="moj-pagination__item  moj-pagination__item--next">
+      <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+    </li>
+  </ul>
+  <p class="moj-pagination__results">Showing <b>10</b> to <b>20</b> of <b>30</b> pages</p>
+</nav>
+</div>
+<br><br><br>
+<div class="govuk-button-group">
+  <a href='/alpha/teamleader/cases/re-assigning-cases'>
+<button class="govuk-button" data-module="govuk-button">
+  Re-assign tasks
+</button>
+
+
+</div>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

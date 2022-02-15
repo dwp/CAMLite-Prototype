@@ -26,40 +26,64 @@
           <span class="govuk-caption-l">Closing the case for Jane Doe</span>
           <h1 class="govuk-heading-l">Are you sure you want to close this case?</h1>
 
-          <table class="govuk-table">
 
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header"></th>
-                <th scope="col" class="govuk-table__header"></th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Case ID</th>
-                <td class="govuk-table__cell">Lorem Ipsum</td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Status</th>
-                <td class="govuk-table__cell"><strong class="govuk-tag  govuk-tag--blue" id="unassigned">Open</strong></td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Case resolution</th>
-                <td class="govuk-table__cell">Lorem Ipsum</td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Case resolution selected on</th>
-                <td class="govuk-table__cell">12 Feb 2022</td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Open tasks for this case</th>
-                <td class="govuk-table__cell">0</td>
-              </tr>
-            </tbody>
-          </table>
+          <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+              <dt class="govuk-summary-list__key">
+                Case ID
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Lorem ipsum
+              </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Status
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <td class="govuk-table__cell"><strong class="govuk-tag  govuk-tag--yellow" id="awaiting decision">Awaiting decision</strong></td>
+
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-status">
+                    Change<span class="govuk-visually-hidden"> status</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Case resolution
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  Lorem ipsum
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> case resolution</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Case resolution selected on
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    5 January 2021
+                </dd>
+                
+              </div>
+
+              <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                  Open tasks for this case
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  0
+                </dd>
+                </div>
 
 
-
+                        </dl>
 
 
 

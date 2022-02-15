@@ -25,14 +25,26 @@
           <a class="govuk-breadcrumbs__link" href="customer-all-cases">Customer cases</a>
         </li>
         <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="/alpha/customers/case-details">Case details</a>
-        </li>
-        <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="task-details">Task details</a>
+          <a class="govuk-breadcrumbs__link" href="case-details">Case details</a>
         </li>
 
       </ol>
     </div>
+
+    <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Success
+        </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+        <h3 class="govuk-notification-banner__heading">
+          Case status has been updated to Open.
+        </h3>
+
+      </div>
+    </div>
+
 
 
 <div class="govuk-width-container">
@@ -61,24 +73,30 @@
 
 
 <main class="govuk-main-wrapper">
+  <div class="govuk-grid-row">
 
-<div class="govuk-grid-row">
 
         <div class="govuk-grid-column-two-thirds">
 
 
+
+
+
+
       <h1 class="govuk-heading-l">
-        Task details
+        Case details
       </h1>
-      <strong class="govuk-tag govuk-tag--red">
-      Urgent
-      </strong>
+
+
+
+
+
 
 <div class="govuk-!-margin-top-6">
         <dl class="govuk-summary-list">
           <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
             <dt class="govuk-summary-list__key">
-              Task ID
+              Case ID
             </dt>
             <dd class="govuk-summary-list__value">
               Lorem ipsum
@@ -93,15 +111,7 @@
               5 January 2020
             </dd>
           </div>
-          <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
-            <dt class="govuk-summary-list__key">
-          Created by
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Lorem ipsum
-            </dd>
 
-          </div>
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
               Type
@@ -134,86 +144,12 @@
               Status
             </dt>
             <dd class="govuk-summary-list__value">
-              <td class="govuk-table__cell"><strong class="govuk-tag  govuk-tag--yellow" id="awaiting decision">Awaiting decision</strong></td>
+              <td class="govuk-table__cell"><strong class="govuk-tag  govuk-tag--blue" id="awaiting decision">Open</strong></td>
 
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
+              <a class="govuk-link" href="change-status">
                 Change<span class="govuk-visually-hidden"> status</span>
-              </a>
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Task SLA/ Doc BF
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Lorem ipsum
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> Task SLA or Doc BF</span>
-              </a>
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Start task from
-            </dt>
-            <dd class="govuk-summary-list__value">
-                5 January 2021
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden">   Start task from</span>
-              </a>
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-            Clear task by
-            </dt>
-            <dd class="govuk-summary-list__value">
-                15 January 2021
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden">   Clear task by</span>
-              </a>
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
-            <dt class="govuk-summary-list__key">
-              Owner ID
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Lorem ipsum
-            </dd>
-
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-                Owner name
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Lorem ipsum
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden">   Owner name</span>
-              </a>
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-                Assigned to
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Lorem ipsum
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden">   Assigned to</span>
               </a>
             </dd>
           </div>
@@ -244,19 +180,93 @@
             </dd>
 
           </div>
-
-
-
-
-
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Benefit
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Lorem ipsum
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> Benefit</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Case resolution
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Lorem ipsum
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> case resolution</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Case resolution selected on
+            </dt>
+            <dd class="govuk-summary-list__value">
+                5 January 2021
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> case resolution selected on</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Due date
+            </dt>
+            <dd class="govuk-summary-list__value">
+                15 January 2021
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> due date</span>
+              </a>
+            </dd>
+          </div>
           <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
             <dt class="govuk-summary-list__key">
-              Closed on
+              Owner ID
             </dt>
             <dd class="govuk-summary-list__value">
               Lorem ipsum
             </dd>
 
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+                Owner name
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Lorem ipsum
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">   Owner name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+                Assigned to
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Lorem ipsum
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">   Assigned to</span>
+              </a>
+            </dd>
           </div>
           <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
             <dt class="govuk-summary-list__key">
@@ -267,29 +277,9 @@
             </dd>
 
           </div>
-          <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
-            <dt class="govuk-summary-list__key">
-              Case ID
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Lorem ipsum
-            </dd>
 
-          </div>
-          <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
-            <dt class="govuk-summary-list__key">
-              Mark as urgent
-            </dt>
-            <dd class="govuk-summary-list__value">
-              <td class="govuk-table__cell"><div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-            <div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses" checked>
-              <label class="govuk-label govuk-checkboxes__label" for="waste">
 
-              </label>
-            </div></td>
-            </dd>
 
-          </div>
 
         </dl>
 
@@ -303,13 +293,13 @@
     <nav role="navigation" aria-labelledby="what-you-can-do-next"
     <ul class="govuk-list">
       <li>
-        <a class="govuk-link" href="case-notes">View and add tasks notes</a>
+        <a class="govuk-link" href="case-notes">View and add case notes</a>
       </li>
       <li>
-        <a class="govuk-link" href="case-history">View task history</a>
+        <a class="govuk-link" href="case-history">View case history</a>
       </li>
       <li>
-        <a class="govuk-link" href="close-case-notification">Close this task</a>
+        <a class="govuk-link" href="close-case-check">Close this case</a>
       </li>
       <li>
         <a class="govuk-link" href="DRS-system">View tasks documents</a>
@@ -322,11 +312,11 @@
         <a class="govuk-link" href="customer-all-cases">View customer cases list</a>
       </li>
       <li>
-        <a class="govuk-link" href="/alpha/customers/customer-details-main">View customer details</a>
+        <a class="govuk-link" href="customer-details-main">View customer details</a>
       </li>
 
       <li>
-        <a class="govuk-link" href="#">Create new task</a>
+        <a class="govuk-link" href="create-new-case">Create new case</a>
       </li>
     </ul>
     </nav>
@@ -336,7 +326,7 @@
         <div class="govuk-button-group">
           <a href='/alpha/teamleader/cases/re-assigning-cases'>
         <button class="govuk-button" data-module="govuk-button">
-          Re-assign task
+          Re-assign case
         </button>
 </a>
 
@@ -360,61 +350,19 @@
 
 <div class="govuk-grid-column-full">
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-<div style="float: right; ">
-
-  <div class="moj-button-menu govuk-!-margin-left-3"  id="query">
-<div class="moj-button-menu__wrapper">
-
-  <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item  " data-module="govuk-button">
-    Lorem Ipsum query
-  </a>
-
-  <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
-    Lorem Ipsum query 2
-  </a>
-
-  <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
-    Lorem Ipsum query 3
-  </a>
-
-</div>
-</div>
-
-</div>
-
-
-
-<div style="float: right;">
-
-<div class="moj-button-menu" id="cases-list-menu">
-    <div class="moj-button-menu__wrapper">
-
-      <a href="/alpha/teamleader/cases/search-cases'" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
-        Search tasks
-      </a>
-
-      <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
-        Export to excel
-      </a>
-
-      <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
-        Select columns
-      </a>
-
-    </div>
-  </div>
-
-</div>
-
-
-
-
   <h2 class="govuk-heading-l">
     Tasks for this case
   </h2>
 
   <p class="govuk-body govuk-!-margin-bottom-7">Total: 3 tasks</p>
-
+  <!--<form method="post" class="form">-->
+  <div class="govuk-!-align-right">
+  <a href='/alpha/teamleader/cases/search-cases'>
+  <button class="govuk-button govuk-button--secondary" data-module="govuk-button" action="search-cases">
+  Search tasks
+  </button>
+  </a>
+  </div>
 
 
 
@@ -459,7 +407,7 @@
        </div>
      </td>
 
-     <td class="govuk-table__cell"><a href="/tasks/task-details" aria-describedby="/tasks/task-details">12 Mar 2021</a></td>
+     <td class="govuk-table__cell"><a href="/alpha/customers/tasks/task-details" aria-describedby="/alpha/customers/tasks/task-details">12 Mar 2021</a></td>
      <td class="govuk-table__cell">Lorem ipsum</td>
      <td class="govuk-table__cell">Lorem ipsum</td>
      <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--yellow" id="awaiting decision">Awaiting decision</strong></th>
