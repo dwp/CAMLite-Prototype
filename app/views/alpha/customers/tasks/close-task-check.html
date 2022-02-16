@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Close case check
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+
+
+
+
+
+
+
+<main class="govuk-main-wrapper">
+  <div class="govuk-grid-row">
+
+
+        <div class="govuk-grid-column-two-thirds">
+
+          <span class="govuk-caption-l">Closing the task for Jane Doe</span>
+          <h1 class="govuk-heading-l">Are you sure you want to close this task?</h1>
+
+
+          <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+              <dt class="govuk-summary-list__key">
+                Task ID
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Lorem ipsum
+              </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Status
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <td class="govuk-table__cell"><strong class="govuk-tag  govuk-tag--yellow" id="awaiting decision">Awaiting decision</strong></td>
+
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-status">
+                    Change<span class="govuk-visually-hidden"> status</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Task SLA/ Doc BF
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  Lorem ipsum
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> case resolution</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Clear task by
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    5 January 2021
+                </dd>
+
+              </div>
+
+            
+
+
+                        </dl>
+
+
+
+
+
+
+
+        <a href='last-task'>
+        <button class="govuk-button govuk-!-margin-top-6" data-module="govuk-button">
+          Yes, close this task
+        </button>
+      </a>
+        <p><a class="govuk-link " href="task-details">No, return to the task details</a></p>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}

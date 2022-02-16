@@ -1,0 +1,144 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Close case check
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+
+
+
+
+
+
+
+<main class="govuk-main-wrapper">
+  <div class="govuk-grid-row">
+
+
+        <div class="govuk-grid-column-two-thirds">
+
+          <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Warning</span>
+              This task is the last open task for the case ID Lorem Ipsum.
+            </strong>
+          </div>
+
+
+
+
+          <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+              <dt class="govuk-summary-list__key">
+                Case ID
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Lorem ipsum
+              </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Status
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <td class="govuk-table__cell"><strong class="govuk-tag  govuk-tag--yellow" id="awaiting decision">Awaiting decision</strong></td>
+
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-status">
+                    Change<span class="govuk-visually-hidden"> status</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Case resolution
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  Lorem ipsum
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> case resolution</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Case resolution selected on
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    5 January 2021
+                </dd>
+
+              </div>
+
+              <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                  Open tasks for this case
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  0
+                </dd>
+                </div>
+
+
+                        </dl>
+
+
+                        <div class="govuk-form-group govuk-!-margin-top-9">
+                          <span class="govuk-caption-l">Closing the task for Jane Doe</span>
+                          <fieldset class="govuk-fieldset">
+
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                              <h1 class="govuk-fieldset__heading">
+                                Do you want to close this case too?
+                              </h1>
+                            </legend>
+                            <div class="govuk-radios" data-module="govuk-radios">
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                                <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                                Yes, close this task and case
+                                </label>
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                                  No, close this task only
+                                </label>
+                              </div>
+                            </fieldset>
+                           </div>
+
+
+
+
+          <a href='/alpha/customers/tasks/close-task-confirmation'>
+          <button class="govuk-button" data-module="govuk-button">
+          Save and continue
+          </button>
+          </a>
+
+
+
+
+        <p><a class="govuk-link " href="task-details">Return to the task details</a></p>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}
