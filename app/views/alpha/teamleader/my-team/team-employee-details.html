@@ -1,29 +1,208 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  My team
+  Case details
 {% endblock %}
+
 
 
 {% block content %}
 
 <div class="govuk-width-container">
 
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="">My team</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="">Employee profile</a>
+        </li>
 
-      <main class="govuk-main-wrapper">
 
-
-        <div class="govuk-grid-row">
-          <div class="govuk-grid-column-full">
-
-
-            <h1 class="govuk-heading-l">
-            WIP
-            </h1>
-          
+      </ol>
     </div>
+
+
+<!-- <section class="key-details-bar" role="contentinfo" aria-label="Key details">
+  <dl class="key-details-bar_key-details">
+    <div class="key-details-bar_top-block">
+      <dt class="govuk-visually-hidden">Name:</dt>
+      <dt class="key-details-bar_name">Noelle Carmel</dt>
+      <dt class="govuk-visually-hidden">National Insurance Number:</dt>
+      <dt class="key-details-bar_name">RN 00 04 26D</dt>
+      <dt class="govuk-visually-hidden">Claim status:</dt>
+      <dt class="key-details-bar_status">Lorem ipsum</dt>
+      ::after
+</section>    -->
+
+<div class="govuk-width-container">
+<section class="dwp-key-details-bar" aria-label="Key details">
+<dl class="dwp-key-details-bar__key-details">
+    <div class="dwp-key-details-bar__top-block">
+        <dt class="govuk-visually-hidden">Name:</dt>
+        <dd class="dwp-key-details-bar__name"> Jane Doe</dd>
+
+        <dt class="govuk-visually-hidden">Availability:</dt>
+        <dd class="dwp-key-details-bar__status">Available</dd>
+    </div>
+    <div class="dwp-key-details-bar__bottom-block">
+        <dt>Staff number:</dt>
+        <dd>451972</dd>
+        <dt>Position:</dt>
+        <dd>Agent</dd>
+
+    </div>
+</dl>
+</section>
+</div>
+
+
+
+<main class="govuk-main-wrapper">
+  <div class="govuk-grid-row">
+
+
+        <div class="govuk-grid-column-one-third">
+
+<aside class="app-related-items" role="complementary">
+          <nav class="moj-side-navigation" aria-label="Side navigation">
+  <h4 class="moj-side-navigation__title">Employee</h4>
+            <ul class="moj-side-navigation__list">
+
+              <li class="moj-side-navigation__item moj-side-navigation__item--active">
+                <a href="employee-details" aria-current="team-employee-details">Personal details</a>
+              </li>
+              <li class="moj-side-navigation__item">
+                <a href="team-employee-notes">Notes</a>
+              </li>
+
+
+
+              <li class="moj-side-navigation__item">
+                <a href="team-employee-schedule">Schedule</a>
+              </li>
+
+          </nav>
+</aside>
         </div>
 
-      </div>
+    <div class="govuk-grid-column-two-thirds">
 
-      {% endblock %}
+      <h1 class="govuk-heading-l">
+        Personal details
+      </h1>
+
+      <dl class="govuk-summary-list">
+
+
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Last name
+          </dt>
+          <dd class="govuk-summary-list__value">
+      Doe
+          </dd>
+
+        </div>
+
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            First name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Jane
+          </dd>
+
+        </div>
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Title
+          </dt>
+          <dd class="govuk-summary-list__value">
+            lorem ipsum
+          </dd>
+
+        </div>
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Job title
+          </dt>
+          <dd class="govuk-summary-list__value">
+            lorem ipsum
+          </dd>
+
+        </div>
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+          Work phone
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Lorem Ipsum
+          </dd>
+
+        </div>
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Callback skill (Enquire only)
+          </dt>
+          <dd class="govuk-summary-list__value">
+          lorem ipsum
+          </dd>
+
+        </div>
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            User ID
+          </dt>
+          <dd class="govuk-summary-list__value">
+            lorem ipsum
+          </dd>
+
+        </div>
+
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Position
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Agent
+          </dd>
+
+        </div>
+
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Responsibility
+          </dt>
+          <dd class="govuk-summary-list__value">
+            lorem ipsum
+          </dd>
+
+        </div>
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Email address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            lorem ipsum
+          </dd>
+
+        </div>
+      </dl>
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+{% endblock %}

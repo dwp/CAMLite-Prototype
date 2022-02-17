@@ -1,0 +1,212 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Case details
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="">My team</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="">Employee profile</a>
+        </li>
+
+
+      </ol>
+    </div>
+
+    <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Success
+        </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+        <h3 class="govuk-notification-banner__heading">
+          New note has been added.
+        </h3>
+
+      </div>
+    </div>
+<!-- <section class="key-details-bar" role="contentinfo" aria-label="Key details">
+  <dl class="key-details-bar_key-details">
+    <div class="key-details-bar_top-block">
+      <dt class="govuk-visually-hidden">Name:</dt>
+      <dt class="key-details-bar_name">Noelle Carmel</dt>
+      <dt class="govuk-visually-hidden">National Insurance Number:</dt>
+      <dt class="key-details-bar_name">RN 00 04 26D</dt>
+      <dt class="govuk-visually-hidden">Claim status:</dt>
+      <dt class="key-details-bar_status">Lorem ipsum</dt>
+      ::after
+</section>    -->
+
+<div class="govuk-width-container">
+<section class="dwp-key-details-bar" aria-label="Key details">
+<dl class="dwp-key-details-bar__key-details">
+    <div class="dwp-key-details-bar__top-block">
+        <dt class="govuk-visually-hidden">Name:</dt>
+        <dd class="dwp-key-details-bar__name"> Jane Doe</dd>
+
+        <dt class="govuk-visually-hidden">Availability:</dt>
+        <dd class="dwp-key-details-bar__status">Available</dd>
+    </div>
+    <div class="dwp-key-details-bar__bottom-block">
+        <dt>Staff number:</dt>
+        <dd>451972</dd>
+        <dt>Position:</dt>
+        <dd>Agent</dd>
+
+    </div>
+</dl>
+</section>
+</div>
+
+
+
+<main class="govuk-main-wrapper">
+  <div class="govuk-grid-row">
+
+
+        <div class="govuk-grid-column-one-third">
+
+<aside class="app-related-items" role="complementary">
+          <nav class="moj-side-navigation" aria-label="Side navigation">
+  <h4 class="moj-side-navigation__title">Employee</h4>
+            <ul class="moj-side-navigation__list">
+
+              <li class="moj-side-navigation__item moj-side-navigation__item--active">
+                <a href="team-employee-details" >Personal details</a>
+              </li>
+              <li class="moj-side-navigation__item">
+                <a href="team-employee-notes" aria-current="team-employee-notes">Notes</a>
+              </li>
+
+
+
+              <li class="moj-side-navigation__item">
+                <a href="team-employee-schedule">Schedule</a>
+              </li>
+
+          </nav>
+</aside>
+        </div>
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Employee notes
+      </h1>
+
+
+      <div class="moj-timeline govuk-!-margin-top-9">
+        <div class="moj-timeline__item ">
+
+          <div class="moj-timeline__header ">
+
+
+        <div class="govuk-button-group ">
+          <a href='employee-add-note'>
+        <button class="govuk-button" data-module="govuk-button">
+          Add note
+        </button></a>
+      </div>
+      </div>
+      </div>
+      <div class="moj-timeline__item">
+
+        <div class="moj-timeline__header">
+          <h2 class="moj-timeline__title">Note added</h2>
+
+          <p class="moj-timeline__byline">by Team Leader</p>
+
+        </div>
+
+        <p class="moj-timeline__date">
+          <time datetime="2019-06-07T12:32:00.000Z">7 July 2021 at 12:32pm</time>
+        </p>
+
+        <div class="moj-timeline__description">Your application is being reviewed by one of our case workers.</div>
+
+      </div>
+
+        <div class="moj-timeline__item">
+
+          <div class="moj-timeline__header">
+            <h2 class="moj-timeline__title">Note added</h2>
+
+            <p class="moj-timeline__byline">by Team Leader</p>
+
+          </div>
+
+          <p class="moj-timeline__date">
+            <time datetime="2019-06-07T12:32:00.000Z">7 July 2019 at 12:32pm</time>
+          </p>
+
+          <div class="moj-timeline__description">Your application is being reviewed by one of our case workers.</div>
+
+        </div>
+      <div class="moj-timeline__item">
+
+        <div class="moj-timeline__header">
+          <h2 class="moj-timeline__title">Note added</h2>
+
+          <p class="moj-timeline__byline">by Team Leader</p>
+
+        </div>
+
+        <p class="moj-timeline__date">
+          <time datetime="2019-06-07T12:32:00.000Z">7 June 2019 at 12:32pm</time>
+        </p>
+
+        <div class="moj-timeline__description">Your application is being reviewed by one of our case workers.</div>
+
+      </div>
+
+      <div class="moj-timeline__item">
+
+        <div class="moj-timeline__header">
+          <h2 class="moj-timeline__title">Note added</h2>
+
+          <p class="moj-timeline__byline">by Team Leader</p>
+
+        </div>
+
+        <p class="moj-timeline__date">
+          <time datetime="2019-06-06T09:12:00.000Z">6 June 2019 at 9:12am</time>
+        </p>
+
+        <div class=" moj-timeline__description ">Your application has been received – reference </div>
+
+
+
+
+      </div></div>
+
+
+
+
+      </div>
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+{% endblock %}
