@@ -5,7 +5,7 @@ module.exports = function (folderForViews, urlPrefix, router) {
 
 router.post('/login-as-answer', function (req, res) {
     const login = req.session.data['login']
-    if (login === 'teamleader') {      
+    if (login === 'teamleader') {
       res.render('agent/teamleader/dashboard-tl')
     } else if (login === 'agent') {
       res.render('agent/teamleader/dashboard-a')
@@ -13,6 +13,8 @@ router.post('/login-as-answer', function (req, res) {
       res.render('agent/teamleader/dashboard-m')
     }
   })
+
+
 }
 
 // router.post('/login-as-answer', function (req, res) {
