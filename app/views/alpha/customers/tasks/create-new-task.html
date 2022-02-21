@@ -11,17 +11,17 @@
     <div class="govuk-breadcrumbs">
       <ol class="govuk-breadcrumbs__list">
         <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="cases">Cases</a>
+          <a class="govuk-breadcrumbs__link" href="cases">Tasks</a>
         </li>
 
       <li class="govuk-breadcrumbs__list-item">
         <a class="govuk-breadcrumbs__link" href="customer-details-main">Customer details</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="customer-all-cases">Customer cases</a>
+        <a class="govuk-breadcrumbs__link" href="customer-all-tasks">Customer tasks</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="case-details">Create new case</a>
+        <a class="govuk-breadcrumbs__link" href="create-new-task">Create new task</a>
       </li>
       </ol>
     </div>
@@ -50,13 +50,12 @@
     </div>
 
 
-
       <main class="govuk-main-wrapper">
 
   <div class="govuk-grid-row">
 <div class="govuk-grid-column-full">
   <h1 class="govuk-heading-l">
-     Create new case
+  Create new task
    </h1>
    </div>
     <div class="govuk-grid-column-one-half">
@@ -64,49 +63,54 @@
 
       <!--COLUMN 1-->
       <div class="govuk-form-group">
+        <label class="govuk-label" for="type">
+            Task ID
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="type" name="type" type="text">
+      </div>
+
+
+      <!--COLUMN 2-->
+      <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" role="group" aria-describedby="created-on">
     <legend class="govuk-fieldset__legend">
       Created on
     </legend>
     <div id="created-on-hint" class="govuk-hint">
-    For example, 27 3 2007
+      For example, 27 3 2007
     </div>
-    <div class="govuk-date-input" id="due-date">
-    <div class="govuk-date-input__item">
-      <div class="govuk-form-group">
-        <label class="govuk-label govuk-date-input__label" for="due-date-day">
-          Day
-        </label>
-        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="due-date-day" name="due-date-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-    </div>
-    <div class="govuk-date-input__item">
-      <div class="govuk-form-group">
-        <label class="govuk-label govuk-date-input__label" for="due-date-month">
-          Month
-        </label>
-        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="due-date-month" name="due-date-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-    </div>
-    <div class="govuk-date-input__item">
-      <div class="govuk-form-group">
-        <label class="govuk-label govuk-date-input__label" for="due-date-year">
-          Year
-        </label>
-        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="due-date-year" name="due-date-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-    </div>
+    <div class="govuk-date-input" id="created-on">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="created-on-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="created-on-day" name="created-on-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="created-on-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="created-on-month" name="created-on-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="created-on-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="created-on-year" name="created-on-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
     </div>
 
-    </fieldset>
-
-
-
+  </fieldset>
 </div>
 
-  <!--COLUMN 2-->
-  <div class="govuk-form-group ">
-    <label class="govuk-label " for="type">
+  <!--COLUMN 3-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="type">
         Type
     </label>
-
     <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
     <option value="published"></option>
     <option value="updated" >Recently updated</option>
@@ -115,7 +119,7 @@
   </select>
   </div>
 
-  <!--COLUMN 3-->
+  <!--COLUMN 4-->
   <div class="govuk-form-group">
     <label class="govuk-label" for="sub-type">
         Sub-type
@@ -128,25 +132,13 @@
   </select>
   </div>
 
-  <!--COLUMN 4-->
-  <div class="govuk-form-group">
-    <label class="govuk-label" for="benefit">
-        Benefit
-    </label>
-    <select class="govuk-select govuk-!-width-one-half " id="sort" name="sort">
-    <option value="published"></option>
-    <option value="updated">Recently updated</option>
-    <option value="views">Most views</option>
-    <option value="comments">Most comments</option>
-  </select>
-  </div>
 
   <!--COLUMN 5-->
   <div class="govuk-form-group">
     <label class="govuk-label" for="status">
         Status
     </label>
-    <select class="govuk-select govuk-!-width-one-half " id="sort" name="sort">
+    <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
     <option value="published"></option>
     <option value="updated" >Recently updated</option>
     <option value="views">Most views</option>
@@ -157,21 +149,16 @@
   <!--COLUMN 6-->
   <div class="govuk-form-group">
     <label class="govuk-label" for="case-resolution">
-        Case resolution
+        Task SLA/ Doc BF
     </label>
-    <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
-    <option value="published"></option>
-    <option value="updated">Recently updated</option>
-    <option value="views">Most views</option>
-    <option value="comments">Most comments</option>
-  </select>
+    <input class="govuk-input govuk-!-width-one-half" id="case-resolution" name="case-resolution" type="text">
   </div>
 
   <!--COLUMN 7-->
   <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" role="group" aria-describedby="case-resolution-selected-on">
   <legend class="govuk-fieldset__legend">
-  Case resolution selected on
+  Start task from
   </legend>
   <div id="created-on-hint" class="govuk-hint">
   For example, 27 3 2007
@@ -203,45 +190,107 @@
   </fieldset>
   </div>
 
+
+<!--COLUMN 8-->
+      <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" role="group" aria-describedby="case-resolution-selected-on">
+      <legend class="govuk-fieldset__legend">
+      Clear task by
+      </legend>
+      <div id="created-on-hint" class="govuk-hint">
+      For example, 27 3 2007
+      </div>
+      <div class="govuk-date-input" id="case-resolution-selected-on">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="case-resolution-selected-on-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="case-resolution-selected-on-day" name="case-resolution-selected-on-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="case-resolution-selected-on-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="case-resolution-selected-on-month" name="case-resolution-selected-on-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="case-resolution-selected-on-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="case-resolution-selected-on-year" name="case-resolution-selected-on-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      </div>
+
+      </fieldset>
+      </div>
+
+
+
+
+
+
+
+      <!--COLUMN 9-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="customer-surname">
+            Owner ID
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="customer-surname" name="customer-surname" type="text">
+      </div>
+
     </div>
 
     <div class="govuk-grid-column-one-half">
 
 
-      <!--COLUMN 8-->
-      <div class="govuk-form-group">
-        <label class="govuk-label" for="customer-surname">
-            Customer surname
-        </label>
-        <div id="created-on-hint" class="govuk-hint">
-        Jane Doe
-      </div>
-      </div>
-
-      <!--COLUMN 9-->
-      <div class="govuk-form-group">
-        <label class="govuk-label" for="nino">
-            NINO
-        </label>
-        <div id="created-on-hint" class="govuk-hint">
-          QQ 12 34 56 X
-          </div>
-      </div>
-
       <!--COLUMN 10-->
       <div class="govuk-form-group">
-        <label class="govuk-label" for="crn">
-            CRN
+        <label class="govuk-label" for="nino">
+            Owner name
         </label>
-        <div id="created-on-hint" class="govuk-hint">
-          Lorem Ipsum</div>
+        <input class="govuk-input govuk-!-width-one-half" id="nino" name="nino" type="text">
       </div>
 
       <!--COLUMN 11-->
       <div class="govuk-form-group">
+        <label class="govuk-label" for="crn">
+            Assigned to
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="crn" name="crn" type="text">
+      </div>
+
+      <!--COLUMN 12-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="crn">
+            Customer name
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="crn" name="crn" type="text">
+      </div>
+
+      <!--COLUMN 13-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="crn">
+            NINO
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="crn" name="crn" type="text">
+      </div>
+
+      <!--COLUMN 14-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="crn">
+            CRN
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="crn" name="crn" type="text">
+      </div>
+
+      <!--COLUMN 15-->
+      <div class="govuk-form-group">
       <fieldset class="govuk-fieldset" role="group" aria-describedby="due-date">
       <legend class="govuk-fieldset__legend">
-      Due date
+      Closed on
       </legend>
       <div id="created-on-hint" class="govuk-hint">
       For example, 27 3 2007
@@ -273,56 +322,59 @@
       </fieldset>
       </div>
 
-      <!--COLUMN 12-->
+      <!--COLUMN 16-->
       <div class="govuk-form-group">
         <label class="govuk-label" for="caseid">
-            Case ID
+            Claim ID
         </label>
-      <div id="created-on-hint" class="govuk-hint">
-        Lorem Ipsum</div>
+        <input class="govuk-input govuk-!-width-one-half" id="caseid" name="caseid" type="text">
       </div>
 
-      <!--COLUMN 13-->
+      <!--COLUMN 17-->
       <div class="govuk-form-group">
         <label class="govuk-label" for="claimid">
-            Claim ID
+            Case ID
         </label>
         <input class="govuk-input govuk-!-width-one-half" id="claimid" name="claimid" type="text">
       </div>
 
-      <!--COLUMN 14-->
+      <!--COLUMN 18-->
       <div class="govuk-form-group">
         <label class="govuk-label" for="claimid">
-            System
+            Urgent
         </label>
-        <div id="created-on-hint" class="govuk-hint">
-          Lorem Ipsum</div>
+        <dd class="govuk-summary-list__value">
+          <td class="govuk-table__cell"><div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+        <div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses" >
+          <label class="govuk-label govuk-checkboxes__label" for="waste">
+
+          </label>
+        </div></td>
+        </dd>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-full">
+
+      <div class="govuk-form-group">
+      <label class="govuk-label" for="more-detail">
+        Add note
+      </label>
+      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
+    </div>
+
+      <a href='create-new-task-confirmation'>
+      <button class="govuk-button" data-module="govuk-button">
+        Save and continue
+      </button>
+    </a>
+    <p>  <a class="govuk-link" href="create-new-task">Cancel and clear fields</a></p>
+
+    </div>
+
+          </div>
+          </main>
+
       </div>
 
-
-</div>
-
-<div class="govuk-grid-column-full">
-
-  <div class="govuk-form-group">
-  <label class="govuk-label" for="more-detail">
-    Add note
-  </label>
-  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
-</div>
-
-  <a href='create-new-case-confirmation'>
-  <button class="govuk-button" data-module="govuk-button">
-    Save and continue
-  </button>
-</a>
-<p>  <a class="govuk-link" href="create-new-case">Cancel and clear fields</a></p>
-
-</div>
-
-      </div>
-      </main>
-
-  </div>
-
-{% endblock %}
+    {% endblock %}

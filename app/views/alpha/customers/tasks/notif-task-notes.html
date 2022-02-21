@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Case notes
+  Task notes
 {% endblock %}
 
 
@@ -22,16 +22,30 @@
           <a class="govuk-breadcrumbs__link" href="customer-details-main">Customer details</a>
         </li>
         <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="customer-all-cases">Customer cases</a>
+          <a class="govuk-breadcrumbs__link" href="customer-all-cases">Customer tasks</a>
         </li>
         <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="case-details">Case details</a>
+          <a class="govuk-breadcrumbs__link" href="case-details">Task details</a>
         </li>
         <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="case-details">Case notes</a>
+          <a class="govuk-breadcrumbs__link" href="case-details">Task notes</a>
         </li>
 
       </ol>
+    </div>
+
+    <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Success
+        </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+        <h3 class="govuk-notification-banner__heading">
+          New note has been added.
+        </h3>
+
+      </div>
     </div>
 
 
@@ -72,7 +86,7 @@
 
 
       <h1 class="govuk-heading-l">
-        Case notes
+        Task notes
       </h1>
 
 
@@ -157,13 +171,13 @@
         <nav role="navigation" aria-labelledby="what-you-can-do-next"
     <ul class="govuk-list">
       <li>
-        <a class="govuk-link" href="case-details">View case details</a>
+        <a class="govuk-link" href="task-details">View task details</a>
       </li>
       <li>
-        <a class="govuk-link" href="case-history">View case history</a>
+        <a class="govuk-link" href="task-history">View task history</a>
       </li>
       <li>
-        <a class="govuk-link" href="close-case-check">Close this case</a>
+        <a class="govuk-link" href="close-task-check">Close this task</a>
       </li>
       <li>
         <a class="govuk-link" href="DRS-system">View tasks documents</a>
@@ -172,14 +186,14 @@
         <a class="govuk-link" href="DRS system">View customer documents</a>
       </li>
       <li>
-        <a class="govuk-link" href="customer-all-cases">View customer cases list</a>
+        <a class="govuk-link" href="customer-all-tasks">View customer tasks list</a>
       </li>
       <li>
-        <a class="govuk-link" href="customer-details-main">View customer details</a>
+        <a class="govuk-link" href="/alpha/customers/customer-details/customer-details-main">View customer details</a>
       </li>
 
       <li>
-        <a class="govuk-link" href="create-new-case">Create new case</a>
+        <a class="govuk-link" href="create-new-task">Create new task</a>
       </li>
     </ul>
 </nav></aside>

@@ -1,4 +1,4 @@
-{% extends "layout_agent.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
   Dashboard TL
@@ -59,6 +59,15 @@
         </thead>
         <tbody class="govuk-table__body ">
           <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--red" id="outstandig">Urgent</strong></th>
+            <td class="govuk-table__cell"><a href="cases/new-cases-unassigned" aria-describedby="unassigned-cases">
+              5 Cases
+            </a></td>
+            <td class="govuk-table__cell">  <a href="tasks/new-tasks-unassigned" aria-describedby="tasks-unassigned">
+              13 Tasks
+            </a></td>
+          </tr>
+          <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--blue" id="outstandig">Outstanding</strong></th>
             <td class="govuk-table__cell"><a href="cases/new-cases-unassigned" aria-describedby="unassigned-cases">
               10 Cases
@@ -110,7 +119,7 @@
     </div>
 
 
-  
+
 
 
     <div class="govuk-grid-column-full">

@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Cases unassigned
+My cases
 {% endblock %}
 
 
@@ -9,18 +9,52 @@
 {% block content %}
 
 <div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
 
-    <div class="govuk-breadcrumbs">
-      <ol class="govuk-breadcrumbs__list">
-        <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="case-queues">Cases</a>
-        </li>
-        <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="teams-all-cases">Team's all cases</a>
-        </li>
+  {% if data['login'] === 'teamleader' %}
 
-      </ol>
-    </div>
+
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="case-queues">Cases</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="teams-all-cases">Team's all cases</a>
+      </li>
+
+
+
+  {% elseif data['login'] === 'manager' %}
+
+
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="case-queues">Cases</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="teams-all-cases">Team's all cases</a>
+      </li>
+
+
+
+  {% else %}
+
+
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="case-queues">Cases</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="my-all-cases">My cases</a>
+      </li>
+
+
+
+  {% endif %}
+
+</ol>
+</div>
+
+
+
 <main class="govuk-main-wrapper">
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
@@ -71,12 +105,20 @@
 
       </div>
 
-
+{% if data['login'] === 'teamleader' %}
 
       <h1 class="govuk-heading-l">
         Team's all cases
       </h1>
-
+  {% elseif data['login'] === 'manager' %}
+  <h1 class="govuk-heading-l">
+    Team's all cases
+  </h1>
+{% else %}
+<h1 class="govuk-heading-l">
+  My cases
+</h1>
+{% endif %}
 
       <!--<form method="post" class="form">-->
 

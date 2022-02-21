@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Case queues
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+
+<main class="govuk-main-wrapper">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Case queues
+      </h1>
+
+
+
+
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+                <h2 class="govuk-heading-m">
+                     My cases: 25 cases
+                </h2>
+
+
+
+                  <ul class="govuk-list">
+                    <li>
+
+                        <a class="govuk-link " href="/alpha/teamleader/cases/teams-all-cases" aria-describedby="my-all-cases-list">
+                      All cases (25)
+                    </a>
+                  </li>
+                  <li>
+                          <a class="govuk-link" href="teams-all-cases" aria-describedby="change-position">
+                      New cases (5)
+                    </a>
+                    </li>
+                    <li>
+                            <a class="govuk-link" href="teams-all-cases" aria-describedby="change-position">
+                        Urgent cases (5)
+                      </a>
+                      </li>
+                  <li>
+
+                      <a class="govuk-link" href="teams-all-cases" aria-describedby="change-position">
+                    Outstanding (10)
+                  </a>
+              </li>
+
+
+
+
+                <li>
+                    <a class="govuk-link" href="agent-cases-queue" aria-describedby="my-account-details">
+                  Closed cases (5)
+                  </a>
+              </li>
+
+
+                </ul>
+
+
+
+
+
+          </div>
+
+          <div class="govuk-grid-column-one-third">
+
+          <aside class="app-related-items" role="complementary">
+            <h2 class="govuk-heading-m">Saved queries</h2>
+            <p class="govuk-body govuk-!-margin-bottom-7">  <a href="saved-queries">View and delete saved queries</a></p>
+
+            </aside>
+
+
+
+
+
+          </div>
+
+
+      </div>
+      </div>
+
+
+
+
+
+{% endblock %}

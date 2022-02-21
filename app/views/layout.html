@@ -60,25 +60,26 @@
 
       <a class="moj-header__link moj-header__link--organisation-name" href="/index">DWP</a>
 
-      <a class="moj-header__link moj-header__link--service-name" href="/alpha/teamleader/dashboard-tl">CAMLite</a>
+      <a class="moj-header__link moj-header__link--service-name" href="/index">CAMLite</a>
     </div>
     <div class="moj-header__content">
 
       <nav class="moj-header__navigation" aria-label="Account navigation">
 
-        <ul class="moj-header__navigation-list">
-          <li class="moj-header__navigation-item">
-            <a class="moj-header__navigation-link" href="/alpha/every-user-general/my-account/my-account" aria-current="page">My account</a>
-          </li>
+        {% if data['login'] === 'teamleader' %}
 
-          <li class="moj-header__navigation-item">
-            <a class="moj-header__navigation-link" href="/alpha/every-user-general/my-account/my-position">Current position: Team Leader</a>
-          </li>
+        {% include "./partials/account-navi-tl.html" %}
 
-          <li class="moj-header__navigation-item">
-            <a class="moj-header__navigation-link" href="#">Sign out</a>
-          </li>
-        </ul>
+        {% elseif data['login'] === 'manager' %}
+
+        {% include "./partials/account-navi-m.html" %}
+
+        {% else %}
+
+        {% include "./partials/account-navi-a.html" %}
+
+        {% endif %}
+
 
       </nav>
 
@@ -89,6 +90,39 @@
 <div class="moj-primary-navigation">
 
   <div class="moj-primary-navigation__container">
+
+
+    <div class="moj-primary-navigation__nav">
+
+    <nav class="moj-primary-navigation" aria-label="Primary navigation">
+
+
+
+    {% if data['login'] === 'teamleader' %}
+
+    {% include "./partials/nav-teamleader.html" %}
+
+    {% elseif data['login'] === 'manager' %}
+
+    {% include "./partials/nav-manager.html" %}
+
+    {% else %}
+
+    {% include "./partials/nav-agent.html" %}
+
+    {% endif %}
+
+
+
+    </nav>
+
+
+
+    </div>
+
+
+
+<!--
 
     <div class="moj-primary-navigation__nav">
 
@@ -122,7 +156,10 @@ Cases </a>
 
       </nav>
 
-    </div>
+    </div> -->
+
+
+
     <div style="float: right;">
 <div class="moj-button-menu" id="navi-search">
 
