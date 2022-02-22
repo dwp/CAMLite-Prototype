@@ -10,6 +10,8 @@
 <div class="govuk-width-container">
 
     <div class="govuk-breadcrumbs">
+
+      {% if data['login'] === 'teamleader' %}
       <ol class="govuk-breadcrumbs__list">
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="task-queues">Tasks</a>
@@ -19,6 +21,28 @@
         </li>
 
       </ol>
+
+      {% elseif data['login'] === 'manager' %}
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task-queues">Tasks</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="teams-all-tasks">Team's all tasks</a>
+        </li>
+
+      </ol>
+{% else %}
+<ol class="govuk-breadcrumbs__list">
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="task-queues">Tasks</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="teams-all-tasks">My all tasks</a>
+  </li>
+
+</ol>
+      {% endif %}
     </div>
 <main class="govuk-main-wrapper">
 
@@ -73,11 +97,20 @@
 
 
 
+      {% if data['login'] === 'teamleader' %}
 
-
+            <h1 class="govuk-heading-l">
+              Team's all tasks
+            </h1>
+        {% elseif data['login'] === 'manager' %}
+        <h1 class="govuk-heading-l">
+          Team's all tasks
+        </h1>
+      {% else %}
       <h1 class="govuk-heading-l">
-        Team's all tasks
+        My tasks
       </h1>
+      {% endif %}
 
       <p class="govuk-body govuk-!-margin-bottom-7">Total: 135 tasks </p>
 

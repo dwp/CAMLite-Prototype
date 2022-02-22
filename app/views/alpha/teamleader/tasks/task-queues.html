@@ -18,6 +18,9 @@
         Task queues
       </h1>
 
+      {% if data['login'] === 'teamleader' %}
+
+
 
       <p class="govuk-body govuk-!-margin-bottom-7">Select a queue to view tasks.</p>
 
@@ -98,7 +101,7 @@
                     Total brought forward (15)
                     </a>
                 </li>
-            
+
 
 
 
@@ -134,6 +137,185 @@
                       Rita Patel (6)</a>
                   </li>
                   </ul>
+    {% elseif data['login'] === 'manager' %}
+
+    <p class="govuk-body govuk-!-margin-bottom-7">Select a queue to view tasks.</p>
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+              <h2 class="govuk-heading-m">
+                   My tasks: 15 tasks
+              </h2>
+
+
+              <ul class="govuk-list">
+                <ul class="govuk-list">
+
+                <li>
+                    <a class="govuk-link" href="agent-tasks-queue" aria-describedby="my-account-details">
+                  Outstanding tasks (5)
+                  </a>
+              </li>
+
+              <li>
+                  <a class="govuk-link" href="agent-tasks-queue" aria-describedby="my-account-details">
+                Closed tasks (5)
+                </a>
+            </li>
+
+
+              </ul>
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+              <h2 class="govuk-heading-m">
+                My team's queues: 135 tasks
+              </h2>
+              <ul class="govuk-list">
+                <ul class="govuk-list">
+                  <li>
+
+                      <a class="govuk-link" href="teams-all-tasks" aria-describedby="change-position">
+                    All tasks (135)
+                  </a>
+              </li>
+              <li>
+
+                <a href="" aria-describedby="company-information-status">
+                  Tasks returned by agents (12)
+                </a>
+          </li>
+
+          <br>
+                          <li>
+
+                              <a class="govuk-link" href="teams-all-cases" aria-describedby="change-position">
+                            Outstanding (105)
+                          </a>
+                      </li>
+                      <ul class="govuk-list govuk-list--bullet">
+                          <li>
+                                  <a class="govuk-link" href="teams-all-cases" aria-describedby="change-position">
+                              New tasks (10)
+                            </a>
+                            </li>
+                            <li>
+                            <a href="new-tasks-unassigned" aria-describedby="company-information-status">
+                              Unassigned tasks (10)
+                            </a>
+                      </li>
+                      <li>
+
+                        <a href="" aria-describedby="company-information-status">
+                          Assigned tasks (125)
+                        </a>
+                  </li>
+                  </ul>
+
+
+
+                <li>
+                    <a class="govuk-link" href="agent-cases-queue" aria-describedby="my-account-details">
+                  Total brought forward (15)
+                  </a>
+              </li>
+
+
+
+
+
+    <li>
+        <a class="govuk-link" href="agent-cases-queue" aria-describedby="my-account-details">
+      Closed tasks (35)
+      </a>
+    </li>
+
+
+              </ul>
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+          <h2 class="govuk-heading-m">
+              Agents' queues: 35 tasks
+              </h2>
+              <ul class="govuk-list">
+                <li>
+
+                  <a href="agent-tasks-queue" aria-describedby="agent-name">
+                    David Francis (12)</a>
+                </li>
+                <li>
+
+                  <a href="agent-tasks-queue" aria-describedby="agent-name">
+                  Paul Farmer (17)</a>
+                </li>
+                <li>
+
+                  <a href="agent-tasks-queue" aria-describedby="agent-name">
+                    Rita Patel (6)</a>
+                </li>
+                </ul>
+
+
+
+    {% else %}
+
+    <!-- <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible"> -->
+
+              <h2 class="govuk-heading-m">
+                   My tasks: 35 tasks
+              </h2>
+
+
+              <ul class="govuk-list">
+                <ul class="govuk-list">
+                  <li>
+                      <a class="govuk-link" href="teams-all-tasks" aria-describedby="my-all-tasks">
+                    All tasks (10)
+                    </a>
+                </li>
+                <li>
+                    <a class="govuk-link" href="my-new-tasks" aria-describedby="my-new-tasks">
+                  New tasks (5)
+                  </a>
+              </li>
+              <li>
+                  <a class="govuk-link" href="urgent-tasks-queue" aria-describedby="urgent-tasks-queue">
+                Urgent tasks (5)
+                </a>
+            </li>
+                <li>
+                    <a class="govuk-link" href="outstanding-tasks-queue" aria-describedby="utstanding-tasks-queue">
+                  Outstanding tasks (5)
+                  </a>
+              </li>
+
+              <li>
+                  <a class="govuk-link" href="closed-tasks-queue" aria-describedby="closed-tasks-queue">
+                Closed tasks (5)
+                </a>
+            </li>
+
+
+              </ul>
+
+
+
+
+
+
+    {% endif %}
+
+          </div>
+          <div class="govuk-grid-column-one-third">
+
+          <aside class="app-related-items" role="complementary">
+            <h2 class="govuk-heading-m">Saved queries</h2>
+            <p class="govuk-body govuk-!-margin-bottom-7">  <a href="/alpha/every-user-general/saved-queries">View and delete saved queries</a></p>
+
+            </aside>
+
+
+
 
 
           </div>
