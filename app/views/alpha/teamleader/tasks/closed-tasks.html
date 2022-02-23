@@ -1,61 +1,31 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-My cases
+  Cases unassigned
 {% endblock %}
 
 
 
 {% block content %}
-
 <div class="govuk-width-container">
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
 
-  {% if data['login'] === 'teamleader' %}
+    <div class="govuk-breadcrumbs">
 
 
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="case-queues">Cases</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="teams-all-cases">Team's all cases</a>
-      </li>
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task-queues">Tasks</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="closed-tasks">Closed tasks</a>
+        </li>
+
+      </ol>
 
 
-
-  {% elseif data['login'] === 'manager' %}
-
-
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="case-queues">Cases</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="teams-all-cases">Team's all cases</a>
-      </li>
-
-
-
-  {% else %}
-
-
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="case-queues">Cases</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="my-all-cases">My cases</a>
-      </li>
-
-
-
-  {% endif %}
-
-</ol>
-</div>
-
-
-
+    </div>
 <main class="govuk-main-wrapper">
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
 
@@ -77,7 +47,7 @@ My cases
         </a>
 
       </div>
-    </div>
+      </div>
 
       </div>
 
@@ -88,8 +58,8 @@ My cases
       <div class="moj-button-menu" id="cases-list-menu">
           <div class="moj-button-menu__wrapper">
 
-            <a href="/alpha/customers/cases/search-cases" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
-              Search cases
+            <a href="/alpha/customers/tasks/search-tasks" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+              Search tasks
             </a>
 
             <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
@@ -105,31 +75,20 @@ My cases
 
       </div>
 
-{% if data['login'] === 'teamleader' %}
-
-      <h1 class="govuk-heading-l">
-        Team's all cases
-      </h1>
-  {% elseif data['login'] === 'manager' %}
-  <h1 class="govuk-heading-l">
-    Team's all cases
-  </h1>
-{% else %}
-<h1 class="govuk-heading-l">
-  My cases
-</h1>
-{% endif %}
-
-      <!--<form method="post" class="form">-->
-
-
-
-<p class="govuk-body govuk-!-margin-bottom-7">Total: 135 cases</p>
 
 
 
 
-<form action="assigning-cases" method="post" class="form">
+            <h1 class="govuk-heading-l">
+              Closed tasks
+            </h1>
+
+
+      <p class="govuk-body govuk-!-margin-bottom-7">Total: 10 tasks </p>
+
+
+
+<form action="assigning-tasks" method="post" class="form">
 
   <table class="govuk-table" data-module="moj-multi-select" data-multi-select-checkbox="#select-all">
      <thead class="govuk-table__head">
@@ -142,6 +101,7 @@ My cases
                </label>
              </div>
            </th>
+           <th class="govuk-table__header" scope="col">Task ID</th>
            <th class="govuk-table__header" scope="col">Created on</th>
            <th class="govuk-table__header" scope="col">Type</th>
            <th class="govuk-table__header" scope="col">Sub-type</th>
@@ -149,16 +109,17 @@ My cases
            <th class="govuk-table__header" scope="col">Customer name</th>
            <th class="govuk-table__header" scope="col">National Insurance Number</th>
            <th class="govuk-table__header" scope="col">CRN</th>
-           <th class="govuk-table__header" scope="col">Status</th>
-           <th class="govuk-table__header" scope="col">Benefit</th>
-           <th class="govuk-table__header" scope="col">Case resolution</th>
-           <th class="govuk-table__header" scope="col">Case resolution selected on</th>
-           <th class="govuk-table__header" scope="col">Due date</th>
+
+           <th class="govuk-table__header" scope="col">Assigned to</th>
+           <th class="govuk-table__header" scope="col">Task SLA/ Doc BF</th>
+           <th class="govuk-table__header" scope="col">Start task from</th>
+           <th class="govuk-table__header" scope="col">Clear task by</th>
+           <th class="govuk-table__header" scope="col">Closed on</th>
            <th class="govuk-table__header" scope="col">Owner ID</th>
            <th class="govuk-table__header" scope="col">Owner name</th>
            <th class="govuk-table__header" scope="col">Claim ID</th>
            <th class="govuk-table__header" scope="col">Case ID</th>
-           <th class="govuk-table__header" scope="col">Urgent</th>
+            <th class="govuk-table__header" scope="col">Urgent</th>
        </tr>
      </thead>
      <tbody class="govuk-table__body">
@@ -171,12 +132,13 @@ My cases
              </label>
            </div>
          </td>
-         <td class="govuk-table__cell"><a href="/alpha/customers/cases/case-details" aria-describedby="case-details">1 Feb 2021</a></td>
+            <td class="govuk-table__cell">Lorem ipsum</td>
+         <td class="govuk-table__cell"><a href="/alpha/customers/tasks/task-details" aria-describedby="case-details">1 Feb 2021</a></td>
          <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell">Lorem ipsum</td>
-         <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--blue" id="unassigned">Unassigned</strong></th>
+         <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--grey" id="unassigned">Closed</strong></th>
 
-         <td class="govuk-table__cell"><a href="/alpha/customers/customer-details/customer-details-main" aria-describedby="customer-details">Jane Doe</a></td>
+         <td class="govuk-table__cell"><a href="/alpha/customers/customer-details/customer-details-main" aria-describedby="claimant-detail-srti">John Doe</a></td>
          <td class="govuk-table__cell">RN 00 01 23 A</td>
          <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell">Lorem ipsum</td>
@@ -188,7 +150,7 @@ My cases
          <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell">Lorem Ipsum</td>
-            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">Lorem ipsum</td>
 
        </tr>
 
@@ -202,11 +164,12 @@ My cases
              </label>
            </div>
          </td>
+            <td class="govuk-table__cell">Lorem ipsum</td>
 <td class="govuk-table__cell"><a href="case-details" aria-describedby="case-details">10 Feb 2021</a></td>
 
          <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell">Lorem ipsum</td>
-         <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--blue" id="unassigned">Unassigned</strong></th>
+         <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--grey" id="unassigned">Closed</strong></th>
 
          <td class="govuk-table__cell"><a href="claimant-detail-srti" aria-describedby="claimant-detail-srti">Janette Rafe</a></td>
          <td class="govuk-table__cell">RN 00 11 23 A</td>
@@ -220,7 +183,7 @@ My cases
          <td class="govuk-table__cell">Lorem Ipsum</td>
          <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell">Lorem Ipsum</td>
-           <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">Lorem ipsum</td>
 
        </tr>
        <tr class="govuk-table__row">
@@ -232,11 +195,11 @@ My cases
              </label>
            </div>
          </td>
-
+            <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell"><a href="case-details" aria-describedby="case-details">12 Mar 2021</a></td>
          <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell">Lorem ipsum</td>
-         <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--yellow" id="awaiting decision">Awaiting decision</strong></th>
+         <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--grey" id="unassigned">Closed</strong></th>
 
          <td class="govuk-table__cell"><a href="claimant-detail" aria-describedby="claimant-detail">Noelle Carmel</a></td>
          <td class="govuk-table__cell">RN 00 04 26 D</td>
@@ -250,7 +213,7 @@ My cases
          <td class="govuk-table__cell">Lorem Ipsum</td>
          <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell">Lorem Ipsum</td>
-           <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Lorem ipsum</td>
 
        </tr>
        <tr class="govuk-table__row">
@@ -262,6 +225,7 @@ My cases
              </label>
            </div>
          </td>
+            <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell"><a href="case-details" aria-describedby="case-details">6 May 2021</a></td>
          <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell">Lorem ipsum</td>
@@ -279,7 +243,7 @@ My cases
          <td class="govuk-table__cell">Lorem Ipsum</td>
          <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell">Lorem Ipsum</td>
-           <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">Lorem ipsum</td>
 
        </tr>
        <tr class="govuk-table__row">
@@ -291,10 +255,11 @@ My cases
              </label>
            </div>
          </td>
+            <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell"><a href="case-details" aria-describedby="case-details">21 Feb 2021</a></td>
          <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell">Lorem ipsum</td>
-         <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--green" id="unassigned">Open</strong></th>
+         <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--grey" id="unassigned">Closed</strong></th>
 
          <td class="govuk-table__cell"><a href="claimant-detail" aria-describedby="claimant-detail">Susanna Shaye</a></td>
          <td class="govuk-table__cell">RN 00 11 23 B</td>
@@ -308,7 +273,7 @@ My cases
          <td class="govuk-table__cell">Lorem Ipsum</td>
          <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell">Lorem Ipsum</td>
-           <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Lorem ipsum</td>
        </tr>
        <tr class="govuk-table__row">
          <td class="govuk-table__cell">
@@ -319,10 +284,11 @@ My cases
              </label>
            </div>
          </td>
+            <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell"><a href="case-details" aria-describedby="case-details">4 Apr 2021</a></td>
          <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell">Lorem ipsum</td>
-         <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--red" id="unassigned">Awaiting evidence</strong></th>
+         <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--grey" id="unassigned">Closed</strong></th>
 
          <td class="govuk-table__cell"><a href="claimant-detail" aria-describedby="claimant-detail">Heather Sand</a></td>
          <td class="govuk-table__cell">RN 00 01 11 A</td>
@@ -336,7 +302,7 @@ My cases
          <td class="govuk-table__cell">Lorem Ipsum</td>
          <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell">Lorem Ipsum</td>
-           <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Lorem ipsum</td>
        </tr>
 
        <tr class="govuk-table__row">
@@ -348,10 +314,11 @@ My cases
              </label>
            </div>
          </td>
+            <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell"><a href="case-details" aria-describedby="case-details">4 Apr 2021</a></td>
          <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell">Lorem ipsum</td>
-         <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--blue" id="unassigned">Unassigned</strong></th>
+         <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--grey" id="unassigned">Closed</strong></th>
 
          <td class="govuk-table__cell"><a href="claimant-detail" aria-describedby="claimant-detail">Heather Sand</a></td>
          <td class="govuk-table__cell">RN 00 01 11 A</td>
@@ -365,7 +332,7 @@ My cases
          <td class="govuk-table__cell">Lorem Ipsum</td>
          <td class="govuk-table__cell">Lorem ipsum</td>
          <td class="govuk-table__cell">Lorem Ipsum</td>
-           <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Lorem ipsum</td>
         </tr>
 
         <tr class="govuk-table__row">
@@ -377,10 +344,11 @@ My cases
               </label>
             </div>
           </td>
+             <td class="govuk-table__cell">Lorem ipsum</td>
           <td class="govuk-table__cell"><a href="case-details" aria-describedby="case-details">2 Jun 2021</a></td>
           <td class="govuk-table__cell">Lorem ipsum</td>
           <td class="govuk-table__cell">Lorem ipsum</td>
-          <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--blue" id="unassigned">Unassigned</strong></th>
+          <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--grey" id="unassigned">Closed</strong></th>
 
           <td class="govuk-table__cell"><a href="claimant-detail" aria-describedby="claimant-detail">Susan Sand</a></td>
           <td class="govuk-table__cell">RN 00 01 11 A</td>
@@ -394,7 +362,7 @@ My cases
           <td class="govuk-table__cell">Lorem Ipsum</td>
           <td class="govuk-table__cell">Lorem ipsum</td>
           <td class="govuk-table__cell">Lorem Ipsum</td>
-            <td class="govuk-table__cell">Yes</td>
+             <td class="govuk-table__cell">Lorem ipsum</td>
          </tr>
          <tr class="govuk-table__row">
            <td class="govuk-table__cell">
@@ -405,10 +373,11 @@ My cases
                </label>
              </div>
            </td>
+              <td class="govuk-table__cell">Lorem ipsum</td>
            <td class="govuk-table__cell"><a href="case-details" aria-describedby="case-details">17 Oct 2021</a></td>
            <td class="govuk-table__cell">Lorem ipsum</td>
            <td class="govuk-table__cell">Lorem ipsum</td>
-           <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--blue" id="unassigned">Unassigned</strong></th>
+           <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--grey" id="unassigned">Closed</strong></th>
 
            <td class="govuk-table__cell"><a href="claimant-detail" aria-describedby="claimant-detail">Heather Brown</a></td>
            <td class="govuk-table__cell">RN 00 01 11 A</td>
@@ -422,7 +391,7 @@ My cases
            <td class="govuk-table__cell">Lorem Ipsum</td>
            <td class="govuk-table__cell">Lorem ipsum</td>
            <td class="govuk-table__cell">Lorem Ipsum</td>
-             <td class="govuk-table__cell">Yes</td>
+              <td class="govuk-table__cell">Lorem ipsum</td>
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
@@ -433,10 +402,11 @@ My cases
                 </label>
               </div>
             </td>
+               <td class="govuk-table__cell">Lorem ipsum</td>
             <td class="govuk-table__cell"><a href="case-details" aria-describedby="case-details">24 Apr 2021</a></td>
             <td class="govuk-table__cell">Lorem ipsum</td>
             <td class="govuk-table__cell">Lorem ipsum</td>
-            <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--blue" id="unassigned">Unassigned</strong></th>
+            <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--grey" id="unassigned">Closed</strong></th>
 
             <td class="govuk-table__cell"><a href="claimant-detail" aria-describedby="claimant-detail">Jonathan Sand</a></td>
             <td class="govuk-table__cell">RN 00 01 11 A</td>
@@ -450,7 +420,7 @@ My cases
             <td class="govuk-table__cell">Lorem Ipsum</td>
             <td class="govuk-table__cell">Lorem ipsum</td>
             <td class="govuk-table__cell">Lorem Ipsum</td>
-              <td class="govuk-table__cell">Yes</td>
+               <td class="govuk-table__cell">Lorem ipsum</td>
            </tr>
 
 
@@ -485,19 +455,11 @@ My cases
   <p class="moj-pagination__results">Showing <b>10</b> to <b>20</b> of <b>30</b> pages</p>
 </nav>
 </div>
-<br><br><br>
-<div class="govuk-button-group">
-  <a href='assigning-cases'>
-<button class="govuk-button" data-module="govuk-button">
-  Re-assign cases
-</button>
-
-
-</div>
 
     </div>
   </div>
+  </div>
 
-</div>
+
 
 {% endblock %}
