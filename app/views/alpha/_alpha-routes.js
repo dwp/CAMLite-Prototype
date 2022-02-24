@@ -6,11 +6,11 @@ module.exports = function (folderForViews, urlPrefix, router) {
 router.post('/login-as-answer', function (req, res) {
     const login = req.session.data['login']
     if (login === 'teamleader') {
-      res.render('agent/teamleader/dashboard-tl')
+      res.render('/alpha/camlite/dashboard-tl')
     } else if (login === 'agent') {
-      res.render('agent/teamleader/dashboard-a')
+      res.render('/alpha/camlite/dashboard-a')
     } else if (login === 'manager') {
-      res.render('agent/teamleader/dashboard-m')
+      res.render('/alpha/camlite/dashboard-m')
     }
   })
 

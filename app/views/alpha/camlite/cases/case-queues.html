@@ -1,0 +1,345 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Case queues
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+
+<main class="govuk-main-wrapper">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Case queues
+      </h1>
+
+      {% if data['login'] === 'teamleader' %}
+
+      <p class="govuk-body govuk-!-margin-bottom-7">Select a queue to view cases.</p>
+
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+                <h2 class="govuk-heading-m">
+                     My cases: 15 cases
+                </h2>
+
+
+
+                  <ul class="govuk-list">
+
+                  <li>
+                      <a class="govuk-link" href="agent-cases-queue" aria-describedby="my-account-details">
+                    Outstanding cases (5)
+                    </a>
+                </li>
+
+                <li>
+                    <a class="govuk-link" href="closed-cases" aria-describedby="closed-cases">
+                  Closed cases (5)
+                  </a>
+              </li>
+
+
+                </ul>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+                <h2 class="govuk-heading-m">
+                  My team's queues: 135 cases
+                </h2>
+                <ul class="govuk-list">
+                  <ul class="govuk-list">
+                    <li>
+
+                        <a class="govuk-link" href="teams-all-cases" aria-describedby="change-position">
+                      All cases (135)
+                    </a>
+                </li>
+                <li>
+
+                  <a href="" aria-describedby="company-information-status">
+                    Cases returned by agents (12)
+                  </a>
+            </li>
+<br>
+                <li>
+
+                    <a class="govuk-link" href="teams-all-cases" aria-describedby="change-position">
+                  Outstanding (105)
+                </a>
+            </li>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>
+                        <a class="govuk-link" href="teams-all-cases" aria-describedby="change-position">
+                    New cases (10)
+                  </a>
+                  </li>
+                  <li>
+                  <a href="new-cases-unassigned" aria-describedby="company-information-status">
+                    Unassigned cases (10)
+                  </a>
+            </li>
+            <li>
+
+              <a href="" aria-describedby="company-information-status">
+                Assigned cases (85)
+              </a>
+        </li>
+        </ul>
+
+
+
+      <li>
+          <a class="govuk-link" href="agent-cases-queue" aria-describedby="my-account-details">
+        Total brought forward (15)
+        </a>
+    </li>
+
+<li>
+    <a class="govuk-link" href="closed-cases" aria-describedby="closed-cases">
+  Closed cases (50)
+  </a>
+</li>
+                </ul>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+            <h2 class="govuk-heading-m">
+                Agents' queues: 35 cases
+                </h2>
+                <ul class="govuk-list">
+                  <li>
+
+                    <a href="agent-cases-queue" aria-describedby="agent-name">
+                      David Francis (12 open, 5 BF)</a>
+                  </li>
+                  <li>
+
+                    <a href="agent-cases-queue" aria-describedby="agent-name">
+                    Paul Farmer (12 open, 5 BF)</a>
+                  </li>
+                  <li>
+
+                    <a href="agent-cases-queue" aria-describedby="agent-name">
+                      Rita Patel (12 open, 5 BF)</a>
+                  </li>
+                  </ul>
+
+
+
+
+
+{% elseif data['login'] === 'manager' %}
+
+
+<p class="govuk-body govuk-!-margin-bottom-7">Select a queue to view cases.</p>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+          <h2 class="govuk-heading-m">
+               My cases: 15 cases
+          </h2>
+
+
+
+            <ul class="govuk-list">
+
+            <li>
+                <a class="govuk-link" href="agent-cases-queue" aria-describedby="my-account-details">
+              Outstanding cases (5)
+              </a>
+          </li>
+
+          <li>
+              <a class="govuk-link" href="closed-cases" aria-describedby="closed-cases">
+            Closed cases (5)
+            </a>
+        </li>
+
+
+          </ul>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+          <h2 class="govuk-heading-m">
+            My team's queues: 135 cases
+          </h2>
+          <ul class="govuk-list">
+            <ul class="govuk-list">
+              <li>
+
+                  <a class="govuk-link" href="teams-all-cases" aria-describedby="change-position">
+                All cases (135)
+              </a>
+          </li>
+          <li>
+
+            <a href="" aria-describedby="company-information-status">
+              Cases returned by agents (12)
+            </a>
+      </li>
+<br>
+          <li>
+
+              <a class="govuk-link" href="teams-all-cases" aria-describedby="change-position">
+            Outstanding (105)
+          </a>
+      </li>
+      <ul class="govuk-list govuk-list--bullet">
+          <li>
+                  <a class="govuk-link" href="teams-all-cases" aria-describedby="change-position">
+              New cases (10)
+            </a>
+            </li>
+            <li>
+            <a href="new-cases-unassigned" aria-describedby="company-information-status">
+              Unassigned cases (10)
+            </a>
+      </li>
+      <li>
+
+        <a href="" aria-describedby="company-information-status">
+          Assigned cases (85)
+        </a>
+  </li>
+  </ul>
+
+
+
+<li>
+    <a class="govuk-link" href="agent-cases-queue" aria-describedby="my-account-details">
+  Total brought forward (15)
+  </a>
+</li>
+
+<li>
+<a class="govuk-link" href="closed-cases" aria-describedby="closed-cases">
+Closed cases (50)
+</a>
+</li>
+          </ul>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-m">
+          Agents' queues: 35 cases
+          </h2>
+          <ul class="govuk-list">
+            <li>
+
+              <a href="agent-cases-queue" aria-describedby="agent-name">
+                David Francis (12 open, 5 BF)</a>
+            </li>
+            <li>
+
+              <a href="agent-cases-queue" aria-describedby="agent-name">
+              Paul Farmer (12 open, 5 BF)</a>
+            </li>
+            <li>
+
+              <a href="agent-cases-queue" aria-describedby="agent-name">
+                Rita Patel (12 open, 5 BF)</a>
+            </li>
+            </ul>
+
+{% else %}
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+                          <h2 class="govuk-heading-m">
+                               My cases: 25 cases
+                          </h2>
+
+
+
+                            <ul class="govuk-list">
+                              <li>
+
+                                  <a class="govuk-link " href="/alpha/teamleader/cases/teams-all-cases" aria-describedby="my-all-cases-list">
+                                All cases (25)
+                              </a>
+                            </li>
+                            <li>
+                                    <a class="govuk-link" href="teams-all-cases" aria-describedby="change-position">
+                                New cases (5)
+                              </a>
+                              </li>
+                              <li>
+                                      <a class="govuk-link" href="teams-all-cases" aria-describedby="change-position">
+                                  Urgent cases (5)
+                                </a>
+                                </li>
+                            <li>
+
+                                <a class="govuk-link" href="teams-all-cases" aria-describedby="change-position">
+                              Outstanding (10)
+                            </a>
+                        </li>
+
+
+
+
+                          <li>
+                              <a class="govuk-link" href="/alpha/teamleader/cases/closed-cases" aria-describedby="closed-cases">
+                            Closed cases (5)
+                            </a>
+                        </li>
+
+
+                          </ul>
+
+  {% endif %}
+                    </div>
+
+
+
+
+          <div class="govuk-grid-column-one-third">
+
+
+            <div style="float: right; ">
+
+              <div class="moj-button-menu govuk-!-margin-left-3"  id="query">
+            <div class="moj-button-menu__wrapper">
+
+              <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item  " data-module="govuk-button">
+                Lorem Ipsum query
+              </a>
+
+              <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+                Lorem Ipsum query 2
+              </a>
+
+              <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+                Lorem Ipsum query 3
+              </a>
+
+            </div>
+            </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+      </div>
+      </div>
+
+
+
+
+
+{% endblock %}

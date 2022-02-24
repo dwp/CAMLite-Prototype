@@ -122,42 +122,6 @@
 
 
 
-<!--
-
-    <div class="moj-primary-navigation__nav">
-
-      <nav class="moj-primary-navigation" aria-label="Primary navigation">
-
-        <ul class="moj-primary-navigation__list">
-          <li class="moj-primary-navigation__item">
-            <a class="moj-primary-navigation__link" aria-current="page" href="/alpha/teamleader/dashboard-tl">Dashboard</a>
-          </li>
-
-
-          <li class="moj-primary-navigation__item">
-            <a class="moj-primary-navigation__link" href="/alpha/teamleader/my-team/my-team">My team</a>
-          </li>
-
-
-          <li class="moj-primary-navigation__item">
-            <a class="moj-primary-navigation__link" href="/alpha/teamleader/cases/case-queues">
-Cases </a>
-          </li>
-
-          <li class="moj-primary-navigation__item">
-            <a class="moj-primary-navigation__link" href="/alpha/teamleader/tasks/task-queues">Tasks</a>
-          </li>
-
-
-          <li class="moj-primary-navigation__item">
-            <a class="moj-primary-navigation__link" href="/alpha/customers/customer-details/customers-list">Customers</a>
-          </li>
-        </ul>
-
-      </nav>
-
-    </div> -->
-
 
 
     <div style="float: right;">
@@ -165,11 +129,11 @@ Cases </a>
 
     <div class="moj-button-menu__wrapper">
   {% if data['login'] === 'teamleader' %}
-      <a href="/alpha/customers/cases/search-cases" role="button" draggable="false" class="govuk-button moj-button-menu__item  " data-module="govuk-button">
+      <a href="/alpha/camlite/cases/search-cases" role="button" draggable="false" class="govuk-button moj-button-menu__item  " data-module="govuk-button">
         Search cases
       </a>
 
-      <a href="/alpha/customers/tasks/search-tasks" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+      <a href="/alpha/camlite/tasks/search-tasks" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
         Search tasks
       </a>
 
@@ -181,12 +145,13 @@ Cases </a>
         Search employees
       </a>
 
+
   {% elseif data['login'] === 'manager' %}
-  <a href="/alpha/customers/cases/search-cases" role="button" draggable="false" class="govuk-button moj-button-menu__item  " data-module="govuk-button">
+  <a href="/alpha/camlite/cases/search-cases" role="button" draggable="false" class="govuk-button moj-button-menu__item  " data-module="govuk-button">
     Search cases
   </a>
 
-  <a href="/alpha/customers/tasks/search-tasks" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+  <a href="/alpha/camlite/tasks/search-tasks" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
     Search tasks
   </a>
 
@@ -198,18 +163,20 @@ Cases </a>
     Search employees
   </a>
 
+
 {% else %}
-<a href="/alpha/customers/cases/search-cases" role="button" draggable="false" class="govuk-button moj-button-menu__item  " data-module="govuk-button">
+<a href="/alpha/camlite/cases/search-cases" role="button" draggable="false" class="govuk-button moj-button-menu__item  " data-module="govuk-button">
   Search cases
 </a>
 
-<a href="/alpha/customers/tasks/search-tasks" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+<a href="/alpha/camlite/tasks/search-tasks" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
   Search tasks
 </a>
 
 <a href="/alpha/customers/customer-details/search-customer" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
   Search customers
 </a>
+
 
 {% endif %}
 

@@ -4,7 +4,7 @@ const router = express.Router()
 
 
 router.post('/assigned-cases-confirmation-b', function(req, res) {
-    res.render('alpha/teamleader/cases/assigned-cases-confirmation-b');
+    res.render('alpha/camlite/cases/assigned-cases-confirmation-b');
 });
 
 //cases queue choice
@@ -12,16 +12,16 @@ router.post('/queue-choice', function (req, res) {
     const assignqueue = req.session.data['assign-queue']
     console.log(assignqueue)
     if (assignqueue === 'me') {
-      res.redirect('/alpha/teamleader/cases/assigned-cases-confirmation-myqueue')
+      res.redirect('/alpha/camlite/cases/assigned-cases-confirmation-myqueue')
 
     } else if (assignqueue === 'agent') {
-      res.redirect('/alpha/teamleader/cases/assigning-cases-to-agent')
+      res.redirect('/alpha/camlite/cases/assigning-cases-to-agent')
 
     } else if (assignqueue === 'other') {
-      res.redirect('/alpha/teamleader/cases/assigning-cases-to-other-team')
+      res.redirect('/alpha/camlite/cases/assigning-cases-to-other-team')
 
     }else if (assignqueue === 'addqueue') {
-      res.redirect('/alpha/teamleader/cases/assigning-cases-to-add-queue')
+      res.redirect('/alpha/camlite/cases/assigning-cases-to-add-queue')
     }
   });
 
@@ -30,13 +30,13 @@ router.post('/queue-choice', function (req, res) {
       const newqueue = req.session.data['new-queue']
       console.log(newqueue)
       if (newqueue === 'me') {
-        res.redirect('/alpha/teamleader/cases/assigned-cases-confirmation-myqueue')
+        res.redirect('/alpha/camlite/cases/assigned-cases-confirmation-myqueue')
 
       } else if (newqueue === 'agent') {
-        res.redirect('/alpha/teamleader/cases/assigning-cases-to-agent')
+        res.redirect('/alpha/camlite/cases/assigning-cases-to-agent')
 
       } else if (newqueue === 'team') {
-        res.redirect('/alpha/teamleader/cases/assigned-cases-confirmation-myqueue')
+        res.redirect('/alpha/camlite/cases/assigned-cases-confirmation-myqueue')
 
       }
     });
@@ -46,16 +46,16 @@ router.post('/queue-choice', function (req, res) {
         const assignqueue = req.session.data['assign-queue']
         console.log(assignqueue)
         if (assignqueue === 'me') {
-          res.redirect('/alpha/teamleader/tasks/assigned-tasks-confirmation-myqueue')
+          res.redirect('/alpha/camlite/tasks/assigned-tasks-confirmation-myqueue')
 
         } else if (assignqueue === 'agent') {
-          res.redirect('/alpha/teamleader/tasks/assigning-tasks-to-agent')
+          res.redirect('/alpha/camlite/tasks/assigning-tasks-to-agent')
 
         } else if (assignqueue === 'other') {
-          res.redirect('/alpha/teamleader/tasks/assigning-tasks-to-other-team')
+          res.redirect('/alpha/camlite/tasks/assigning-tasks-to-other-team')
 
         }else if (assignqueue === 'addqueue') {
-          res.redirect('/alpha/teamleader/tasks/assigning-tasks-to-add-queue')
+          res.redirect('/alpha/camlite/tasks/assigning-tasks-to-add-queue')
         }
       });
 
@@ -64,13 +64,13 @@ router.post('/queue-choice', function (req, res) {
             const newqueue = req.session.data['new-queue']
             console.log(newqueue)
             if (newqueue === 'me') {
-              res.redirect('/alpha/teamleader/tasks/assigned-tasks-confirmation-myqueue')
+              res.redirect('/alpha/camlite/tasks/assigned-tasks-confirmation-myqueue')
 
             } else if (newqueue === 'agent') {
-              res.redirect('/alpha/teamleader/tasks/assigning-tasks-to-agent')
+              res.redirect('/alpha/camlite/tasks/assigning-tasks-to-agent')
 
             } else if (newqueue === 'team') {
-              res.redirect('/alpha/teamleader/tasks/assigned-tasks-confirmation-myqueue')
+              res.redirect('/alpha/camlite/tasks/assigned-tasks-confirmation-myqueue')
 
             }
           });
@@ -80,10 +80,10 @@ router.post('/queue-choice', function (req, res) {
                     const deletequery = req.session.data['delete-query']
                     console.log(deletequery)
                     if (deletequery === 'yes') {
-                      res.redirect('/alpha/teamleader/cases/removing-query-confirmation')
+                      res.redirect('/alpha/every-user-general/removing-query-confirmation')
 
                     } else if (deletequery === 'no') {
-                      res.redirect('/alpha/teamleader/cases/saved-queries')
+                      res.redirect('/alpha/every-user-general/saved-queries')
 
                     }
                   });
