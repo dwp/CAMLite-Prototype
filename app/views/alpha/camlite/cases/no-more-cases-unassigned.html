@@ -6,9 +6,74 @@
 
 
 {% block content %}
+<div class="govuk-width-container">
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="case-queues">Cases</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="new-cases-unassigned">New cases to assign</a>
+          </li>
+
+        </ol>
+      </div>
+      <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <div style="float: right; ">
+
+          <div class="moj-button-menu govuk-!-margin-left-3"  id="query">
+        <div class="moj-button-menu__wrapper">
+
+          <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item  " data-module="govuk-button">
+            Lorem Ipsum query
+          </a>
+
+          <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+            Lorem Ipsum query 2
+          </a>
+
+          <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+            Lorem Ipsum query 3
+          </a>
+
+        </div>
+      </div>
+
+        </div>
+
+
+
+        <div style="float: right;">
+
+        <div class="moj-button-menu" id="cases-list-menu">
+            <div class="moj-button-menu__wrapper">
+
+              <a href="search-cases" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+                Search cases
+              </a>
+              <a href="/alpha/camlite/cases/owner-cases" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+                Change owner
+              </a>
+              <a href="/alpha/camlite/cases/assigning-cases" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+                Change assign to
+              </a>
+              <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+                Export to excel
+              </a>
+
+              <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+                Select columns
+              </a>
+
+            </div>
+          </div>
+
+        </div>
 
 
       <h1 class="govuk-heading-l">
@@ -21,14 +86,8 @@
   There are no more cases to assign.
 </div>
 
-<div class="govuk-button-group">
-<button disabled="disabled" aria-disabled="true" class="govuk-button govuk-button--disabled" class="govuk-button" data-module="govuk-button">
-  Assign cases
-</button>
-
 
 </div>
-
     </div>
   </div>
 

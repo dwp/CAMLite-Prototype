@@ -4,7 +4,7 @@ const router = express.Router()
 
 
 router.post('/assigned-cases-confirmation-b', function(req, res) {
-    res.render('alpha/camlite/cases/assigned-cases-confirmation-b');
+    res.render('/alpha/camlite/cases/assigned-cases-confirmation-b');
 });
 
 //cases queue choice

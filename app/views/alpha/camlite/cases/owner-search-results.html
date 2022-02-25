@@ -13,60 +13,53 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="queue-choice" method="post" class="form">
+        <form action="owner-changed-notif" method="post" class="form">
 
 
             <div class="govuk-form-group">
                 <fieldset class="govuk-fieldset" aria-describedby="transport-option-hint">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-  <span class="govuk-caption-l">Change owner of the cases</span>
+<span class="govuk-caption-l">Search results</span>
                         <h1 class="govuk-fieldset__heading">
-                            Which queue do you want to assign these cases to?
+                            Change the owner of the cases
                         </h1>
                     </legend>
-
                     <div class="govuk-radios">
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="assign-queue-1" name="assign-queue"
+                            <input class="govuk-radios__input" id="lorem-queue-1" name="lorem-queue"
                                    type="radio"
                                    value="me">
-                            <label class="govuk-label govuk-radios__label" for="assign-queue-1">
-                              My cases
+                            <label class="govuk-label govuk-radios__label" for="lorem-queue-1">
+                              Lorem ipsum 1
                             </label>
                         </div>
 
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="assign-queue-2" name="assign-queue"
+                            <input class="govuk-radios__input" id="lorem-queue-2" name="lorem-queue"
                                    type="radio"
                                    value="agent">
-                            <label class="govuk-label govuk-radios__label" for="assign-queue-2">
-                                Agent's queue
+                            <label class="govuk-label govuk-radios__label" for="lorem-queue-2">
+                                Lorem ipsum 1
                             </label>
                         </div>
 
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="assign-queue-3" name="assign-queue"
+                            <input class="govuk-radios__input" id="lorem-queue-3" name="lorem-queue"
                                    type="radio"
                                    value="other">
-                            <label class="govuk-label govuk-radios__label" for="assign-queue-3">
-                                Other team's queues
+                            <label class="govuk-label govuk-radios__label" for="lorem-queue-3">
+                                Lorem ipsum 1
                             </label>
                         </div>
-<div class="govuk-radios__divider">or</div>
-<div class="govuk-radios__item">
-    <input class="govuk-radios__input" id="assign-queue-4" name="assign-queue"
-           type="radio"
-           value="addqueue">
-    <label class="govuk-label govuk-radios__label" for="assign-queue-4">
-        Add queue
-    </label>
-</div>
-                    </div>
+
+
+
                 </fieldset>
             </div>
             <button type="submit" class="govuk-button" data-module="govuk-button">
-                Continue
+                Save and continue
             </button>
+            <p>  <a class="govuk-link" href="teams-all-cases">Cancel </a></p>
         </form>
     </div>
 </div>
