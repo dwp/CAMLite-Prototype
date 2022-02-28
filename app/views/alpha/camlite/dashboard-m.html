@@ -1,0 +1,466 @@
+{% extends "layout.html" %}
+
+
+
+{% block pageTitle %}
+  Dashboard TL
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back (ONLY for prototype)</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <h1 class="govuk-heading-xl">
+      Dashboard
+    </h1>
+
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Important
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+            You have 10 new cases in the Team queue.
+            <a class="govuk-notification-banner__link" href="/alpha/teamleader/cases/new-cases-unassigned">View new cases</a>
+          </p>
+          <p class="govuk-notification-banner__heading">
+            You have 6 new tasks in the Team queue.
+            <a class="govuk-notification-banner__link" href="/alpha/teamleader/cases/new-tasks-unassigned">View new tasks</a>
+          </p>
+        </div>
+      </div>
+
+
+
+
+<div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+
+
+
+      <h2 class="govuk-heading-l govuk-!-margin-bottom-2">Items to review</h2>
+
+      <table class="govuk-table govuk-!-margin-top-5">
+
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header govuk-!-width-one-half">Status</th>
+            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Cases</th>
+            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Tasks</th>
+
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body ">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--red" id="outstandig">Urgent</strong></th>
+            <td class="govuk-table__cell"><a href="cases/new-cases-unassigned" aria-describedby="unassigned-cases">
+              5 Cases
+            </a></td>
+            <td class="govuk-table__cell">  <a href="tasks/new-tasks-unassigned" aria-describedby="tasks-unassigned">
+              13 Tasks
+            </a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--blue" id="outstandig">Outstanding</strong></th>
+            <td class="govuk-table__cell"><a href="cases/new-cases-unassigned" aria-describedby="unassigned-cases">
+              10 Cases
+            </a></td>
+            <td class="govuk-table__cell">  <a href="tasks/new-tasks-unassigned" aria-describedby="tasks-unassigned">
+              4 Tasks
+            </a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><strong class="govuk-tag govuk-tag--orange" id="returned-by-agent">Returned by agent</strong></th>
+            <td class="govuk-table__cell">  <a href="#" aria-describedby="cases/cases-open">
+                6 Cases
+              </a></td>
+            <td class="govuk-table__cell"><a href="#" aria-describedby="tasks/tasks-open">
+              11 Tasks
+            </a></td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><strong class="govuk-tag govuk-tag--yellow" id="case-with-no-task">Closed tasks case open</strong>
+          </th>
+            <td class="govuk-table__cell"><a href="#" aria-describedby="cases/case-with-no-task">
+              1 Case
+            </a></td>
+            <td class="govuk-table__cell">-</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><strong class="govuk-tag govuk-tag--green" id="closed-today">Closed today</strong>
+          </th>
+            <td class="govuk-table__cell"><a href="#" aria-describedby="cases/cases-closed-today">
+              0 Cases
+            </a></td>
+            <td class="govuk-table__cell"><a href="#" aria-describedby="tasks/tasks-closed-today">
+              4 Tasks
+            </a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Total </th>
+            <td class="govuk-table__cell"><a href="#" aria-describedby="cases/total-cases">
+              17 Cases
+            </a></td>
+            <td class="govuk-table__cell"><a href="#" aria-describedby="tasks/total-tasks">
+              19 Tasks
+            </a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+  <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-m">My position</h3>
+
+        <p class="govuk-body">Current position: Manager<br><a href="my-account/my-position" aria-describedby="my-position">View or change your active position</a></p>
+
+      </div>
+
+
+    <div class="govuk-grid-column-full">
+<br><br>
+            <h2 class="govuk-heading-l govuk-!-margin-bottom-7">Agents' cases and tasks</h2>
+
+
+
+            <div class="govuk-tabs" data-module="govuk-tabs">
+              <h2 class="govuk-tabs__title">
+                Contents
+              </h2>
+              <ul class="govuk-tabs__list">
+                <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                  <a class="govuk-tabs__tab" href="#today">
+                    Today
+                  </a>
+                </li>
+                <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                  <a class="govuk-tabs__tab" href="#yesterday">
+                    Yesterday
+                  </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                  <a class="govuk-tabs__tab" href="#past-week">
+                    Past week
+                  </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                  <a class="govuk-tabs__tab" href="#past-month">
+                    Past month
+                  </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                  <a class="govuk-tabs__tab" href="#past-year">
+                    Past year
+                  </a>
+                </li>
+              </ul>
+              <div class="govuk-tabs__panel" id="today">
+                <h2 class="govuk-heading-m">Today</h2>
+                <table class="govuk-table">
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Case agent</th>
+
+
+                      <th scope="col" class="govuk-table__header">New cases</th>
+                      <th scope="col" class="govuk-table__header">Cases opened</th>
+                      <th scope="col" class="govuk-table__header">Cases closed</th>
+                      <th scope="col" class="govuk-table__header">Tasks opened</th>
+                      <th scope="col" class="govuk-table__header">Tasks closed</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="agent-view1" aria-describedby="agent-view">David Francis</a></td>
+
+
+                          <td class="govuk-table__cell">3</td>
+                      <td class="govuk-table__cell">3</td>
+                      <td class="govuk-table__cell">0</td>
+                      <td class="govuk-table__cell">4</td>
+                      <td class="govuk-table__cell">0</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="agent-view2" aria-describedby="agent-view">Paul Farmer</a></td>
+
+
+                        <td class="govuk-table__cell">3</td>
+                      <td class="govuk-table__cell">1</td>
+                      <td class="govuk-table__cell">0</td>
+                      <td class="govuk-table__cell">3</td>
+                      <td class="govuk-table__cell">0</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="agent-view3" aria-describedby="agent-view">Rita Patel</a></td>
+
+
+                        <td class="govuk-table__cell">3</td>
+                      <td class="govuk-table__cell">2</td>
+                      <td class="govuk-table__cell">0</td>
+                      <td class="govuk-table__cell">4</td>
+                      <td class="govuk-table__cell">0</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><b>Total</b></td>
+
+
+                        <td class="govuk-table__cell">9</td>
+                      <td class="govuk-table__cell">6</td>
+                      <td class="govuk-table__cell">0</td>
+                      <td class="govuk-table__cell">11</td>
+                      <td class="govuk-table__cell">0</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+                <div class="govuk-tabs__panel" id="yesterday">
+                  <h2 class="govuk-heading-m">Yesterday</h2>
+                  <table class="govuk-table">
+                    <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Case agent</th>
+                        <th scope="col" class="govuk-table__header">New cases</th>
+                        <th scope="col" class="govuk-table__header">Cases opened</th>
+                        <th scope="col" class="govuk-table__header">Cases closed</th>
+                        <th scope="col" class="govuk-table__header">Tasks opened</th>
+                        <th scope="col" class="govuk-table__header">Tasks closed</th>
+                      </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell"><a href="agent-view1" aria-describedby="agent-view">David Francis</a></td>
+
+                            <td class="govuk-table__cell">3</td>
+                        <td class="govuk-table__cell">3</td>
+                        <td class="govuk-table__cell">0</td>
+                        <td class="govuk-table__cell">4</td>
+                        <td class="govuk-table__cell">0</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell"><a href="agent-view2" aria-describedby="agent-view">Paul Farmer</a></td>
+
+
+                          <td class="govuk-table__cell">3</td>
+                        <td class="govuk-table__cell">1</td>
+                        <td class="govuk-table__cell">0</td>
+                        <td class="govuk-table__cell">3</td>
+                        <td class="govuk-table__cell">0</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell"><a href="agent-view3" aria-describedby="agent-view">Rita Patel</a></td>
+
+
+                          <td class="govuk-table__cell">3</td>
+                        <td class="govuk-table__cell">2</td>
+                        <td class="govuk-table__cell">0</td>
+                        <td class="govuk-table__cell">4</td>
+                        <td class="govuk-table__cell">0</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell"><b>Total</b></td>
+
+
+                          <td class="govuk-table__cell">3546</td>
+                        <td class="govuk-table__cell">1539</td>
+                        <td class="govuk-table__cell">1265</td>
+                        <td class="govuk-table__cell">1780</td>
+                        <td class="govuk-table__cell">1932</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+                <h2 class="govuk-heading-m">Past week</h2>
+                <table class="govuk-table">
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Case agent</th>
+                      <th scope="col" class="govuk-table__header">New cases</th>
+                      <th scope="col" class="govuk-table__header">Cases opened</th>
+                      <th scope="col" class="govuk-table__header">Cases closed</th>
+                      <th scope="col" class="govuk-table__header">Tasks opened</th>
+                      <th scope="col" class="govuk-table__header">Tasks closed</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="agent-view1" aria-describedby="agent-view">David Francis</a></td>
+
+
+                          <td class="govuk-table__cell">3</td>
+                      <td class="govuk-table__cell">24</td>
+                      <td class="govuk-table__cell">18</td>
+                      <td class="govuk-table__cell">14</td>
+                      <td class="govuk-table__cell">30</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="agent-view2" aria-describedby="agent-view">Paul Farmer</a></td>
+
+
+                        <td class="govuk-table__cell">3</td>
+                      <td class="govuk-table__cell">16</td>
+                      <td class="govuk-table__cell">20</td>
+                      <td class="govuk-table__cell">14</td>
+                      <td class="govuk-table__cell">30</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="agent-view3" aria-describedby="agent-view">Rita Patel</a></td>
+
+
+                        <td class="govuk-table__cell">3</td>
+                      <td class="govuk-table__cell">24</td>
+                      <td class="govuk-table__cell">27</td>
+                      <td class="govuk-table__cell">14</td>
+                      <td class="govuk-table__cell">30</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><b>Total</b></td>
+
+
+                        <td class="govuk-table__cell">3546</td>
+                      <td class="govuk-table__cell">1539</td>
+                      <td class="govuk-table__cell">1265</td>
+                      <td class="govuk-table__cell">1780</td>
+                      <td class="govuk-table__cell">1932</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+                <h2 class="govuk-heading-m">Past month</h2>
+                <table class="govuk-table">
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Case agent</th>
+                      <th scope="col" class="govuk-table__header">New cases</th>
+
+                      <th scope="col" class="govuk-table__header">Cases opened</th>
+                      <th scope="col" class="govuk-table__header">Cases closed</th>
+                      <th scope="col" class="govuk-table__header">Tasks opened</th>
+                      <th scope="col" class="govuk-table__header">Tasks closed</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="agent-view1" aria-describedby="agent-view">David Francis</a></td>
+
+                          <td class="govuk-table__cell">3</td>
+                      <td class="govuk-table__cell">98</td>
+                      <td class="govuk-table__cell">95</td>
+                      <td class="govuk-table__cell">140</td>
+                      <td class="govuk-table__cell">60</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="agent-view2" aria-describedby="agent-view">Paul Farmer</a></td>
+
+                        <td class="govuk-table__cell">122</td>
+                      <td class="govuk-table__cell">122</td>
+                      <td class="govuk-table__cell">131</td>
+                      <td class="govuk-table__cell">140</td>
+                      <td class="govuk-table__cell">60</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="agent-view3" aria-describedby="agent-view">Rita Patel</a></td>
+
+
+                        <td class="govuk-table__cell">3</td>
+                      <td class="govuk-table__cell">126</td>
+                      <td class="govuk-table__cell">142</td>
+                      <td class="govuk-table__cell">140</td>
+                      <td class="govuk-table__cell">60</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><b>Total</b></td>
+
+
+                        <td class="govuk-table__cell">3546</td>
+                      <td class="govuk-table__cell">1539</td>
+                      <td class="govuk-table__cell">1265</td>
+                      <td class="govuk-table__cell">1780</td>
+                      <td class="govuk-table__cell">1932</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-year">
+                <h2 class="govuk-heading-m">Past year</h2>
+                <table class="govuk-table">
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Case agent</th>
+                      <th scope="col" class="govuk-table__header">New cases</th>
+                      <th scope="col" class="govuk-table__header">Cases opened</th>
+                      <th scope="col" class="govuk-table__header">Cases closed</th>
+                      <th scope="col" class="govuk-table__header">Tasks opened</th>
+                      <th scope="col" class="govuk-table__header">Tasks closed</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="agent-view1" aria-describedby="agent-view">David Francis</a></td>
+
+
+                          <td class="govuk-table__cell">3434</td>
+                      <td class="govuk-table__cell">1380</td>
+                      <td class="govuk-table__cell">1472</td>
+                      <td class="govuk-table__cell">1780</td>
+                      <td class="govuk-table__cell">1932</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="agent-view2" aria-describedby="agent-view">Paul Farmer</a></td>
+
+
+                        <td class="govuk-table__cell">3454</td>
+                      <td class="govuk-table__cell">1129</td>
+                      <td class="govuk-table__cell">1083</td>
+                      <td class="govuk-table__cell">1780</td>
+                      <td class="govuk-table__cell">1932</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="agent-view3" aria-describedby="agent-view">Rita Patel</a></td>
+
+
+                        <td class="govuk-table__cell">3546</td>
+                      <td class="govuk-table__cell">1539</td>
+                      <td class="govuk-table__cell">1265</td>
+                      <td class="govuk-table__cell">1780</td>
+                      <td class="govuk-table__cell">1932</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><b>Total</b></td>
+
+
+                        <td class="govuk-table__cell">3546</td>
+                      <td class="govuk-table__cell">1539</td>
+                      <td class="govuk-table__cell">1265</td>
+                      <td class="govuk-table__cell">1780</td>
+                      <td class="govuk-table__cell">1932</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+
+{% endblock %}

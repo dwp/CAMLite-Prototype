@@ -18,7 +18,6 @@
         Task queues
       </h1>
 
-      {% if data['login'] === 'teamleader' %}
 
 
 
@@ -51,14 +50,14 @@
       <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
                 <h2 class="govuk-heading-m">
-                  My team's queues: 135 tasks
+                Lorem ipsum team's queues: 650 tasks
                 </h2>
                 <ul class="govuk-list">
                   <ul class="govuk-list">
                     <li>
 
                         <a class="govuk-link" href="teams-all-tasks" aria-describedby="change-position">
-                      All tasks (135)
+                      All tasks (650)
                     </a>
                 </li>
                 <li>
@@ -78,18 +77,18 @@
                         <ul class="govuk-list govuk-list--bullet">
                             <li>
                                     <a class="govuk-link" href="teams-all-cases" aria-describedby="change-position">
-                                New tasks (10)
+                                New tasks (100)
                               </a>
                               </li>
                               <li>
                               <a href="new-tasks-unassigned" aria-describedby="company-information-status">
-                                Urgent tasks (10)
+                                Urgent tasks (250)
                               </a>
                         </li>
                         <li>
 
                           <a href="" aria-describedby="company-information-status">
-                            Assigned tasks (125)
+                            Assigned tasks (340)
                           </a>
                     </li>
                     </ul>
@@ -132,138 +131,6 @@
                       Rita Patel (6)</a>
                   </li>
                   </ul>
-    {% elseif data['login'] === 'manager' %}
-
-    <p class="govuk-body govuk-!-margin-bottom-7">Select a queue to view tasks.</p>
-
-    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-              <h2 class="govuk-heading-m">
-                   My tasks: 15 tasks
-              </h2>
-
-
-              <ul class="govuk-list">
-                <ul class="govuk-list">
-
-                <li>
-                    <a class="govuk-link" href="agent-tasks-queue" aria-describedby="my-account-details">
-                  Outstanding tasks (5)
-                  </a>
-              </li>
-
-              <li>
-                  <a class="govuk-link" href="closed-tasks" aria-describedby="my-account-details">
-                Closed tasks (5)
-                </a>
-            </li>
-
-
-              </ul>
-    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-              <h2 class="govuk-heading-m">
-                Team's queues: 1350 tasks
-              </h2>
-              <ul class="govuk-list">
-                <ul class="govuk-list">
-                  <li>
-
-                      <a class="govuk-link" href="teams-all-tasks" aria-describedby="change-position">
-                    All tasks (1350)
-                  </a>
-              </li>
-              <li>
-                  <a class="govuk-link" href="manager-team-tasks" aria-describedby="my-account-details">
-                Team lorem ipsum tasks (12)
-                </a>
-              </li>
-              <li>
-                  <a class="govuk-link" href="manager-team-tasks" aria-describedby="my-account-details">
-                Team lorem ipsum tasks (120)
-                </a>
-              </li>
-              <li>
-                  <a class="govuk-link" href="manager-team-tasks" aria-describedby="my-account-details">
-                Team lorem ipsum tasks (205)
-                </a>
-              </li>
-              <li>
-                  <a class="govuk-link" href="manager-team-tasks" aria-describedby="my-account-details">
-                Team lorem ipsum tasks (320)
-                </a>
-              </li>
-              <li>
-                  <a class="govuk-link" href="manager-team-tasks" aria-describedby="my-account-details">
-                Team lorem ipsum tasks (650)
-                </a>
-              </li>
-
-
-    <li>
-        <a class="govuk-link" href="closed-tasks" aria-describedby="my-account-details">
-      Closed tasks (35)
-      </a>
-    </li>
-
-
-              </ul>
-
-
-
-
-
-    {% else %}
-
-     <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-              <h2 class="govuk-heading-m">
-                   My tasks: 35 tasks
-              </h2>
-
-
-              <ul class="govuk-list">
-                <ul class="govuk-list">
-                  <li>
-                      <a class="govuk-link" href="teams-all-tasks" aria-describedby="my-all-tasks">
-                    All tasks (10)
-                    </a>
-                </li>
-                <br>
-                <li>
-                    <a class="govuk-link" href="outstanding-tasks-queue" aria-describedby="utstanding-tasks-queue">
-                  Outstanding tasks (5)
-                  </a>
-                </li>
-
-<ul class="govuk-list govuk-list--bullet">
-                <li>
-                    <a class="govuk-link" href="my-new-tasks" aria-describedby="my-new-tasks">
-                  New tasks (5)
-                  </a>
-              </li>
-              <li>
-                  <a class="govuk-link" href="urgent-tasks-queue" aria-describedby="urgent-tasks-queue">
-                Urgent tasks (5)
-                </a>
-            </li>
-
-</ul>
-              <li>
-                  <a class="govuk-link" href="closed-tasks" aria-describedby="closed-tasks-queue">
-                Closed tasks (5)
-                </a>
-            </li>
-
-
-              </ul>
-
-
-
-
-
-
-    {% endif %}
 
           </div>
           <div class="govuk-grid-column-one-third">
