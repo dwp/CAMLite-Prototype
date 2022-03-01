@@ -13,7 +13,7 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="owner-search-results" method="post" class="form">
+
 
 
             <div class="govuk-form-group">
@@ -25,31 +25,139 @@
                         </h1>
                     </legend>
 
-<p class="govuk-body govuk-!-margin-bottom-7">Search for the owner ID or name to move the cases</p>
+                    {% if data['login'] === 'teamleader' %}
+                    <p class="govuk-body govuk-!-margin-bottom-7">Search for the owner ID or name to move the cases</p>
+
                     <div class="govuk-form-group">
-                      <label class="govuk-label" for="claimid">
-                          Owner ID
+                      <label class="govuk-label" for="customer-name">
+                          Last name
                       </label>
-                      <input class="govuk-input govuk-!-width-one-half" id="claimid" name="claimid" type="text">
+                      <input class="govuk-input govuk-!-width-one-half" id="customer-surname" name="customer-surname" type="text">
                     </div>
 
 
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="customer-name">
+                            First name
+                        </label>
+                        <input class="govuk-input govuk-!-width-one-half" id="customer-surname" name="customer-surname" type="text">
+                      </div>
+
+
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="customer-name">
+                              Team queue name
+                          </label>
+                          <input class="govuk-input govuk-!-width-one-half" id="customer-surname" name="customer-surname" type="text">
+                        </div>
+
+
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="customer-name">
+                                Position
+                            </label>
+                            <input class="govuk-input govuk-!-width-one-half" id="customer-surname" name="customer-surname" type="text">
+                          </div>
+
+
+                            <div class="govuk-form-group">
+                              <label class="govuk-label" for="customer-name">
+                                  Login name
+                              </label>
+                              <input class="govuk-input govuk-!-width-one-half" id="customer-surname" name="customer-surname" type="text">
+                            </div>
+
+
+                    {% elseif data['login'] === 'manager' %}
+                    <p class="govuk-body govuk-!-margin-bottom-7">Search for the owner ID or name to move the cases</p>
                     <div class="govuk-form-group">
-                      <label class="govuk-label" for="claimid">
-                          Owner name
+                      <label class="govuk-label" for="customer-name">
+                          Last name
                       </label>
-                      <input class="govuk-input govuk-!-width-one-half" id="claimid" name="claimid" type="text">
+                      <input class="govuk-input govuk-!-width-one-half" id="customer-surname" name="customer-surname" type="text">
                     </div>
+
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="customer-name">
+                            First name
+                        </label>
+                        <input class="govuk-input govuk-!-width-one-half" id="customer-surname" name="customer-surname" type="text">
+                      </div>
+
+
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="customer-name">
+                              Team queue name
+                          </label>
+                          <input class="govuk-input govuk-!-width-one-half" id="customer-surname" name="customer-surname" type="text">
+
+
+                          </div>
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="customer-name">
+                                Position
+                            </label>
+                            <input class="govuk-input govuk-!-width-one-half" id="customer-surname" name="customer-surname" type="text">
+                          </div>
+
+
+                            <div class="govuk-form-group">
+                              <label class="govuk-label" for="customer-name">
+                                  Login name
+                              </label>
+                              <input class="govuk-input govuk-!-width-one-half" id="customer-surname" name="customer-surname" type="text">
+                            </div>
+
+
+
+                    {% else %}
+                                        <div class="govuk-radios">
+                                            <div class="govuk-radios__item">
+                                                <input class="govuk-radios__input" id="assign-queue-1" name="assign-queue"
+                                                       type="radio"
+                                                       value="me">
+                                                <label class="govuk-label govuk-radios__label" for="assign-queue-1">
+                                                  Myself
+                                                </label>
+                                            </div>
+
+                                            <div class="govuk-radios__item">
+                                                <input class="govuk-radios__input" id="assign-queue-2" name="assign-queue"
+                                                       type="radio"
+                                                       value="agent">
+                                                <label class="govuk-label govuk-radios__label" for="assign-queue-2">
+                                                    Queue name populated by hierarchy or Team Leader
+                                                </label>
+                                            </div>
+
+                    {% endif %}
 
 
 
 
                 </fieldset>
             </div>
+            {% if data['login'] === 'teamleader' %}
+            <a href='owner-search-results'>
+                    <button type="submit" class="govuk-button" data-module="govuk-button">
+                        Search
+                    </button></a>
+
+            {% elseif data['login'] === 'manager' %}
+            <a href='owner-search-results'>
             <button type="submit" class="govuk-button" data-module="govuk-button">
                 Search
-            </button>
-        </form>
+            </button></a>
+
+            {% else %}
+            <a href='owner-changed-notif'>
+            <button type="submit" class="govuk-button" data-module="govuk-button">
+                Save and continue
+            </button></a>
+            {% endif %}
+
+    
     </div>
 </div>
 </div>

@@ -13,36 +13,10 @@
 {% block content %}
 
   <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-xl">
       Dashboard
     </h1>
-
-      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-        <div class="govuk-notification-banner__header">
-          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-            Important
-          </h2>
-        </div>
-        <div class="govuk-notification-banner__content">
-          <p class="govuk-notification-banner__heading">
-            You have 10 new cases in the Team queue.
-            <a class="govuk-notification-banner__link" href="/alpha/teamleader/cases/new-cases-unassigned">View new cases</a>
-          </p>
-          <p class="govuk-notification-banner__heading">
-            You have 6 new tasks in the Team queue.
-            <a class="govuk-notification-banner__link" href="/alpha/teamleader/cases/new-tasks-unassigned">View new tasks</a>
-          </p>
-        </div>
-      </div>
-
-
-
-
-<div class="govuk-grid-column-two-thirds">
-
-
-
-
 
 
 
@@ -63,28 +37,28 @@
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--red" id="outstandig">Urgent</strong></th>
             <td class="govuk-table__cell"><a href="cases/new-cases-unassigned" aria-describedby="unassigned-cases">
-              5 Cases
+              500 Cases
             </a></td>
             <td class="govuk-table__cell">  <a href="tasks/new-tasks-unassigned" aria-describedby="tasks-unassigned">
-              13 Tasks
+              1300 Tasks
             </a></td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--blue" id="outstandig">Outstanding</strong></th>
             <td class="govuk-table__cell"><a href="cases/new-cases-unassigned" aria-describedby="unassigned-cases">
-              10 Cases
+              1000 Cases
             </a></td>
             <td class="govuk-table__cell">  <a href="tasks/new-tasks-unassigned" aria-describedby="tasks-unassigned">
-              4 Tasks
+              400 Tasks
             </a></td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header"><strong class="govuk-tag govuk-tag--orange" id="returned-by-agent">Returned by agent</strong></th>
             <td class="govuk-table__cell">  <a href="#" aria-describedby="cases/cases-open">
-                6 Cases
+                600 Cases
               </a></td>
             <td class="govuk-table__cell"><a href="#" aria-describedby="tasks/tasks-open">
-              11 Tasks
+              110 Tasks
             </a></td>
           </tr>
 
@@ -92,7 +66,7 @@
             <th scope="row" class="govuk-table__header"><strong class="govuk-tag govuk-tag--yellow" id="case-with-no-task">Closed tasks case open</strong>
           </th>
             <td class="govuk-table__cell"><a href="#" aria-describedby="cases/case-with-no-task">
-              1 Case
+              10 Cases
             </a></td>
             <td class="govuk-table__cell">-</td>
           </tr>
@@ -100,19 +74,19 @@
             <th scope="row" class="govuk-table__header"><strong class="govuk-tag govuk-tag--green" id="closed-today">Closed today</strong>
           </th>
             <td class="govuk-table__cell"><a href="#" aria-describedby="cases/cases-closed-today">
-              0 Cases
+              6 Cases
             </a></td>
             <td class="govuk-table__cell"><a href="#" aria-describedby="tasks/tasks-closed-today">
-              4 Tasks
+              12 Tasks
             </a></td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Total </th>
             <td class="govuk-table__cell"><a href="#" aria-describedby="cases/total-cases">
-              17 Cases
+              1700 Cases
             </a></td>
             <td class="govuk-table__cell"><a href="#" aria-describedby="tasks/total-tasks">
-              19 Tasks
+              1900 Tasks
             </a></td>
           </tr>
         </tbody>
@@ -130,7 +104,7 @@
 
     <div class="govuk-grid-column-full">
 <br><br>
-            <h2 class="govuk-heading-l govuk-!-margin-bottom-7">Agents' cases and tasks</h2>
+            <h2 class="govuk-heading-l govuk-!-margin-bottom-7">Teams' cases and tasks</h2>
 
 
 
@@ -182,7 +156,7 @@
                   </thead>
                   <tbody class="govuk-table__body">
                     <tr class="govuk-table__row">
-                      <td class="govuk-table__cell"><a href="agent-view1" aria-describedby="agent-view">David Francis</a></td>
+                      <td class="govuk-table__cell"><a href="agent-view1" aria-describedby="agent-view">Team A</a></td>
 
 
                           <td class="govuk-table__cell">3</td>
@@ -192,7 +166,7 @@
                       <td class="govuk-table__cell">0</td>
                     </tr>
                     <tr class="govuk-table__row">
-                      <td class="govuk-table__cell"><a href="agent-view2" aria-describedby="agent-view">Paul Farmer</a></td>
+                      <td class="govuk-table__cell"><a href="agent-view2" aria-describedby="agent-view">Team B</a></td>
 
 
                         <td class="govuk-table__cell">3</td>
@@ -202,7 +176,7 @@
                       <td class="govuk-table__cell">0</td>
                     </tr>
                     <tr class="govuk-table__row">
-                      <td class="govuk-table__cell"><a href="agent-view3" aria-describedby="agent-view">Rita Patel</a></td>
+                      <td class="govuk-table__cell"><a href="agent-view3" aria-describedby="agent-view">Team C</a></td>
 
 
                         <td class="govuk-table__cell">3</td>
@@ -239,7 +213,7 @@
                     </thead>
                     <tbody class="govuk-table__body">
                       <tr class="govuk-table__row">
-                        <td class="govuk-table__cell"><a href="agent-view1" aria-describedby="agent-view">David Francis</a></td>
+                        <td class="govuk-table__cell"><a href="agent-view1" aria-describedby="agent-view">Team A</a></td>
 
                             <td class="govuk-table__cell">3</td>
                         <td class="govuk-table__cell">3</td>
@@ -248,7 +222,7 @@
                         <td class="govuk-table__cell">0</td>
                       </tr>
                       <tr class="govuk-table__row">
-                        <td class="govuk-table__cell"><a href="agent-view2" aria-describedby="agent-view">Paul Farmer</a></td>
+                        <td class="govuk-table__cell"><a href="agent-view2" aria-describedby="agent-view">Team B</a></td>
 
 
                           <td class="govuk-table__cell">3</td>
@@ -258,7 +232,7 @@
                         <td class="govuk-table__cell">0</td>
                       </tr>
                       <tr class="govuk-table__row">
-                        <td class="govuk-table__cell"><a href="agent-view3" aria-describedby="agent-view">Rita Patel</a></td>
+                        <td class="govuk-table__cell"><a href="agent-view3" aria-describedby="agent-view">Team C</a></td>
 
 
                           <td class="govuk-table__cell">3</td>
@@ -295,7 +269,7 @@
                   </thead>
                   <tbody class="govuk-table__body">
                     <tr class="govuk-table__row">
-                      <td class="govuk-table__cell"><a href="agent-view1" aria-describedby="agent-view">David Francis</a></td>
+                      <td class="govuk-table__cell"><a href="agent-view1" aria-describedby="agent-view">Team A</a></td>
 
 
                           <td class="govuk-table__cell">3</td>
@@ -305,7 +279,7 @@
                       <td class="govuk-table__cell">30</td>
                     </tr>
                     <tr class="govuk-table__row">
-                      <td class="govuk-table__cell"><a href="agent-view2" aria-describedby="agent-view">Paul Farmer</a></td>
+                      <td class="govuk-table__cell"><a href="agent-view2" aria-describedby="agent-view">Team B</a></td>
 
 
                         <td class="govuk-table__cell">3</td>
@@ -315,7 +289,7 @@
                       <td class="govuk-table__cell">30</td>
                     </tr>
                     <tr class="govuk-table__row">
-                      <td class="govuk-table__cell"><a href="agent-view3" aria-describedby="agent-view">Rita Patel</a></td>
+                      <td class="govuk-table__cell"><a href="agent-view3" aria-describedby="agent-view">Team C</a></td>
 
 
                         <td class="govuk-table__cell">3</td>
@@ -354,7 +328,7 @@
                   </thead>
                   <tbody class="govuk-table__body">
                     <tr class="govuk-table__row">
-                      <td class="govuk-table__cell"><a href="agent-view1" aria-describedby="agent-view">David Francis</a></td>
+                      <td class="govuk-table__cell"><a href="agent-view1" aria-describedby="agent-view">Team A</a></td>
 
                           <td class="govuk-table__cell">3</td>
                       <td class="govuk-table__cell">98</td>
@@ -363,7 +337,7 @@
                       <td class="govuk-table__cell">60</td>
                     </tr>
                     <tr class="govuk-table__row">
-                      <td class="govuk-table__cell"><a href="agent-view2" aria-describedby="agent-view">Paul Farmer</a></td>
+                      <td class="govuk-table__cell"><a href="agent-view2" aria-describedby="agent-view">Team B</a></td>
 
                         <td class="govuk-table__cell">122</td>
                       <td class="govuk-table__cell">122</td>
@@ -372,7 +346,7 @@
                       <td class="govuk-table__cell">60</td>
                     </tr>
                     <tr class="govuk-table__row">
-                      <td class="govuk-table__cell"><a href="agent-view3" aria-describedby="agent-view">Rita Patel</a></td>
+                      <td class="govuk-table__cell"><a href="agent-view3" aria-describedby="agent-view">Team C</a></td>
 
 
                         <td class="govuk-table__cell">3</td>
@@ -410,7 +384,7 @@
                   </thead>
                   <tbody class="govuk-table__body">
                     <tr class="govuk-table__row">
-                      <td class="govuk-table__cell"><a href="agent-view1" aria-describedby="agent-view">David Francis</a></td>
+                      <td class="govuk-table__cell"><a href="agent-view1" aria-describedby="agent-view">Team A</a></td>
 
 
                           <td class="govuk-table__cell">3434</td>
@@ -420,7 +394,7 @@
                       <td class="govuk-table__cell">1932</td>
                     </tr>
                     <tr class="govuk-table__row">
-                      <td class="govuk-table__cell"><a href="agent-view2" aria-describedby="agent-view">Paul Farmer</a></td>
+                      <td class="govuk-table__cell"><a href="agent-view2" aria-describedby="agent-view">Team B</a></td>
 
 
                         <td class="govuk-table__cell">3454</td>
@@ -430,7 +404,7 @@
                       <td class="govuk-table__cell">1932</td>
                     </tr>
                     <tr class="govuk-table__row">
-                      <td class="govuk-table__cell"><a href="agent-view3" aria-describedby="agent-view">Rita Patel</a></td>
+                      <td class="govuk-table__cell"><a href="agent-view3" aria-describedby="agent-view">Team C</a></td>
 
 
                         <td class="govuk-table__cell">3546</td>
