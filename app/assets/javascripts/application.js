@@ -22,13 +22,22 @@ new MOJFrontend.ButtonMenu({
   container: $("#cases-list-menu"),
   mq: "(min-width: 200em)",
   buttonText: "Menu",
-  buttonClasses:
-    "govuk-button--secondary moj-button-menu__toggle-button--secondary",
+  menuClasses: "moj-button-menu__wrapper--right"
+
 });
 
 new MOJFrontend.ButtonMenu({
   container: $("#query"),
   mq: "(min-width: 200em)",
   buttonText: "Saved queries",
-  menuClasses: "moj-button-menu__wrapper--right",
+  buttonClasses:
+    "govuk-button--secondary moj-button-menu__toggle-button--secondary",
+});
+
+new MOJFrontend.ButtonMenu({
+  container: $("#query-primary"),
+  mq: "(min-width: 200em)",
+  buttonText: "Saved queries",
+  menuClasses: "moj-button-menu__wrapper--right"
+
 });
