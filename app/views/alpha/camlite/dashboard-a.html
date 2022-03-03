@@ -1,12 +1,10 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Dashboard TL
+  Dashboard Agent
 {% endblock %}
 
-{% block beforeContent %}
-  <a class="govuk-back-link" href="javascript:window.history.back()">Back (ONLY for prototype)</a>
-{% endblock %}
+
 
 {% block content %}
 
@@ -78,16 +76,7 @@
             </a></td>
           </tr>
 
-          <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header"><strong class="govuk-tag govuk-tag--orange" id="brought-forward">Brought forward</strong>
-          </th>
-            <td class="govuk-table__cell"><a href="#" aria-describedby="cases/cases-brought-forward">
-              0 Cases
-            </a></td>
-            <td class="govuk-table__cell"><a href="#" aria-describedby="tasks/tasks-brought-forward">
-              4 Tasks
-            </a></td>
-          </tr>
+
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header"><strong class="govuk-tag govuk-tag--yellow" id="case-with-no-task">Closed tasks case open</strong>
           </th>
