@@ -17,6 +17,9 @@ router.post('/login-as', function (req, res) {
     } else if (login === 'manager') {
       //res.render('alpha/manager/dashboard-m')
       res.redirect('/alpha/camlite/dashboard-m')
+    } else if (login === 'admin') {
+      //res.render('alpha/manager/dashboard-m')
+      res.redirect('/alpha/admin/home')
     }
   });
 

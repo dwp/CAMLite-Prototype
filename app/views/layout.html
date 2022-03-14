@@ -74,6 +74,10 @@
 
         {% include "./partials/account-navi-m.html" %}
 
+        {% elseif data['login'] === 'admin' %}
+
+        {% include "./partials/account-navi-a.html" %}
+
         {% else %}
 
         {% include "./partials/account-navi-a.html" %}
@@ -105,6 +109,10 @@
     {% elseif data['login'] === 'manager' %}
 
     {% include "./partials/nav-manager.html" %}
+
+    {% elseif data['login'] === 'admin' %}
+
+    {% include "./partials/nav-admin.html" %}
 
     {% else %}
 

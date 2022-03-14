@@ -43,9 +43,17 @@
                   <li class="moj-side-navigation__item">
                     <a href="saved-queries">Task queries</a>
                   </li>
+{% if data['login'] === 'teamleader' %}
+
                   <li class="moj-side-navigation__item">
                     <a href="saved-queries">Employee queries</a>
                   </li>
+  {% elseif data['login'] === 'manager' %}
+  <li class="moj-side-navigation__item">
+    <a href="saved-queries">Employee queries</a>
+  </li>
+  {% else %}
+  {% endif %}
 
                 </ul>
 
