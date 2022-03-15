@@ -108,7 +108,7 @@
               Lorem ipsum
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
+              <a class="govuk-link" href="change-type">
                 Change<span class="govuk-visually-hidden"> type</span>
               </a>
             </dd>
@@ -122,7 +122,7 @@
               Lorem ipsum
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
+              <a class="govuk-link" href="change-subtype">
                 Change<span class="govuk-visually-hidden"> Sub-type</span>
               </a>
             </dd>
@@ -176,7 +176,7 @@
               Lorem ipsum
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
+              <a class="govuk-link" href="change-benefit">
                 Change<span class="govuk-visually-hidden"> Benefit</span>
               </a>
             </dd>
@@ -189,7 +189,7 @@
               Lorem ipsum
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
+              <a class="govuk-link" href="change-case-resol">
                 Change<span class="govuk-visually-hidden"> case resolution</span>
               </a>
             </dd>
@@ -202,7 +202,7 @@
                 5 January 2021
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
+              <a class="govuk-link" href="change-case-reso-date">
                 Change<span class="govuk-visually-hidden"> case resolution selected on</span>
               </a>
             </dd>
@@ -215,7 +215,7 @@
                 15 January 2021
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
+              <a class="govuk-link" href="change-due-date">
                 Change<span class="govuk-visually-hidden"> due date</span>
               </a>
             </dd>
@@ -241,7 +241,7 @@
             <dd class="govuk-summary-list__value">
               Lorem ipsum
             </dd>
-            
+
           </div>
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
@@ -265,19 +265,18 @@
             </dd>
 
           </div>
-          <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              Mark as urgent
+                Urgent
             </dt>
             <dd class="govuk-summary-list__value">
-              <td class="govuk-table__cell"><div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-            <div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses" checked>
-              <label class="govuk-label govuk-checkboxes__label" for="waste">
-
-              </label>
-            </div></td>
+              Yes
             </dd>
-
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="change-urgent">
+                Change<span class="govuk-visually-hidden">   case urgent</span>
+              </a>
+            </dd>
           </div>
 
 
@@ -314,7 +313,7 @@
         <a class="govuk-link" href="customer-all-cases">View customer cases list</a>
       </li>
       <li>
-        <a class="govuk-link" href="customer-details-main">View customer details</a>
+        <a class="govuk-link" href="/alpha/customers/customer-details/customer-details-main">View customer details</a>
       </li>
 
       <li>
@@ -333,27 +332,7 @@
 <div class="govuk-grid-column-full">
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-<div style="float: right; ">
 
-  <div class="moj-button-menu govuk-!-margin-left-3"  id="query">
-<div class="moj-button-menu__wrapper">
-
-  <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item  " data-module="govuk-button">
-    Lorem Ipsum query
-  </a>
-
-  <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
-    Lorem Ipsum query 2
-  </a>
-
-  <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
-    Lorem Ipsum query 3
-  </a>
-
-</div>
-</div>
-
-</div>
 
 
 
@@ -370,6 +349,12 @@
       </a>
       <a href="/alpha/camlite/tasks/assigning-tasks" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
         Change assign to
+      </a>
+      <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+        Close cases
+      </a>
+      <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+        Reopen cases
       </a>
 
       <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">

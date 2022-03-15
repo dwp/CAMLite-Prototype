@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Task details
+  Case details
 {% endblock %}
 
 
@@ -19,21 +19,29 @@
           <a class="govuk-breadcrumbs__link" href="teams-all-cases">Team's all cases</a>
         </li>
         <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="/alpha/customers/customer-details/customer-details-main">Customer details</a>
+          <a class="govuk-breadcrumbs__link" href="customer-details-main">Customer details</a>
         </li>
         <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="/alpha/camlite/cases/customer-all-cases">Customer cases</a>
+          <a class="govuk-breadcrumbs__link" href="customer-all-cases">Customer cases</a>
         </li>
         <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="/alpha/camlite/cases/case-details">Case details</a>
-        </li>
-        <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="task-details">Task details</a>
+          <a class="govuk-breadcrumbs__link" href="case-details">Case details</a>
         </li>
 
       </ol>
     </div>
-
+    <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Success
+        </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+        <h3 class="govuk-notification-banner__heading">
+          Cases {{ data['govuk-summary-list__key'] }} changed to Lorem Ipsum
+        </h3>
+            </div>
+    </div>
 
 <div class="govuk-width-container">
 <section class="dwp-key-details-bar" aria-label="Key details">
@@ -61,24 +69,33 @@
 
 
 <main class="govuk-main-wrapper">
+  <div class="govuk-grid-row">
 
-<div class="govuk-grid-row">
 
         <div class="govuk-grid-column-two-thirds">
 
 
+
+
+
+
       <h1 class="govuk-heading-l">
-        Task details
+        Case details
       </h1>
+
+
       <strong class="govuk-tag govuk-tag--red">
       Urgent
       </strong>
+
+
+
 
 <div class="govuk-!-margin-top-6">
         <dl class="govuk-summary-list">
           <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
             <dt class="govuk-summary-list__key">
-              Task ID
+              Case ID
             </dt>
             <dd class="govuk-summary-list__value">
               Lorem ipsum
@@ -102,7 +119,7 @@
               Lorem ipsum
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
+              <a class="govuk-link" href="change-type">
                 Change<span class="govuk-visually-hidden"> type</span>
               </a>
             </dd>
@@ -116,7 +133,7 @@
               Lorem ipsum
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
+              <a class="govuk-link" href="change-subtype">
                 Change<span class="govuk-visually-hidden"> Sub-type</span>
               </a>
             </dd>
@@ -130,82 +147,8 @@
 
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
+              <a class="govuk-link" href="change-status">
                 Change<span class="govuk-visually-hidden"> status</span>
-              </a>
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Task SLA/ Doc BF
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Lorem ipsum
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> Task SLA or Doc BF</span>
-              </a>
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Start task from
-            </dt>
-            <dd class="govuk-summary-list__value">
-                5 January 2021
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden">   Start task from</span>
-              </a>
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-            Clear task by
-            </dt>
-            <dd class="govuk-summary-list__value">
-                15 January 2021
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden">   Clear task by</span>
-              </a>
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-                Owner ID
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Lorem ipsum
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="owner-tasks">
-                Change<span class="govuk-visually-hidden">   Owner ID</span>
-              </a>
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-                Owner name
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Lorem ipsum
-            </dd>
-
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-                Assigned to
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Lorem ipsum
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="assigning-tasks">
-                Change<span class="govuk-visually-hidden">   Assigned to</span>
               </a>
             </dd>
           </div>
@@ -236,19 +179,93 @@
             </dd>
 
           </div>
-
-
-
-
-
-          <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              Closed on
+              Benefit
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Lorem ipsum
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="change-benefit">
+                Change<span class="govuk-visually-hidden"> Benefit</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Case resolution
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Lorem ipsum
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="change-case-resol">
+                Change<span class="govuk-visually-hidden"> case resolution</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Case resolution selected on
+            </dt>
+            <dd class="govuk-summary-list__value">
+                5 January 2021
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="change-case-reso-date">
+                Change<span class="govuk-visually-hidden"> case resolution selected on</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Due date
+            </dt>
+            <dd class="govuk-summary-list__value">
+                15 January 2021
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="change-due-date">
+                Change<span class="govuk-visually-hidden"> due date</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+                Owner ID
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Lorem ipsum
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="owner-cases">
+                Change<span class="govuk-visually-hidden">   Owner ID</span>
+              </a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+                Owner name
             </dt>
             <dd class="govuk-summary-list__value">
               Lorem ipsum
             </dd>
 
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+                Assigned to
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Lorem ipsum
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="assigning-cases">
+                Change<span class="govuk-visually-hidden">   Assigned to</span>
+              </a>
+            </dd>
           </div>
           <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
             <dt class="govuk-summary-list__key">
@@ -256,15 +273,6 @@
             </dt>
             <dd class="govuk-summary-list__value">
               Lorem ipsum
-            </dd>
-
-          </div>
-          <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
-            <dt class="govuk-summary-list__key">
-              Case ID
-            </dt>
-            <dd class="govuk-summary-list__value">
-              <a href="/alpha/customers/cases/case-details" aria-describedby="case-details">Lorem ipsum</a>
             </dd>
 
           </div>
@@ -276,11 +284,13 @@
               Yes
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="assigning-cases">
+              <a class="govuk-link" href="change-urgent">
                 Change<span class="govuk-visually-hidden">   case urgent</span>
               </a>
             </dd>
           </div>
+
+
 
 
         </dl>
@@ -295,13 +305,13 @@
     <nav role="navigation" aria-labelledby="what-you-can-do-next"
     <ul class="govuk-list">
       <li>
-        <a class="govuk-link" href="task-notes">View and add tasks notes</a>
+        <a class="govuk-link" href="case-notes">View and add case notes</a>
       </li>
       <li>
-        <a class="govuk-link" href="task-history">View task history</a>
+        <a class="govuk-link" href="case-history">View case history</a>
       </li>
       <li>
-        <a class="govuk-link" href="close-task-check">Close this task</a>
+        <a class="govuk-link" href="close-case-check">Close this case</a>
       </li>
       <li>
         <a class="govuk-link" href="DRS-system">View tasks documents</a>
@@ -311,14 +321,14 @@
         <a class="govuk-link" href="DRS system">View customer documents</a>
       </li>
       <li>
-        <a class="govuk-link" href="customer-all-tasks">View customer tasks list</a>
+        <a class="govuk-link" href="customer-all-cases">View customer cases list</a>
       </li>
       <li>
         <a class="govuk-link" href="/alpha/customers/customer-details/customer-details-main">View customer details</a>
       </li>
 
       <li>
-        <a class="govuk-link" href="create-new-task">Create new task</a>
+        <a class="govuk-link" href="create-new-case">Create new case</a>
       </li>
     </ul>
     </nav>
@@ -336,12 +346,13 @@
 
 
 
+
 <div style="float: right;">
 
 <div class="moj-button-menu" id="cases-list-menu">
     <div class="moj-button-menu__wrapper">
 
-      <a href="/alpha/camlite/tasks/search-tasks" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
+      <a href="/alpha/camlite/cases/search-cases'" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
         Search tasks
       </a>
       <a href="/alpha/camlite/tasks/owner-tasks" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
@@ -351,11 +362,12 @@
         Change assign to
       </a>
       <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
-        Close tasks
+        Close cases
       </a>
       <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
-        Reopen task
+        Reopen cases
       </a>
+
       <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
         Export to excel
       </a>
@@ -368,8 +380,6 @@
   </div>
 
 </div>
-
-
 
 
   <h2 class="govuk-heading-l">
@@ -425,7 +435,7 @@
        </div>
      </td>
      <td class="govuk-table__cell">Lorem ipsum</td>
-     <td class="govuk-table__cell"><a href="/tasks/task-details" aria-describedby="/tasks/task-details">12 Mar 2021</a></td>
+     <td class="govuk-table__cell"><a href="/alpha/camlite/tasks/task-details" aria-describedby="/alpha/customers/tasks/task-details">12 Mar 2021</a></td>
      <td class="govuk-table__cell">Lorem ipsum</td>
      <td class="govuk-table__cell">Lorem ipsum</td>
      <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--yellow" id="awaiting decision">Awaiting decision</strong></th>
@@ -442,7 +452,7 @@
      <td class="govuk-table__cell">Lorem Ipsum</td>
      <td class="govuk-table__cell">Lorem ipsum</td>
      <td class="govuk-table__cell">Lorem Ipsum</td>
-<td class="govuk-table__cell">Lorem ipsum</td>
+     <td class="govuk-table__cell">Lorem ipsum</td>
    </tr>
    <tr class="govuk-table__row">
      <td class="govuk-table__cell">
@@ -454,7 +464,7 @@
        </div>
      </td>
      <td class="govuk-table__cell">Lorem ipsum</td>
-     <td class="govuk-table__cell"><a href="case-details" aria-describedby="case-details">6 May 2021</a></td>
+     <td class="govuk-table__cell"><a href="/alpha/camlite/tasks/task-details" aria-describedby="case-details">6 May 2021</a></td>
      <td class="govuk-table__cell">Lorem ipsum</td>
      <td class="govuk-table__cell">Lorem ipsum</td>
      <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--grey" id="unassigned">Closed</strong></th>
@@ -472,7 +482,6 @@
      <td class="govuk-table__cell">Lorem ipsum</td>
      <td class="govuk-table__cell">Lorem Ipsum</td>
      <td class="govuk-table__cell">Lorem ipsum</td>
-
    </tr>
    <tr class="govuk-table__row">
      <td class="govuk-table__cell">
@@ -484,7 +493,7 @@
        </div>
      </td>
      <td class="govuk-table__cell">Lorem ipsum</td>
-     <td class="govuk-table__cell"><a href="case-details" aria-describedby="case-details">21 Feb 2021</a></td>
+     <td class="govuk-table__cell"><a href="/alpha/camlite/tasks/task-details" aria-describedby="case-details">21 Feb 2021</a></td>
      <td class="govuk-table__cell">Lorem ipsum</td>
      <td class="govuk-table__cell">Lorem ipsum</td>
      <th scope="row" class="govuk-table__header"><strong class="govuk-tag  govuk-tag--green" id="unassigned">Open</strong></th>
