@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Close case check
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+
+
+
+
+
+
+
+<main class="govuk-main-wrapper">
+  <div class="govuk-grid-row">
+
+
+        <div class="govuk-grid-column-two-thirds">
+
+          <span class="govuk-caption-l">Closing the cases</span>
+          <h1 class="govuk-heading-l">Are you sure you want to close [number] cases?</h1>
+
+
+          <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="close-cases1" name="close-cases"
+                         type="radio"
+                         value="yes">
+                  <label class="govuk-label govuk-radios__label" for="close-cases1">
+                    Yes, close these cases
+                  </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="close-cases2" name="close-cases"
+                         type="radio"
+                         value="no">
+                  <label class="govuk-label govuk-radios__label" for="close-cases2">
+                      No, return to the case list
+                  </label>
+              </div>
+</div>
+
+              <a href='/alpha/camlite/cases/close-bulk-confirmation'>
+            <button class="govuk-button govuk-!-margin-top-6" data-module="govuk-button">
+              Save and continue
+            </button></a>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}

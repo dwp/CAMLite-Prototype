@@ -247,6 +247,7 @@ if (typeof (routes) !== 'function') {
   app.use('/alpha', alphaRoutes)
   app.use ('/alpha/camlite/cases', alphaTeamleaderRoutes)
   app.use ('/alpha/camlite/tasks', alphaTeamleaderRoutes)
+  app.use ('/alpha/every-user-general', alphaTeamleaderRoutes)
   app.use ('/alpha/agent', alphaAgentRoutes)
 
 }

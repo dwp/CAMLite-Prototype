@@ -1,0 +1,210 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Saved queries
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="case-queues">Cases</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="saved-queries">Saved queries</a>
+        </li>
+
+
+      </ol>
+    </div>
+
+
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+            <div class="govuk-notification-banner__header">
+              <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                Success
+              </h2>
+            </div>
+            <div class="govuk-notification-banner__content">
+              <h3 class="govuk-notification-banner__heading">
+              You deleted [Lorem Ipsum] query
+              </h3>
+                  </div>
+          </div>
+</div>
+            <div class="govuk-grid-column-one-third">
+
+
+
+    <aside class="app-related-items" role="complementary">
+              <nav class="moj-side-navigation" aria-label="Side navigation">
+<h4 class="moj-side-navigation__title">Saved queries</h4>
+                <ul class="moj-side-navigation__list">
+
+                  <li class="moj-side-navigation__item moj-side-navigation__item--active">
+                    <a href="saved-queries" aria-current="location">Case queries</a>
+                  </li>
+                  <li class="moj-side-navigation__item">
+                    <a href="saved-queries">Task queries</a>
+                  </li>
+{% if data['login'] === 'teamleader' %}
+
+                  <li class="moj-side-navigation__item">
+                    <a href="saved-queries">Employee queries</a>
+                  </li>
+  {% elseif data['login'] === 'manager' %}
+  <li class="moj-side-navigation__item">
+    <a href="saved-queries">Employee queries</a>
+  </li>
+  {% else %}
+  {% endif %}
+
+                </ul>
+
+              </nav>
+            </aside>
+            </div>
+
+
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-l">
+        Case queries
+      </h1>
+
+
+              <a href='/alpha/camlite/cases/search-cases'>
+            <button class="govuk-button" data-module="govuk-button">
+              Add new query
+            </button>
+      </a>
+
+
+
+
+
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+  <div class="govuk-accordion__section ">
+
+    <div class="govuk-accordion__section-header">
+
+      <h2 class="govuk-accordion__section-heading">
+
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+        Lorem ipsum query
+        </span>
+      </h2>
+
+
+    </div>
+    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+
+      <p class="govuk-body">Selected fields:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Status: Open</li>
+        <li>Type: Lorem ipsum</li>
+        <li>Sub-type: Lorem ipsum</li>
+      </ul>
+
+<p class="govuk-body"><a class="govuk-link" href="removing-saved-query">
+        Delete this query<span class="govuk-visually-hidden">   Lorem ipsum query</span>
+      </a>
+</p>
+
+    </div>
+  </div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+          Lorem ipsum query 2
+          </span>
+        </h2>
+      </div>
+      <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+
+        <p class="govuk-body">Selected fields:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Status: Open</li>
+          <li>Type: Lorem ipsum</li>
+          <li>Sub-type: Lorem ipsum</li>
+        </ul>
+
+        <p class="govuk-body"><a class="govuk-link" href="#">
+                Delete this query<span class="govuk-visually-hidden">   Lorem ipsum query</span>
+              </a>
+        </p>
+    </div>
+  </div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+          Lorem ipsum query 3
+          </span>
+        </h2>
+      </div>
+      <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+
+        <p class="govuk-body">Selected fields:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Status: Open</li>
+          <li>Type: Lorem ipsum</li>
+          <li>Sub-type: Lorem ipsum</li>
+        </ul>
+
+        <p class="govuk-body"><a class="govuk-link" href="#">
+                Delete this query<span class="govuk-visually-hidden">   Lorem ipsum query</span>
+              </a>
+        </p>
+    </div>
+  </div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+          Lorem ipsum query 4
+          </span>
+        </h2>
+      </div>
+      <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+
+        <p class="govuk-body">Selected fields:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Status: Open</li>
+          <li>Type: Lorem ipsum</li>
+          <li>Sub-type: Lorem ipsum</li>
+        </ul>
+        <p class="govuk-body"><a class="govuk-link" href="#">
+                Delete this query<span class="govuk-visually-hidden">   Lorem ipsum query</span>
+              </a>
+        </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+          </div>
+
+
+      </div>
+      </div>
+
+
+
+
+
+{% endblock %}

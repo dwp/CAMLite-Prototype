@@ -14,7 +14,7 @@ router.post('/assigned-cases-confirmation-b', function(req, res) {
                     const deletequery = req.session.data['delete-query']
                     console.log(deletequery)
                     if (deletequery === 'yes') {
-                      res.redirect('/alpha/every-user-general/removing-query-confirmation')
+                      res.redirect('/alpha/every-user-general/deleted-queries-confir')
 
                     } else if (deletequery === 'no') {
                       res.redirect('/alpha/every-user-general/saved-queries')
