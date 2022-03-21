@@ -41,3 +41,11 @@ new MOJFrontend.ButtonMenu({
   menuClasses: "moj-button-menu__wrapper--right"
 
 });
+
+new MOJFrontend.ButtonMenu({
+  container: $("#admin-menu"),
+  mq: "(min-width: 200em)",
+  buttonText: "Menu",
+  menuClasses: "moj-button-menu__wrapper--right"
+
+});

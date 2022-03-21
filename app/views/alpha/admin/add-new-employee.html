@@ -1,0 +1,316 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Search cases
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-width-container">
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="employees">Employees</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="search-employees">Add new employee</a>
+        </li>
+
+      </ol>
+    </div>
+
+      <main class="govuk-main-wrapper">
+
+  <div class="govuk-grid-row">
+<div class="govuk-grid-column-full">
+  <h1 class="govuk-heading-l">
+     Add new employee
+   </h1>
+   </div>
+    <div class="govuk-grid-column-one-half">
+
+<h2 class="govuk-heading-m">Name</h2>
+
+<!--COLUMN 1-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+      Title
+  </label>
+  <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+  <option value="available">Title 1</option>
+  <option value="not-available" >Title 2</option>
+
+</select>
+</div>
+
+      <!--COLUMN 2-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="nino">
+            Last name
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="last-name" name="last-name" type="text">
+      </div>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7">Contact Information</h2>
+<!--COLUMN 6-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+    Extension
+  </label>
+  <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+</div>
+
+<!--COLUMN 7-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+    Email
+  </label>
+  <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+</div>
+
+<!--COLUMN 9-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+    Fax
+  </label>
+  <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+</div>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7">Business Address</h2>
+
+<!--COLUMN 10-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+    Office Id
+  </label>
+  <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+</div>
+
+<!--COLUMN 12-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+    Office location
+  </label>
+  <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+</div>
+
+<!--COLUMN 14-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+    Address Line 1
+  </label>
+  <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+</div>
+
+<!--COLUMN 16-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+    Town
+  </label>
+  <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+</div>
+
+<!--COLUMN 18-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+    County
+  </label>
+  <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+</div>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7">Login</h2>
+
+<!--COLUMN 20-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+    User ID
+  </label>
+  <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+</div>
+
+<!--COLUMN 22-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+      NISSA Flag
+  </label>
+  <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+  <option value="available">No</option>
+  <option value="not-available" >Yes</option>
+
+</select>
+</div>
+
+<!--COLUMN 24-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+      National Sensitivity Access Flag
+  </label>
+  <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+  <option value="available">No</option>
+  <option value="not-available" >Yes</option>
+
+</select>
+</div>
+
+
+<!--COLUMN 26-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+    Staff number
+  </label>
+  <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+</div>
+
+<!--COLUMN 28-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+    Position Organisation
+  </label>
+  <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+</div>
+
+
+
+
+    </div>
+
+  <div class="govuk-grid-column-one-half">
+
+    <!--COLUMN 4-->
+    <div class="govuk-form-group govuk-!-margin-top-8">
+      <label class="govuk-label" for="nino">
+        MI
+      </label>
+      <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+    </div>
+
+    <!--COLUMN 3-->
+    <div class="govuk-form-group ">
+      <label class="govuk-label" for="nino">
+          First name
+      </label>
+      <input class="govuk-input govuk-!-width-one-half govuk-!-margin-bottom-6" id="first-name" name="first-name" type="text">
+    </div>
+
+
+<!--COLUMN 5-->
+<div class="govuk-form-group govuk-!-margin-top-9">
+  <label class="govuk-label" for="nino">
+    Work phone
+  </label>
+  <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+</div>
+
+
+<!--COLUMN 8-->
+<div class="govuk-form-group ">
+  <label class="govuk-label" for="nino">
+    Mobile phone
+  </label>
+  <input class="govuk-input govuk-!-width-one-half govuk-!-margin-bottom-9" id="user-id" name="user-id" type="text">
+</div>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" colour="#ffffff">.</h2>
+
+<!--COLUMN 11-->
+<div class="govuk-form-group govuk-!-margin-top-9">
+  <label class="govuk-label" for="nino">
+    Room number
+  </label>
+  <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+</div>
+
+<!--COLUMN 13-->
+<div class="govuk-form-group ">
+  <label class="govuk-label" for="nino">
+  Name/ Number street
+  </label>
+  <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+</div>
+
+<!--COLUMN 15-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+    Address Line 2
+  </label>
+  <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+</div>
+
+<!--COLUMN 17-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+    Post code
+  </label>
+  <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+</div>
+
+<!--COLUMN 19-->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+    Country
+  </label>
+  <input class="govuk-input govuk-!-width-one-half govuk-!-margin-bottom-9" id="user-id" name="user-id" type="text">
+</div>
+
+  <!--COLUMN 21-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="nino">
+      Responsibility
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+  </div>
+
+  <!--COLUMN 23-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="nino">
+      Position
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="staff-number" name="staff-number" type="text">
+  </div>
+
+  <!--COLUMN 25-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="status">
+        Orphan Case Permission
+    </label>
+    <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+    <option value="available">No</option>
+    <option value="not-available" >Yes</option>
+
+  </select>
+  </div>
+
+      <!--COLUMN 27-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="nino">
+          Division
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="nationally-sensitive" name="nationally-sensitive" type="text">
+      </div>
+
+
+
+
+
+</div>
+
+<div class="govuk-grid-column-full">
+<div class="govuk-button-group govuk-!-margin-top-6">
+  <a href='search-employees-results'>
+  <button class="govuk-button" data-module="govuk-button">
+    Add employee
+  </button>
+</a>
+
+</div>
+<p>  <a class="govuk-link" href="search-employees">Clear fields</a></p>
+</div>
+
+
+      </div>
+      </main>
+
+  </div>
+
+{% endblock %}
