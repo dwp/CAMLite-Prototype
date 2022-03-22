@@ -1,0 +1,159 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Search cases
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-width-container">
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="employees">Employees</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="employee-details">Employee details</a>
+        </li>
+
+      </ol>
+    </div>
+
+    <div class="govuk-width-container">
+    <section class="dwp-key-details-bar" aria-label="Key details">
+    <dl class="dwp-key-details-bar__key-details">
+        <div class="dwp-key-details-bar__top-block">
+            <dt class="govuk-visually-hidden">Name:</dt>
+            <dd class="dwp-key-details-bar__name"> Jane Doe</dd>
+
+
+        </div>
+        <div class="dwp-key-details-bar__bottom-block">
+            <dt>Staff number:</dt>
+            <dd>451972</dd>
+            <dt>Position:</dt>
+            <dd>Agent</dd>
+
+        </div>
+    </dl>
+    </section>
+    </div>
+
+
+
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+
+
+            <div class="govuk-grid-column-one-third">
+
+    <aside class="app-related-items" role="complementary">
+              <nav class="moj-side-navigation" aria-label="Side navigation">
+      <h4 class="moj-side-navigation__title">Employee details</h4>
+                <ul class="moj-side-navigation__list">
+
+                  <li class="moj-side-navigation__item moj-side-navigation__item--active">
+                    <a href="employee-details" >Name</a>
+                  </li>
+                  <li class="moj-side-navigation__item">
+                    <a href="employee-contact-info" aria-current="employee-details">Contact information</a>
+                  </li>
+
+
+
+                  <li class="moj-side-navigation__item">
+                    <a href="employee-address">Business address</a>
+                  </li>
+                  <li class="moj-side-navigation__item">
+                    <a href="employee-login">Login</a>
+                  </li>
+    </ul>
+
+              </nav>
+    </aside>
+            </div>
+
+        <div class="govuk-grid-column-two-thirds">
+
+          <h1 class="govuk-heading-l">
+          Contact information
+          </h1>
+
+          <dl class="govuk-summary-list">
+
+
+
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+              <dt class="govuk-summary-list__key">
+              Work phone
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Lorem Ipsum
+              </dd>
+
+            </div>
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+              <dt class="govuk-summary-list__key">
+              Extension
+              </dt>
+              <dd class="govuk-summary-list__value">
+              lorem ipsum
+              </dd>
+</div>
+
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+              <dt class="govuk-summary-list__key">
+                Mobile phone
+              </dt>
+              <dd class="govuk-summary-list__value">
+                lorem ipsum
+              </dd>
+
+            </div>
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+              <dt class="govuk-summary-list__key">
+                Email address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                lorem ipsum
+              </dd>
+
+            </div>
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+              <dt class="govuk-summary-list__key">
+                Fax
+              </dt>
+              <dd class="govuk-summary-list__value">
+                lorem ipsum
+              </dd>
+
+            </div>
+          </dl>
+
+
+
+
+
+
+    </div>
+
+
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+{% endblock %}
