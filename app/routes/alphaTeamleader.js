@@ -22,6 +22,18 @@ router.post('/assigned-cases-confirmation-b', function(req, res) {
                     }
                   });
 
+    //admin employee change
+                              router.post('/admin-changed-name', function (req, res) {
+                                  const adminchangedname = req.session.data['admin-changed-name']
+                                  console.log(adminchangedname)
+                                  if (adminchangedname === 'yes') {
+                                    res.redirect('/alpha/admin/employee-details-notif')
+
+                                  } else if (adminchangedname === 'no') {
+                                    res.redirect('/alpha/admin/employee-details')
+
+                                  }
+                                });
 
 
 module.exports = router
