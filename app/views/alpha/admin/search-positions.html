@@ -1,0 +1,123 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Search cases
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-width-container">
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="positions">Positions</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="search-positions">Search positions</a>
+        </li>
+
+      </ol>
+    </div>
+
+      <main class="govuk-main-wrapper">
+
+  <div class="govuk-grid-row">
+<div class="govuk-grid-column-full">
+  <h1 class="govuk-heading-l">
+     Search positions
+   </h1>
+   </div>
+    <div class="govuk-grid-column-one-half">
+
+
+      <!--COLUMN 1-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="nino">
+            Division
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="division" name="division" type="text">
+      </div>
+
+  <!--COLUMN 2-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="nino">
+        Position
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="position" name="position" type="text">
+  </div>
+
+  <!--COLUMN 3-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="nino">
+      Parent Position
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="parent-position" name="parent-position" type="text">
+  </div>
+
+
+
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <!--COLUMN 4-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="nino">
+        Position Type
+        </label>
+        <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+        <option value="available">Type 1</option>
+        <option value="not-available" >Type 2</option>
+
+      </select>
+
+      </div>
+
+
+
+      <!--COLUMN 5-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="nino">
+          Last Name
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="last-name" name="last-name" type="text">
+      </div>
+
+      <!--COLUMN 6-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="status">
+            First Name
+        </label>
+      <input class="govuk-input govuk-!-width-one-half" id="first-name" name="first-name" type="text">
+      </div>
+
+
+
+
+
+</div>
+
+<div class="govuk-grid-column-full">
+<div class="govuk-button-group govuk-!-margin-top-6">
+  <a href='search-employees-results'>
+  <button class="govuk-button" data-module="govuk-button">
+    Search
+  </button>
+</a>
+<a href='/alpha/every-user-general/save-as-query'>
+  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+Save as query
+</button></a>
+</div>
+<p>  <a class="govuk-link" href="search-employees">Clear fields</a></p>
+</div>
+
+
+      </div>
+      </main>
+
+  </div>
+
+{% endblock %}

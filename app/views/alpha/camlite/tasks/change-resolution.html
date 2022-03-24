@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Deleting query
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="govuk-width-container">
+    <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <form action="cases-change-notif" method="post" class="form">
+
+
+          <div class="govuk-form-group">
+            <span class="govuk-caption-l">Changing the task resolution</span>
+            <fieldset class="govuk-fieldset">
+
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h1 class="govuk-fieldset__heading">
+
+
+    Change task resolution for the selected tasks to:
+
+  </h1>
+</legend>
+  <div class="govuk-radios" data-module="govuk-radios">
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="delete-query" name="delete-query" type="radio" value="yes">
+      <label class="govuk-label govuk-radios__label" for="delete-query">
+        Solved
+      </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="delete-query-2" name="delete-query" type="radio" value="no">
+      <label class="govuk-label govuk-radios__label" for="delete-query-2">
+      Not solved
+      </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="delete-query-2" name="delete-query" type="radio" value="no">
+      <label class="govuk-label govuk-radios__label" for="delete-query-2">
+      Lorem Ipsum
+      </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="delete-query-2" name="delete-query" type="radio" value="no">
+      <label class="govuk-label govuk-radios__label" for="delete-query-2">
+      Lorem Ipsum
+      </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="delete-query-2" name="delete-query" type="radio" value="no">
+      <label class="govuk-label govuk-radios__label" for="delete-query-2">
+      Lorem Ipsum
+      </label>
+    </div>
+    </fieldset>
+</div>
+
+
+            <button type="submit" class="govuk-button" data-module="govuk-button">
+              Save and continue
+            </button>
+            <p><a class="govuk-link" href="case-details">Cancel</a></p>
+
+        </form>
+    </div>
+</div>
+</div>
+
+{% endblock %}

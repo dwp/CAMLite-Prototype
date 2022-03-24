@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Cases unassigned
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+<form action="change-records" method="post" class="form">
+
+
+
+
+
+  <div class="govuk-form-group">
+<h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+  Change selected records
+
+</label>
+</h1>
+
+</div>
+
+<div class="govuk-radios govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="change-records" name="change-records" type="radio" value="status">
+        <label class="govuk-label govuk-radios__label" for="change-records">
+          Status
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="change-records-2" name="change-records" type="radio" value="duedate">
+        <label class="govuk-label govuk-radios__label" for="change-records-2">
+          Due date
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="change-records-3" name="change-records" type="radio" value="resolution">
+        <label class="govuk-label govuk-radios__label" for="change-records-3">
+          Case resolution
+        </label>
+      </div>
+    </div>
+
+
+
+
+  <button type="submit" class="govuk-button govuk-!-margin-top-6" data-module="govuk-button">
+  Continue
+  </button>
+      <p><a class="govuk-link" href="case-details">Cancel</a></p>
+  </form>
+</div>
+</div>
+  </main>
+  </div>
+
+{% endblock %}
