@@ -1,0 +1,331 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Case queues
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="positions">Positions</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="search-positions">Search positions</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="position-details">Position details</a>
+      </li>
+
+    </ol>
+  </div>
+<main class="govuk-main-wrapper">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+      Position details
+      </h1>
+
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Division
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Lorem ipsum
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> division</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+          Position
+          </dt>
+          <dd class="govuk-summary-list__value">
+          Lorem ipsum
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> Position</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+          Parent position
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Lorem ipsum
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> parent position</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+          Position type
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Lorem ipsum
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> Position type</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+        Last name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Lorem ipsum
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> last name</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+        First name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Lorem ipsum
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> First Name</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+
+
+<h2 class="govuk-heading-l govuk-!-margin-top-7">
+Assignment skills
+</h2>
+<div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+        Benefit Type
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+      <p class='govuk-body'>Position skill items:</p>
+
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+
+          <dd class="govuk-summary-list__value">
+            101796
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="delete-position-skill-item">
+              Delete<span class="govuk-visually-hidden"> 101796</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+
+          <dd class="govuk-summary-list__value">
+          101711
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Delete<span class="govuk-visually-hidden"> 101711</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+
+          <dd class="govuk-summary-list__value">
+            102589
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Delete<span class="govuk-visually-hidden"> 102589</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+
+          <dd class="govuk-summary-list__actions govuk-!-text-align-left">
+            <a class="govuk-link " href="add-new-position-skill">
+            Add new <span class="govuk-visually-hidden"> position skill item</span>
+
+
+            </a>
+          </dd>
+        </div>
+        </dl>
+    </div>
+  </div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+          Assignment Office ID
+        </span>
+      </h2>
+    </div>
+
+    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+      <p class='govuk-body'>Position skill items:</p>
+
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+
+          <dd class="govuk-summary-list__value">
+            101796
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Delete<span class="govuk-visually-hidden"> 101796</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+
+          <dd class="govuk-summary-list__value">
+          101711
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Delete<span class="govuk-visually-hidden"> 101711</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+
+          <dd class="govuk-summary-list__value">
+            102589
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Delete<span class="govuk-visually-hidden"> 102589</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+
+          <dd class="govuk-summary-list__actions govuk-!-text-align-left">
+            <a class="govuk-link " href="#">
+            Add new <span class="govuk-visually-hidden"> position skill item</span>
+
+
+            </a>
+          </dd>
+        </div>
+        </dl>
+    </div>
+
+
+  </div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+        BDC Processing Agent Skills
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+      <p class='govuk-body'>Position skill items:</p>
+
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+
+          <dd class="govuk-summary-list__value">
+            101796
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Delete<span class="govuk-visually-hidden"> 101796</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+
+          <dd class="govuk-summary-list__value">
+          101711
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Delete<span class="govuk-visually-hidden"> 101711</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+
+          <dd class="govuk-summary-list__value">
+            102589
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Delete<span class="govuk-visually-hidden"> 102589</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+
+          <dd class="govuk-summary-list__actions govuk-!-text-align-left">
+            <a class="govuk-link " href="#">
+            Add new <span class="govuk-visually-hidden"> position skill item</span>
+
+
+            </a>
+          </dd>
+        </div>
+        </dl>
+    </div>
+  </div>
+
+</div>
+
+
+<a class="govuk-link " href="add-assignment-skill">
+<button class="govuk-button " data-module="govuk-button">
+  Add assignment skill
+</button>
+</a>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+          </div>
+
+
+      </div>
+      </div>
+
+
+
+
+
+{% endblock %}

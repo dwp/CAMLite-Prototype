@@ -54,4 +54,22 @@ router.post('/assigned-cases-confirmation-b', function(req, res) {
 
 
 
+//delete-position-skill-item
+            router.post('/delete-position-skill-item', function (req, res) {
+              const deletepositionskillitem = req.session.data['delete-position-skill-item']
+              console.log(deletepositionskillitem)
+              if (deletepositionskillitem === 'yes') {
+                  res.redirect('/alpha/admin/position-details-confir')
+
+              } else if (deletepositionskillitem === 'no') {
+                    res.redirect('/alpha/admin/position-details')
+
+
+
+        }
+        });
+
+
+
+
 module.exports = router

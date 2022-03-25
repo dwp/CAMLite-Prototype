@@ -11,10 +11,10 @@
     <div class="govuk-breadcrumbs">
       <ol class="govuk-breadcrumbs__list">
         <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="positions">Positions</a>
+          <a class="govuk-breadcrumbs__link" href="divisions">Divisions</a>
         </li>
         <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="search-positions">Search positions</a>
+          <a class="govuk-breadcrumbs__link" href="search-divisions">Search divisions</a>
         </li>
 
       </ol>
@@ -25,7 +25,7 @@
   <div class="govuk-grid-row">
 <div class="govuk-grid-column-full">
   <h1 class="govuk-heading-l">
-     Search positions
+     Search divisions
    </h1>
    </div>
     <div class="govuk-grid-column-one-half">
@@ -34,7 +34,7 @@
       <!--COLUMN 1-->
       <div class="govuk-form-group">
         <label class="govuk-label" for="nino">
-            Division
+            Division Name
         </label>
         <input class="govuk-input govuk-!-width-one-half" id="division" name="division" type="text">
       </div>
@@ -42,7 +42,7 @@
   <!--COLUMN 2-->
   <div class="govuk-form-group">
     <label class="govuk-label" for="nino">
-        Position
+      Parent Division Name
     </label>
     <input class="govuk-input govuk-!-width-one-half" id="position" name="position" type="text">
   </div>
@@ -50,37 +50,37 @@
   <!--COLUMN 3-->
   <div class="govuk-form-group">
     <label class="govuk-label" for="nino">
-      Parent Position
+      Office Type
     </label>
     <input class="govuk-input govuk-!-width-one-half" id="parent-position" name="parent-position" type="text">
   </div>
 
+  <!--COLUMN 4-->
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="nino">
+    Office Sub Type
+    </label>
+    <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+    <option value="available">Type 1</option>
+    <option value="not-available" >Type 2</option>
 
+  </select>
+
+  </div>
 
 
 
     </div>
 
     <div class="govuk-grid-column-one-half">
-      <!--COLUMN 4-->
-      <div class="govuk-form-group">
-        <label class="govuk-label" for="nino">
-        Position Type
-        </label>
-        <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
-        <option value="available">Type 1</option>
-        <option value="not-available" >Type 2</option>
 
-      </select>
-
-      </div>
 
 
 
       <!--COLUMN 5-->
       <div class="govuk-form-group">
         <label class="govuk-label" for="nino">
-          Last Name
+        Office ID
         </label>
         <input class="govuk-input govuk-!-width-one-half" id="last-name" name="last-name" type="text">
       </div>
@@ -88,20 +88,32 @@
       <!--COLUMN 6-->
       <div class="govuk-form-group">
         <label class="govuk-label" for="status">
-            First Name
+          Room Number
         </label>
       <input class="govuk-input govuk-!-width-one-half" id="first-name" name="first-name" type="text">
       </div>
 
+      <!--COLUMN 7-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="status">
+          Office Location
+        </label>
+      <input class="govuk-input govuk-!-width-one-half" id="first-name" name="first-name" type="text">
+      </div>
 
-
-
+      <!--COLUMN 8-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="status">
+          BDC Live Flag
+        </label>
+      <input class="govuk-input govuk-!-width-one-half" id="first-name" name="first-name" type="text">
+      </div>
 
 </div>
 
 <div class="govuk-grid-column-full">
 <div class="govuk-button-group govuk-!-margin-top-6">
-  <a href='search-positions-results'>
+  <a href='search-division-results'>
   <button class="govuk-button" data-module="govuk-button">
     Search
   </button>

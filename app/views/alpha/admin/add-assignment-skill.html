@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Cases unassigned
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+
+
+ <main class="govuk-main-wrapper " id="main-content" role="main">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+
+
+
+  <div class="govuk-form-group">
+<h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+  Which assignment skill do you want to add?
+
+</label>
+</h1>
+
+</div>
+
+<div class="govuk-radios govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="delete-position-skill-item" name="delete-position-skill-item" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="delete-position-skill-item">
+          BDC Processing Agent Skill
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="delete-position-skill-item-2" name="delete-position-skill-item" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="delete-position-skill-item-2">
+        Assignment Office ID
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="delete-position-skill-item-2" name="delete-position-skill-item" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="delete-position-skill-item-2">
+        Benefit Type
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="delete-position-skill-item-2" name="delete-position-skill-item" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="delete-position-skill-item-2">
+        Error Queue Skill
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="delete-position-skill-item-2" name="delete-position-skill-item" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="delete-position-skill-item-2">
+        Callback Skill
+        </label>
+      </div>
+    </div>
+
+
+
+  <a class="govuk-link" href="position-details-confir">
+  <button type="submit" class="govuk-button govuk-!-margin-top-6" data-module="govuk-button">
+    Save and continue
+  </button>
+</a>
+
+
+</div>
+</div>
+  </main>
+  </div>
+
+{% endblock %}
