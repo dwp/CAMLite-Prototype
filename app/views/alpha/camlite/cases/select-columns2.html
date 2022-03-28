@@ -1,0 +1,166 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Select columns
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="govuk-width-container">
+    <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <form action="cases-change-notif" method="post" class="form">
+
+
+          <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h1 class="govuk-fieldset__heading">
+          In what order do you want to display selected columns?
+        </h1>
+      </legend>
+      <div id="waste-hint" class="govuk-hint">
+        Select order from drop down menu.
+      </div>
+
+
+
+<dl class="govuk-summary-list govuk-summary-list--no-border govuk-!-margin-top-8">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-list__key govuk-!-width-three-quarters">
+    Created on
+    </dt>
+    <dd class="govuk-summary-list__value govuk-!-text-align-right">
+      <select class="govuk-select" id="sort" name="sort">
+        <option value="published">Column 1</option>
+        <option value="updated" selected>Column 2</option>
+        <option value="views">Column 3</option>
+        <option value="comments">Column 4</option>
+        <option value="comments">Column 5</option>
+        <option value="comments">Column 6</option>
+        <option value="comments">Column 7</option>
+      </select>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-list__key govuk-!-width-three-quarters">
+        Type
+    </dt>
+    <dd class="govuk-summary-list__value govuk-!-text-align-right">
+      <select class="govuk-select" id="sort" name="sort">
+        <option value="published">Column 1</option>
+        <option value="updated" selected>Column 2</option>
+        <option value="views">Column 3</option>
+        <option value="comments">Column 4</option>
+        <option value="comments">Column 5</option>
+        <option value="comments">Column 6</option>
+        <option value="comments">Column 7</option>
+      </select>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-list__key govuk-!-width-three-quarters">
+      Status
+    </dt>
+    <dd class="govuk-summary-list__value govuk-!-text-align-right">
+      <select class="govuk-select" id="sort" name="sort">
+        <option value="published">Column 1</option>
+        <option value="updated" selected>Column 2</option>
+        <option value="views">Column 3</option>
+        <option value="comments">Column 4</option>
+        <option value="comments">Column 5</option>
+        <option value="comments">Column 6</option>
+        <option value="comments">Column 7</option>
+      </select>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-list__key govuk-!-width-three-quarters">
+      Customer name
+    </dt>
+    <dd class="govuk-summary-list__value govuk-!-text-align-right">
+      <select class="govuk-select" id="sort" name="sort">
+        <option value="published">Column 1</option>
+        <option value="updated" selected>Column 2</option>
+        <option value="views">Column 3</option>
+        <option value="comments">Column 4</option>
+        <option value="comments">Column 5</option>
+        <option value="comments">Column 6</option>
+        <option value="comments">Column 7</option>
+      </select>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-list__key govuk-!-width-three-quarters">
+      National Insurance Number
+    </dt>
+    <dd class="govuk-summary-list__value govuk-!-text-align-right">
+      <select class="govuk-select" id="sort" name="sort">
+        <option value="published">Column 1</option>
+        <option value="updated" selected>Column 2</option>
+        <option value="views">Column 3</option>
+        <option value="comments">Column 4</option>
+        <option value="comments">Column 5</option>
+        <option value="comments">Column 6</option>
+        <option value="comments">Column 7</option>
+      </select>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-list__key govuk-!-width-three-quarters">
+        Case resolution selected on
+    </dt>
+    <dd class="govuk-summary-list__value govuk-!-text-align-right">
+      <select class="govuk-select" id="sort" name="sort">
+        <option value="published">Column 1</option>
+        <option value="updated" selected>Column 2</option>
+        <option value="views">Column 3</option>
+        <option value="comments">Column 4</option>
+        <option value="comments">Column 5</option>
+        <option value="comments">Column 6</option>
+        <option value="comments">Column 7</option>
+      </select>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-list__key govuk-!-width-three-quarters">
+        Owner name
+    </dt>
+    <dd class="govuk-summary-list__value govuk-!-text-align-right">
+      <select class="govuk-select" id="sort" name="sort">
+        <option value="published">Column 1</option>
+        <option value="updated" selected>Column 2</option>
+        <option value="views">Column 3</option>
+        <option value="comments">Column 4</option>
+        <option value="comments">Column 5</option>
+        <option value="comments">Column 6</option>
+        <option value="comments">Column 7</option>
+      </select>
+    </dd>
+  </div>
+</dl>
+
+
+
+
+
+
+
+  </div>
+
+
+            <button type="submit" class="govuk-button" data-module="govuk-button">
+              Save and continue
+            </button>
+            <p><a class="govuk-link" href="case-details">Cancel</a></p>
+
+        </form>
+    </div>
+</div>
+</div>
+
+{% endblock %}
