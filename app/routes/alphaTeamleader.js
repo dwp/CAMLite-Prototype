@@ -70,6 +70,34 @@ router.post('/assigned-cases-confirmation-b', function(req, res) {
         });
 
 
+//delete-position-employee
+                    router.post('/delete-position-employee', function (req, res) {
+                      const deletepositionemployee = req.session.data['delete-position-employee']
+                      console.log(deletepositionemployee)
+                      if (deletepositionemployee === 'yes') {
+                          res.redirect('/alpha/admin/position-delete-confir')
 
+                      } else if (deletepositionemployee === 'no') {
+                            res.redirect('/alpha/admin/view-position')
+
+
+
+                }
+                });
+
+  //delete-respo-employee
+                                    router.post('/delete-respo-employee', function (req, res) {
+                                      const deleterespoemployee = req.session.data['delete-respo-employee']
+                                      console.log(deleterespoemployee)
+                                      if (deleterespoemployee === 'yes') {
+                                          res.redirect('/alpha/admin/view-responsibility-confir')
+
+                                      } else if (deleterespoemployee === 'no') {
+                                            res.redirect('/alpha/admin/view-responsibility')
+
+
+
+                                }
+                                });
 
 module.exports = router
