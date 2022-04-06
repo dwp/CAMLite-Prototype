@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Search cases
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-width-container">
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="positions">Positions</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="add-new-position">Add new position</a>
+        </li>
+
+      </ol>
+    </div>
+
+      <main class="govuk-main-wrapper">
+
+  <div class="govuk-grid-row">
+<div class="govuk-grid-column-full">
+  <h1 class="govuk-heading-l">
+     Add new position
+   </h1>
+   </div>
+    <div class="govuk-grid-column-one-half">
+
+
+
+
+
+      <!--COLUMN 2-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="nino">
+            Position
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="last-name" name="last-name" type="text">
+      </div>
+
+      <!--COLUMN 20-->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="nino">
+        Parent position
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="user-id" name="user-id" type="text">
+      </div>
+
+
+
+
+      <!--COLUMN 1-->
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="nino">
+            Position type
+        </label>
+        <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+        <option value="available">lorem Ipsum</option>
+        <option value="not-available" >lorem ipsum</option>
+
+      </select>
+      </div>
+
+
+            <!--COLUMN 23-->
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="nino">
+                Division
+              </label>
+              <input class="govuk-input govuk-!-width-one-half" id="staff-number" name="staff-number" type="text">
+            </div>
+
+    </div>
+
+</div>
+
+<div class="govuk-button-group govuk-!-margin-top-6">
+  <a href='new-position-confirmation'>
+  <button class="govuk-button" data-module="govuk-button">
+    Add new position
+  </button>
+</a>
+
+</div>
+<p>  <a class="govuk-link" href="search-employees">Clear fields</a></p>
+</div>
+
+
+      </div>
+      </main>
+
+  </div>
+
+{% endblock %}
